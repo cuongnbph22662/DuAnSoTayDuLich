@@ -1,11 +1,11 @@
 package cuongnbph22662.poly.duansotaydulich;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Bundle;
 
 import cuongnbph22662.poly.duansotaydulich.databinding.ActivityMainBinding;
 import cuongnbph22662.poly.duansotaydulich.fragment.CaNhanFragment;
@@ -14,8 +14,6 @@ import cuongnbph22662.poly.duansotaydulich.fragment.KhamPhaFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.LichFragment;
 
 public class MainActivity extends AppCompatActivity {
-    // helooo cường nè cả nhà
-    // cường đói quá
     ActivityMainBinding activityMainBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
