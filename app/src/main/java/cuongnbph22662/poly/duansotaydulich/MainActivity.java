@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(R.layout.activity_main);
+        setContentView(activityMainBinding.getRoot());
         replaceFrament(new HomeFragment());
         activityMainBinding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){

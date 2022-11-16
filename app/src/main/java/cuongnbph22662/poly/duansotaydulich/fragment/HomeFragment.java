@@ -17,10 +17,6 @@ import cuongnbph22662.poly.duansotaydulich.R;
  */
 public class HomeFragment extends Fragment {
 
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

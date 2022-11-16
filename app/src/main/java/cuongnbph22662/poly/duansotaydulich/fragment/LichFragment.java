@@ -15,15 +15,6 @@ import cuongnbph22662.poly.duansotaydulich.R;
  */
 public class LichFragment extends Fragment {
 
-    public static LichFragment newInstance(String param1, String param2) {
-        LichFragment fragment = new LichFragment();
-        return fragment;
-    }
-
-    public LichFragment() {
-        // Required empty public constructor
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

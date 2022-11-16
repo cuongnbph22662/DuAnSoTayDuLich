@@ -17,11 +17,6 @@ import cuongnbph22662.poly.duansotaydulich.R;
  */
 public class KhamPhaFragment extends Fragment {
 
-    public static KhamPhaFragment newInstance(String param1, String param2) {
-        KhamPhaFragment fragment = new KhamPhaFragment();
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

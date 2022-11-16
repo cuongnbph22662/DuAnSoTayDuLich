@@ -17,11 +17,6 @@ import cuongnbph22662.poly.duansotaydulich.R;
  */
 public class CaNhanFragment extends Fragment {
 
-    public static CaNhanFragment newInstance(String param1, String param2) {
-        CaNhanFragment fragment = new CaNhanFragment();
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
