@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".fragment.KhamPhaFragment"
-    android:background="#F8DDDD"
-    >
+    android:background="#F8DDDD">
  <TextView
      android:textSize="50dp"
      android:layout_width="wrap_content"
@@ -36,30 +36,47 @@
 
    </LinearLayout>
    <com.google.android.material.tabs.TabLayout
-       android:id="@+id/id_tabLayout"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+       android:layout_height="?actionBarSize"
+       android:id="@+id/tab_layout"
+       android:background="@color/white"
+       app:tabInlineLabel="true"
+       app:tabTextColor="@color/teal_700"
+       app:tabIndicatorColor="@color/teal_700"
+       app:tabSelectedTextColor="@color/teal_700"
+       app:tabTextAppearance="@style/TextAppearance.AppCompat.Small">
 
-      <com.google.android.material.tabs.TabItem
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Khoản Chi" />
 
-      <com.google.android.material.tabs.TabItem
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Loại Chi" />
-      <com.google.android.material.tabs.TabItem
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Loại Chi" />
 
 
    </com.google.android.material.tabs.TabLayout>
-   <androidx.viewpager2.widget.ViewPager2
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:id="@+id/id_viewPager"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/simpleSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travenus Top 10"
+        android:textColor="#D33D7E"
+        android:textSize="25dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_pager"/>
+
 
 
 </LinearLayout>
