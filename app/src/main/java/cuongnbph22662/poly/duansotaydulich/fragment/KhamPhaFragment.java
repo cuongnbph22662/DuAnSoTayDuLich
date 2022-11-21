@@ -98,7 +98,7 @@ public class KhamPhaFragment extends Fragment {
         ArrayList<Fragment> fragmentArrayList= new ArrayList<>();
         ArrayList<String> stringArrayList=new ArrayList<>();
 
-        int[] imageList={R.drawable.ic_baseline_person_search_24,R.drawable.ic_baseline_favorite_border_24,R.drawable.ic_baseline_people_24};
+        int[] imageList={R.drawable.ic_timkiemnguoi,R.drawable.ic_yeuthich,R.drawable.ic_capnguoi};
 
         // Create constructor
         public void addFragment(Fragment fragment,String s)
