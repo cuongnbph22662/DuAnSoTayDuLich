@@ -14,6 +14,7 @@ import cuongnbph22662.poly.duansotaydulich.fragment.KhamPhaFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.LichFragment;
 
 public class MainActivity extends AppCompatActivity {
+    String ten = "Cường đây aloo";
     ActivityMainBinding activityMainBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
