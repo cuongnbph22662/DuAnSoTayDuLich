@@ -1,17 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
         <ImageView
-            android:layout_width="355dp"
-            android:layout_height="325dp"
+            android:layout_width="335dp"
+            android:layout_height="355dp"
             android:layout_gravity="center_horizontal"
             android:id="@+id/imgkhampha"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dia Diem 1"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gia"
+                android:id="@+id/tvGia"
+                android:layout_marginLeft="170dp"/>
 
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameDiaDiem"
+            android:text="Ten Dia Diem"
+            android:textSize="25dp"
+            android:layout_marginLeft="40dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginLeft="40dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 day tour"
+                android:layout_marginLeft="100dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
