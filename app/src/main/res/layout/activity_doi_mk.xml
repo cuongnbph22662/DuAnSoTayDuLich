@@ -34,27 +34,70 @@
         android:layout_height="wrap_content"
         android:text="Đổi mật khẩu "
         android:layout_gravity="center_horizontal"/>
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/round_edittext"
-        android:hint="Mật khẩu cũ"/>
-    <EditText
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/ed_MKCu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round_edittext"
+            android:hint="Mật Khẩu cũ"
+            android:inputType="textPassword"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/round_edittext"
-        android:hint="Mật khẩu mới"/>
-    <EditText
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ed_MKMoi"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="Mật Khẩu Mới"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round_edittext">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/round_edittext"
-        android:hint="Xác nhận mật khẩu mới"/>
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/round_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ed_XacNhanMKMoi"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="Xác Nhận Mật Khẩu Mới"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
        <Button
            android:textColor="@color/white"
            android:layout_marginTop="34dp"
