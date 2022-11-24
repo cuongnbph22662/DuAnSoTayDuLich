@@ -1,10 +1,8 @@
-package cuongnbph22662.poly.duansotaydulich.Canhan;
-
-import androidx.appcompat.app.AppCompatActivity;
+package cuongnbph22662.poly.duansotaydulich;
 
 import android.os.Bundle;
 
-import cuongnbph22662.poly.duansotaydulich.R;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DangNhap extends AppCompatActivity {
 

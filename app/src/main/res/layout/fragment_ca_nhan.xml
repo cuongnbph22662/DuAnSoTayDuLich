@@ -35,6 +35,7 @@
         android:textColor="@color/black"/>
 
     <TextView
+        android:id="@+id/btnEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -43,6 +44,7 @@
         android:textSize="18dp" />
 
     <TextView
+        android:id="@+id/btnSoDienThoai"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
