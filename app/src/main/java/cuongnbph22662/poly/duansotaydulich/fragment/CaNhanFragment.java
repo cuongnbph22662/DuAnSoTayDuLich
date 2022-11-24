@@ -39,7 +39,6 @@ public class CaNhanFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(),DangNhap.class);
                 startActivity(intent);
-
             }
         });
         return view;
