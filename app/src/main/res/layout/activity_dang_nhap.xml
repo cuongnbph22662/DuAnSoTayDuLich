@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F8D4D0"
-    tools:context=".Canhan.CreateAccount">
+    tools:context=".Canhan.DangNhap">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,12 +29,14 @@
             android:textSize="40dp" />
     </LinearLayout>
     <TextView
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tạo tài khoản"
+        android:text="Đăng nhập"
+        android:textColor="@color/black"
         android:layout_marginBottom="20dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_margin="10dp"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,43 +79,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone number"
+        android:text="Bạn chưa có tài khoản ? Đi đến đăng kí !"
         android:textSize="16dp"
         android:layout_marginLeft="20dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/round_edittext"
-        android:padding="5dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Full name"
-        android:textSize="16dp"
-        android:layout_marginLeft="20dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/round_edittext"
-        android:padding="5dp"/>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đồng ý với điều khoản và chính sách bảo mật của Travenus"/>
-    </LinearLayout>
     <Button
         android:textColor="@color/white"
         android:layout_marginTop="34dp"
@@ -123,4 +91,5 @@
         android:background="@drawable/button_design"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
+
 </LinearLayout>

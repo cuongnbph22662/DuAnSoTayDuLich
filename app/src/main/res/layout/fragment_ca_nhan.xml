@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Thông tin người dùng"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="26dp"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/black"/>
 
@@ -69,24 +69,27 @@
         android:layout_height="wrap_content"
         android:text="Chức năng"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="26dp"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/black"/>
     <TextView
+        android:id="@+id/btnDangNhap"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lịch sử chuyến đi "
+        android:text="Đăng nhập "
         android:textSize="18dp"
         android:layout_marginLeft="10dp"/>
     <TextView
+        android:id="@+id/btnTaoTaiKhoan"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cộng đồng"
+        android:text="Tạo tài khoản"
         android:textSize="18dp"
         android:layout_marginLeft="10dp"/>
     <TextView
+        android:id="@+id/btnTTTaiKhoan"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -94,6 +97,7 @@
         android:textSize="18dp"
         android:layout_marginLeft="10dp"/>
     <TextView
+
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,7 +109,7 @@
         android:layout_height="wrap_content"
         android:text="Liên hệ"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="26dp"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/black"/>
     <TextView
@@ -134,15 +138,34 @@
         android:layout_height="wrap_content"
         android:text="Theo dõi chúng tôi"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="26dp"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/black"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/facebook"/>
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/lag"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/img"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/telegram"/>
     </LinearLayout>
 </LinearLayout>
