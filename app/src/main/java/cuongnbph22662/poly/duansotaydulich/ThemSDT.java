@@ -1,14 +1,14 @@
-package cuongnbph22662.poly.duansotaydulich.Canhan;
+package cuongnbph22662.poly.duansotaydulich;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class DoiMK extends AppCompatActivity {
+public class ThemSDT extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doi_mk);
+        setContentView(R.layout.activity_them_sdt);
     }
 }
