@@ -8,21 +8,22 @@
     android:orientation="vertical"
     android:background="#F8D4D0">
 
-    <TextView
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_width="36dp"
         android:id="@+id/id_Back"
         android:layout_height="39dp"
         android:background="@drawable/ic_back2">
 
 
-    </TextView>
+    </ImageView>
 
     <TextView
         android:text="Travenus"
         android:textSize="30dp"
         android:gravity="center"
         android:textColor="#C9AE82"
-        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
