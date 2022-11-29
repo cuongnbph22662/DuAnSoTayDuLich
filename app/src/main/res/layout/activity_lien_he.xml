@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LienHeActivity"
+    android:orientation="vertical"
+    android:background="#F8D4D0">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="38dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+        </ImageView>
+        <TextView
+            android:text="Travenus"
+            android:textSize="40dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp">
+
+        </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:text="Liên hệ chúng tôi"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="40dp">
+
+        </TextView>
+        </LinearLayout>
+        <ImageView
+            android:background="@drawable/lienhe"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </ImageView>
+        <TextView
+            android:text="Bạn đang có câu hỏi ư ?"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:text="Hãy nhắn cho chúng tôi để được trả lời nhanh chóng"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
