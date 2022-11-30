@@ -122,6 +122,6 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="20dp"
             android:id="@+id/btn_book"
-            />
+            android:backgroundTint="#C9AE82"/>
     </LinearLayout>
 </LinearLayout>

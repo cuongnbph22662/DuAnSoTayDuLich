@@ -53,8 +53,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C9AE82"
+        android:backgroundTint="#C9AE82"
         android:text="Đăng tin"
-        
         android:layout_margin="20dp"/>
 </LinearLayout>
