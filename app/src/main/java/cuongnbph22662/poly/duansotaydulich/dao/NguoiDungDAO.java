@@ -1,4 +1,4 @@
-package cuongnbph22662.poly.duansotaydulich.DAO;
+package cuongnbph22662.poly.duansotaydulich.dao;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;

@@ -1,4 +1,4 @@
-package cuongnbph22662.poly.duansotaydulich.DAO;
+package cuongnbph22662.poly.duansotaydulich.dao;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.database.DB_Helper;
-import cuongnbph22662.poly.duansotaydulich.model.NguoiDung;
 import cuongnbph22662.poly.duansotaydulich.model.PhieuDuLich;
 
 public class PhieuDuLichDAO {
