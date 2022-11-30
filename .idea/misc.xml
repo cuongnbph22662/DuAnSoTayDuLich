@@ -4,11 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
-        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_image.xml" value="0.1375" />
-        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_star.xml" value="0.1375" />
-        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_chia_se.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_dang_nhap.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_dia_diem.xml" value="0.2" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/button_design.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_insert_comment_24.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_phone_iphone_24.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_capnguoi.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_timkiemnguoi.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_chia_se.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_create_account.xml" value="0.25" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_ca_nhan.xml" value="0.25" />
       </map>
     </option>
   </component>
