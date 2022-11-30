@@ -38,17 +38,15 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:id="@+id/img_anhchiase"
         android:src="@drawable/anh_chiase"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_image"
-        android:id="@+id/btn_img"
         android:layout_margin="10dp"/>
 
     <EditText
-        android:id="@+id/edt_tieude"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tiêu đề" />
@@ -57,6 +55,6 @@
         android:layout_height="wrap_content"
         android:background="#C9AE82"
         android:text="Đăng tin"
-        android:id="@+id/btn_dangtin"
+        
         android:layout_margin="20dp"/>
 </LinearLayout>
