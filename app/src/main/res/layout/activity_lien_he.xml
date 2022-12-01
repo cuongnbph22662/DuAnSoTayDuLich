@@ -43,7 +43,7 @@
                 android:id="@+id/id_Back"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/ic_back"
+                android:background="@drawable/ic_quaylai"
                 android:layout_width="30dp"
                 android:layout_height="30dp">
 
@@ -60,7 +60,7 @@
         </TextView>
         </LinearLayout>
         <ImageView
-            android:background="@drawable/lienhe"
+            android:background="@drawable/img_lienhe"
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="300dp">
