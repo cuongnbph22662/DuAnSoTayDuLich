@@ -15,10 +15,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import cuongnbph22662.poly.duansotaydulich.CreateAccountActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.CreateAccountActivity;
 import cuongnbph22662.poly.duansotaydulich.DangNhapActivity;
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.TTCaNhanActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 import cuongnbph22662.poly.duansotaydulich.ThemEmailActivity;
 import cuongnbph22662.poly.duansotaydulich.ThemSDTActivity;
 

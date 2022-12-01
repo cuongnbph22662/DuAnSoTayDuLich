@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F8D4D0"
     android:orientation="vertical"
-    tools:context=".ChiaSeActivity">
+    tools:context=".activity.ChiaSeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_btn_dangnhap.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/button_design.xml" value="0.1195" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1195" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_insert_comment_24.xml" value="0.1195" />
@@ -23,6 +24,7 @@
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_them_email.xml" value="0.1" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_them_sdt.xml" value="0.1" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_ttca_nhan.xml" value="0.10925925925925926" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_ca_nhan.xml" value="0.25" />
       </map>
     </option>
