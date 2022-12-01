@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LichSuActivity"
+    android:orientation="vertical"
+    android:background="#F8D4D0">
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="36dp"
+        android:id="@+id/id_Back"
+        android:layout_height="39dp"
+        android:background="@drawable/ic_back2">
+
+
+    </ImageView>
+
+    <TextView
+        android:text="Travenus"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#C9AE82"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Travel History"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <ListView
+        android:id="@+id/id_LV_LichSu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
