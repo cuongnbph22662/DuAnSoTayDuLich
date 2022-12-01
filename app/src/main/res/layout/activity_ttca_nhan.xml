@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Canhan.TTCaNhan">
+    tools:context=".activity.TTCaNhanActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="350dp">
@@ -139,7 +139,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_baseline_email_24"/>
+                android:src="@drawable/ic_ttcn_email"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_baseline_phone_iphone_24"/>
+                android:src="@drawable/ic_ttcn_sdt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_baseline_location_on_24"/>
+                android:src="@drawable/ic_ttcn_diachi"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_baseline_insert_comment_24"/>
+                android:src="@drawable/ic_ttcn_comment"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
