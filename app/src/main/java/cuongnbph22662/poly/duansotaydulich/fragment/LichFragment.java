@@ -7,12 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import cuongnbph22662.poly.duansotaydulich.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link LichFragment#newInstance} factory method to
- * create an instance of this fragment.
- *
- */
+
 public class LichFragment extends Fragment {
 
     @Override
