@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="cuongnbph22662.poly.duansotaydulich">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,42 +17,42 @@
         android:theme="@style/Theme.DuAnSoTayDuLich"
         tools:targetApi="31">
         <activity
-            android:name=".ThemSDT"
+            android:name=".ThemSDTActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DangNhap"
+            android:name=".DangNhapActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".TTCaNhan"
+            android:name=".TTCaNhanActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ThemEmail"
+            android:name=".ThemEmailActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CreateAccount"
+            android:name=".CreateAccountActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DoiMK"
+            android:name=".DoiMatKhauActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

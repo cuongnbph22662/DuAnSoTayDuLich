@@ -15,13 +15,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import cuongnbph22662.poly.duansotaydulich.CreateAccount;
-import cuongnbph22662.poly.duansotaydulich.DangNhap;
-import cuongnbph22662.poly.duansotaydulich.MainActivity;
+import cuongnbph22662.poly.duansotaydulich.CreateAccountActivity;
+import cuongnbph22662.poly.duansotaydulich.DangNhapActivity;
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.TTCaNhan;
-import cuongnbph22662.poly.duansotaydulich.ThemEmail;
-import cuongnbph22662.poly.duansotaydulich.ThemSDT;
+import cuongnbph22662.poly.duansotaydulich.TTCaNhanActivity;
+import cuongnbph22662.poly.duansotaydulich.ThemEmailActivity;
+import cuongnbph22662.poly.duansotaydulich.ThemSDTActivity;
 
 public class CaNhanFragment extends Fragment {
     TextView btnDangNhap,btnTaoTaiKhoan,btnTTTaiKhoan,btnEmail,btnSoDienThoai;
@@ -45,35 +44,35 @@ public class CaNhanFragment extends Fragment {
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), DangNhap.class);
+                Intent intent = new Intent(getActivity(), DangNhapActivity.class);
                 startActivity(intent);
             }
         });
         btnTaoTaiKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), CreateAccount.class);
+                Intent intent = new Intent(getActivity(), CreateAccountActivity.class);
                 startActivity(intent);
             }
         });
         btnTTTaiKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), TTCaNhan.class);
+                Intent intent = new Intent(getActivity(), TTCaNhanActivity.class);
                 startActivity(intent);
             }
         });
         btnEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ThemEmail.class);
+                Intent intent = new Intent(getActivity(), ThemEmailActivity.class);
                 startActivity(intent);
             }
         });
         btnSoDienThoai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ThemSDT.class);
+                Intent intent = new Intent(getActivity(), ThemSDTActivity.class);
                 startActivity(intent);
             }
         });
