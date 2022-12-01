@@ -6,6 +6,7 @@
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_btn_dangnhap.xml" value="0.198" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_dialog.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/button_design.xml" value="0.1195" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_back.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_back2.xml" value="0.198" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_phone_iphone_24.xml" value="0.1195" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.1195" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_capnguoi.xml" value="0.1195" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_check.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_home.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_image.xml" value="0.155" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_launcher_background.xml" value="0.198" />
@@ -26,6 +28,7 @@
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_timkiemnguoi.xml" value="0.1195" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_ttcn_comment.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_ttcn_sdt.xml" value="0.198" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_xacnhanthoat.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_yeuthich.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/round_edittext.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_chia_se.xml" value="0.24456521739130435" />
@@ -39,6 +42,7 @@
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_them_email.xml" value="0.1" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_them_sdt.xml" value="0.1" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_ttca_nhan.xml" value="0.10925925925925926" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/dialog_thoat.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_ca_nhan.xml" value="0.25" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_lich.xml" value="0.13125" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_main.xml" value="0.13125" />

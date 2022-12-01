@@ -163,11 +163,6 @@
             android:layout_margin="5dp"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/img"/>
-        <ImageView
-            android:layout_margin="5dp"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
             android:src="@drawable/mxh_telegram"/>
     </LinearLayout>
 </LinearLayout>

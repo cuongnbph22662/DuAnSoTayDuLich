@@ -5,25 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F8D4D0"
+    android:background="@color/maunen"
     tools:context=".activity.ThemEmailActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/img"
-            android:layout_margin="10dp"
-            />
-
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="Travenus"
             android:textColor="@color/white"
             android:textSize="40dp" />
