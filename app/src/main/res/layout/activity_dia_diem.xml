@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F8D4D0"
-    tools:context=".DiaDiemActivity">
+    tools:context=".activity.DiaDiemActivity">
 
     <ImageView
         android:layout_width="wrap_content"

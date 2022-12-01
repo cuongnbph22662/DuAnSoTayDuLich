@@ -16,11 +16,11 @@ import android.widget.TextView;
 
 
 import cuongnbph22662.poly.duansotaydulich.activity.CreateAccountActivity;
-import cuongnbph22662.poly.duansotaydulich.DangNhapActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
-import cuongnbph22662.poly.duansotaydulich.ThemEmailActivity;
-import cuongnbph22662.poly.duansotaydulich.ThemSDTActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.ThemEmailActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.ThemSDTActivity;
 
 public class CaNhanFragment extends Fragment {
     TextView btnDangNhap,btnTaoTaiKhoan,btnTTTaiKhoan,btnEmail,btnSoDienThoai;
