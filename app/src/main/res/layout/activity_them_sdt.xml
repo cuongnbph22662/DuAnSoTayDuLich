@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/icon"
+            android:src="@drawable/img"
             android:layout_margin="10dp"
             />
 
