@@ -14,7 +14,7 @@
         android:layout_width="36dp"
         android:id="@+id/id_Back"
         android:layout_height="39dp"
-        android:background="@drawable/ic_back2">
+        android:background="@drawable/ic_back">
 
 
     </ImageView>

@@ -152,13 +152,13 @@
             android:layout_margin="5dp"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/facebook"/>
+            android:src="@drawable/mxh_facebook"/>
 
         <ImageView
             android:layout_margin="5dp"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/lag"/>
+            android:src="@drawable/mxh_intagram"/>
         <ImageView
             android:layout_margin="5dp"
             android:layout_width="24dp"
@@ -168,6 +168,6 @@
             android:layout_margin="5dp"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/telegram"/>
+            android:src="@drawable/mxh_telegram"/>
     </LinearLayout>
 </LinearLayout>
