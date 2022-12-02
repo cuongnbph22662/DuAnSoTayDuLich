@@ -26,7 +26,6 @@ public class HoSoFragment extends Fragment {
     Button btnDangNhap;
     TextView tvTaoTaiKhoan;
     LinearLayout lienHe, theoDoi, dieuKhoan, quyenRiengTu;
-    Context context;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
