@@ -32,7 +32,7 @@ public class DangNhapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dang_nhap);
         edUsername = findViewById(R.id.edUsername);
         edPassword = findViewById(R.id.edPassword);
-        ExitDangNhap = findViewById(R.id.ExitDangNhap);
+
         btnLogin = findViewById(R.id.btnLogin);
         lienHe = findViewById(R.id.id_lienHe);
         nguoiDungDAO = new NguoiDungDAO(getApplicationContext());

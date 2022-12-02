@@ -26,15 +26,9 @@ import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 public class HoSoFragment extends Fragment {
     Button btnDangNhap;
     TextView tvTaoTaiKhoan;
-<<<<<<< HEAD
     LinearLayout lienHe, theoDoi, dieuKhoan, quyenRiengTu,ExitDangNhap;
-
     Context context;
 
-
-=======
-    LinearLayout lienHe, theoDoi, dieuKhoan, quyenRiengTu;
->>>>>>> 38f45c729b739066a7aecc8d4c1331a041d22441
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,8 +45,6 @@ public class HoSoFragment extends Fragment {
         theoDoi = view.findViewById(R.id.id_theoDoi);
         dieuKhoan = view.findViewById(R.id.id_dieuKhoan);
         quyenRiengTu = view.findViewById(R.id.id_quyenRiengTu);
-        ExitDangNhap = view.findViewById(R.id.ExitDangNhap);
-
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
