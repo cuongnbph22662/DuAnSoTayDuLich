@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import cuongnbph22662.poly.duansotaydulich.DangNhapSuccess;
 import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
 import cuongnbph22662.poly.duansotaydulich.R;
@@ -25,8 +26,11 @@ import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 public class HoSoFragment extends Fragment {
     Button btnDangNhap;
     TextView tvTaoTaiKhoan;
-    LinearLayout lienHe, theoDoi, dieuKhoan, quyenRiengTu;
+    LinearLayout lienHe, theoDoi, dieuKhoan, quyenRiengTu,ExitDangNhap;
+
     Context context;
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +40,6 @@ public class HoSoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_ho_so, container, false);
         btnDangNhap = view.findViewById(R.id.btnDangNhap);
         tvTaoTaiKhoan = view.findViewById(R.id.tvDangKi);
@@ -44,6 +47,8 @@ public class HoSoFragment extends Fragment {
         theoDoi = view.findViewById(R.id.id_theoDoi);
         dieuKhoan = view.findViewById(R.id.id_dieuKhoan);
         quyenRiengTu = view.findViewById(R.id.id_quyenRiengTu);
+        ExitDangNhap = view.findViewById(R.id.ExitDangNhap);
+
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,12 +71,15 @@ public class HoSoFragment extends Fragment {
             }
         });
 
+
         return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
     }
+
 
 }

@@ -26,6 +26,13 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             android:text="Hãy đăng nhập để bắt đầu lập kế hoạch cho chuyến du lịch của bạn."/>
+        <LinearLayout
+            android:id="@+id/ExitDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
         <androidx.appcompat.widget.AppCompatButton
             android:layout_marginTop="40dp"
             android:id="@+id/btnDangNhap"
@@ -58,6 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Đăng ký"/>
+        </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/id_lienHe"
