@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable-v24/background_title.xml" value="0.1845" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_btn_dangnhap.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_dialog.xml" value="0.198" />
@@ -36,7 +37,11 @@
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_ttcn_sdt.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_xacnhanthoat.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_yeuthich.xml" value="0.198" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/icon_chuyenactivity.xml" value="0.1845" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/icon_danhgia.xml" value="0.1845" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/icon_image.xml" value="0.1845" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/icon_pass.xml" value="0.1845" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/icon_quaylai.xml" value="0.1845" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/round_edittext.xml" value="0.198" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_chia_se.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_create_account.xml" value="0.25" />
@@ -51,6 +56,7 @@
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_them_sdt.xml" value="0.1" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_ttca_nhan.xml" value="0.10925925925925926" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/dialog_thoat.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/dialog_thongbao.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_ca_nhan.xml" value="0.25" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_ho_so.xml" value="0.264" />
         <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_lich.xml" value="0.13125" />

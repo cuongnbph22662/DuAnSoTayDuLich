@@ -77,7 +77,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_chuyenactivity"/>
+                android:src="@drawable/icon_tro_ve_phai"/>
         </LinearLayout>
         <TextView
             android:layout_marginTop="5dp"
@@ -103,7 +103,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_chuyenactivity"/>
+                android:src="@drawable/icon_tro_ve_phai"/>
         </LinearLayout>
         <TextView
             android:layout_marginTop="5dp"
@@ -129,7 +129,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_chuyenactivity"/>
+                android:src="@drawable/icon_tro_ve_phai"/>
         </LinearLayout>
         <TextView
             android:layout_marginTop="5dp"
@@ -154,7 +154,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_chuyenactivity"/>
+                android:src="@drawable/icon_tro_ve_phai"/>
         </LinearLayout>
         <TextView
             android:layout_marginTop="5dp"
