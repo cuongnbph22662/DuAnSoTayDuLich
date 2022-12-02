@@ -6,21 +6,27 @@
     tools:context=".fragment.HomeFragment"
     android:background="@color/maunen"
     android:orientation="vertical">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAllCaps="false"
+        android:text="Travenus"
+        android:gravity="center"/>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleviewTopmenu"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            >
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="40dp"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -28,39 +34,35 @@
             android:id="@+id/recycleviewItem1"
             android:layout_width="wrap_content"
             android:layout_height="170dp"
-            android:layout_marginTop="20dp"
-            >
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Đề cử"
+        android:text="Đề cử chuyến đi"
         android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/andalemono"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
         />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleviewItem2"
-            android:layout_width="200dp"
-            android:layout_height="320dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            >
-        </androidx.recyclerview.widget.RecyclerView>
-
+            android:layout_marginBottom="10dp"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleviewItem3"
-            android:layout_width="200dp"
+            android:layout_width="190dp"
             android:layout_marginTop="10dp"
-            android:layout_height="320dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"/>
     </LinearLayout>
 </LinearLayout>

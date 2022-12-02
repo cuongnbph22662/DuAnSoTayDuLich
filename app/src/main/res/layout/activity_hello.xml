@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Winter"
         android:layout_marginTop="30dp"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:fontFamily="@font/arialbold"
         android:layout_marginLeft="30dp"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Vacation Trips"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:fontFamily="@font/arialbold"
         android:textStyle="bold"
         android:layout_marginLeft="30dp"
@@ -50,6 +50,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/robotolight"
         android:layout_marginLeft="30dp"
+        android:textSize="18sp"
         />
     <TextView
         android:layout_marginLeft="30dp"
@@ -57,6 +58,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/robotolight"
         android:text="and amazing sightseeing on the mountains."
+        android:textSize="18sp"
         />
     <TextView
         android:layout_marginLeft="30dp"
@@ -64,16 +66,18 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/robotolight"
         android:text="Enjoy the best experience with us!"
+        android:textSize="18sp"
         />
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btngetstart"
         android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:fontFamily="@font/andalemono"
-        android:text="Let’s Go! ---->"
-        android:backgroundTint="@color/maubuton"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
-        />
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/background_btn_dangnhap"
+        android:elevation="3dp"
+        android:text="Bắt đầu thôi! ---->"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:textSize="18sp" />
 </LinearLayout>
