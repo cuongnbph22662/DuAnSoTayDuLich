@@ -19,7 +19,7 @@
                 android:id="@+id/id_Back"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="20dp"
-                android:background=""
+                android:background="@drawable/icon_tro_ve_trai"
                 android:layout_width="30dp"
                 android:layout_height="30dp">
 
