@@ -49,27 +49,27 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_star"
+            android:src="@drawable/icon_star"
             android:layout_marginLeft="30dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_star"
+            android:src="@drawable/icon_star"
             android:layout_marginLeft="5dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_star"
+            android:src="@drawable/icon_star"
             android:layout_marginLeft="5dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_star"
+            android:src="@drawable/icon_star"
             android:layout_marginLeft="5dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_star"
+            android:src="@drawable/icon_star"
             android:layout_marginLeft="5dp"/>
         <TextView
             android:layout_width="wrap_content"

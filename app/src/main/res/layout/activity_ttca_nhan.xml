@@ -139,7 +139,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_ttcn_email"/>
+                android:src="@drawable/icon_ttcn_email"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_ttcn_sdt"/>
+                android:src="@drawable/icon_ttcn_sdt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_ttcn_diachi"/>
+                android:src="@drawable/icon_ttcn_diachi"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:src="@drawable/ic_ttcn_comment"/>
+                android:src="@drawable/icon_ttcn_comment"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

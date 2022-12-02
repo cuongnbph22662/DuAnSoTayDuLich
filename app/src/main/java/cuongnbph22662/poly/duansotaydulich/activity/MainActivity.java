@@ -15,7 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.databinding.ActivityMainBinding;
-import cuongnbph22662.poly.duansotaydulich.fragment.CaNhanFragment;
+import cuongnbph22662.poly.duansotaydulich.fragment.HoSoFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.HomeFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.KhamPhaFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.LichFragment;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     replaceFrament(new KhamPhaFragment());
                     break;
                 case R.id.navigation_profile:
-                    replaceFrament(new CaNhanFragment());
+                    replaceFrament(new HoSoFragment());
                     break;
             }
             return true;

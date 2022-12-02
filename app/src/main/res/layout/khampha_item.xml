@@ -47,27 +47,27 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_danhgia"
+                android:src="@drawable/icon_danhgia"
                 android:layout_marginLeft="40dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_danhgia"
+                android:src="@drawable/icon_danhgia"
                 android:layout_marginLeft="5dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_danhgia"
+                android:src="@drawable/icon_danhgia"
                 android:layout_marginLeft="5dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_danhgia"
+                android:src="@drawable/icon_danhgia"
                 android:layout_marginLeft="5dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_danhgia"
+                android:src="@drawable/icon_danhgia"
                 android:layout_marginLeft="5dp"/>
             <TextView
                 android:layout_width="wrap_content"

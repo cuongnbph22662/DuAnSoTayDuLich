@@ -35,7 +35,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_image"
+        android:src="@drawable/icon_image"
         android:layout_margin="10dp"/>
 
     <EditText

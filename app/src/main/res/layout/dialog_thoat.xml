@@ -11,7 +11,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
         android:backgroundTint="@color/maunen"
-        android:src="@drawable/ic_xacnhanthoat" />
+        android:src="@drawable/icon_xacnhanthoat" />
 
     <TextView
         android:layout_width="wrap_content"

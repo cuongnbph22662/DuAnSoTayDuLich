@@ -43,7 +43,7 @@
                 android:id="@+id/id_Back"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/ic_quaylai"
+                android:background="@drawable/icon_quaylai"
                 android:layout_width="30dp"
                 android:layout_height="30dp">
 
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_marginLeft="30dp"
-                android:background="@drawable/ic_check"
+                android:background="@drawable/icon_check"
                 android:layout_width="30dp"
                 android:layout_height="30dp">
 
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_marginLeft="30dp"
-                android:background="@drawable/ic_check"
+                android:background="@drawable/icon_check"
                 android:layout_width="30dp"
                 android:layout_height="30dp">
 
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_marginLeft="30dp"
-                android:background="@drawable/ic_check"
+                android:background="@drawable/icon_check"
                 android:layout_width="30dp"
                 android:layout_height="30dp">
 

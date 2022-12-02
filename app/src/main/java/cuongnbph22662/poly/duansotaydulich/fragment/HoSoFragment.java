@@ -12,18 +12,20 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-import cuongnbph22662.poly.duansotaydulich.activity.CreateAccountActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
-import cuongnbph22662.poly.duansotaydulich.activity.ThemEmailActivity;
-import cuongnbph22662.poly.duansotaydulich.activity.ThemSDTActivity;
 
-public class CaNhanFragment extends Fragment {
-    TextView btnDangNhap,btnTaoTaiKhoan,btnTTTaiKhoan,btnEmail,btnSoDienThoai;
+public class HoSoFragment extends Fragment {
+    Button btnDangNhap;
+    TextView tvTaoTaiKhoan;
+    LinearLayout lienHe, theoDoi, dieuKhoan, quyenRiengTu;
     Context context;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,12 +37,13 @@ public class CaNhanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_ca_nhan, container, false);
+        View view = inflater.inflate(R.layout.fragment_ho_so, container, false);
         btnDangNhap = view.findViewById(R.id.btnDangNhap);
-        btnTaoTaiKhoan = view.findViewById(R.id.btnTaoTaiKhoan);
-        btnTTTaiKhoan = view.findViewById(R.id.btnTTTaiKhoan);
-        btnEmail = view.findViewById(R.id.btnEmail);
-        btnSoDienThoai = view.findViewById(R.id.btnSoDienThoai);
+        tvTaoTaiKhoan = view.findViewById(R.id.tvDangKi);
+        lienHe = view.findViewById(R.id.id_lienHe);
+        theoDoi = view.findViewById(R.id.id_theoDoi);
+        dieuKhoan = view.findViewById(R.id.id_dieuKhoan);
+        quyenRiengTu = view.findViewById(R.id.id_quyenRiengTu);
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,34 +51,21 @@ public class CaNhanFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        btnTaoTaiKhoan.setOnClickListener(new View.OnClickListener() {
+        tvTaoTaiKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), CreateAccountActivity.class);
+                Intent intent = new Intent(getActivity(), TaoTaiKhoanActivity.class);
                 startActivity(intent);
             }
         });
-        btnTTTaiKhoan.setOnClickListener(new View.OnClickListener() {
+        lienHe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), TTCaNhanActivity.class);
                 startActivity(intent);
             }
         });
-        btnEmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ThemEmailActivity.class);
-                startActivity(intent);
-            }
-        });
-        btnSoDienThoai.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ThemSDTActivity.class);
-                startActivity(intent);
-            }
-        });
+
         return view;
     }
 
