@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+<<<<<<< HEAD
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,25 +47,60 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
+=======
+>>>>>>> 38f45c729b739066a7aecc8d4c1331a041d22441
         <LinearLayout
-            android:layout_marginTop="18dp"
+            android:id="@+id/id_DangNhap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
             <TextView
-                android:textSize="18dp"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bạn chưa có tài khoản?"/>
-            <TextView
-                android:layout_marginLeft="5dp"
-                android:id="@+id/tvDangKi"
+                android:text="Hồ sơ của bạn"
+                android:textSize="30sp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="18dp"
-                android:layout_width="wrap_content"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đăng ký"/>
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Hãy đăng nhập để bắt đầu lập kế hoạch cho chuyến du lịch của bạn."/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_btn_dangnhap"
+                android:elevation="3dp"
+                android:text="@string/strDangNhap"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_marginTop="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn chưa có tài khoản?"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tvDangKi"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng ký"/>
+            </LinearLayout>
         </LinearLayout>
         </LinearLayout>
         <LinearLayout
