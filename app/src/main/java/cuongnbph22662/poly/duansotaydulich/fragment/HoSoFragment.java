@@ -66,6 +66,7 @@ public class HoSoFragment extends Fragment {
             }
         });
 
+
         return view;
     }
 

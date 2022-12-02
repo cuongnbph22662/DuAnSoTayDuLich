@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
+import cuongnbph22662.poly.duansotaydulich.fragment.HoSoFragment;
 
 public class DangNhapActivity extends AppCompatActivity {
     EditText edUsername,edPassword;
@@ -50,13 +51,16 @@ public class DangNhapActivity extends AppCompatActivity {
         else {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                Intent intent = new Intent(getApplicationContext(), HoSoFragment.class);
+                intent.putExtra("user", strUser);
+                startActivity(intent);
                 finish();
             }
             else {
                 Toast.makeText(getApplicationContext(),"Tên đăng nhập và mật khẩu không đúng",Toast.LENGTH_SHORT).show();
             }
         }
+
     }
 
 }
