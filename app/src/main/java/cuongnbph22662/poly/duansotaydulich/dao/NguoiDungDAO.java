@@ -63,4 +63,11 @@ public class NguoiDungDAO {
         List<NguoiDung> list = getData(sql,id);
         return list.get(0);
     }
+    public int checkLogin(String id,String password){
+        String sql = " SELECT * FROM NguoiDung WHERE taiKhoan=? AND matKhau=?";
+        List <NguoiDung> list =getData(sql,id,password) ;
+        if (list.size()==0)
+            return -1 ;
+        return 1 ;
+    }
 }
