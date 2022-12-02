@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(activityMainBinding.getRoot());
         replaceFrament(new HomeFragment());
         activityMainBinding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()){
+            switch (item.getItemId()) {
                 case R.id.navigation_home:
                     replaceFrament(new HomeFragment());
                     break;

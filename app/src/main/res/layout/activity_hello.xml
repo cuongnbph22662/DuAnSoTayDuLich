@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#F1CACA"
+    android:layout_height="match_parent"
+    tools:context=".helloActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:id="@+id/imgheader"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAVENUS"
+        android:fontFamily="@font/andalemono"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winter"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/arialbold"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vacation Trips"
+        android:textSize="30dp"
+        android:fontFamily="@font/arialbold"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoy your winter vacations with warmth"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotolight"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotolight"
+        android:text="and amazing sightseeing on the mountains."
+        />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotolight"
+        android:text="Enjoy the best experience with us!"
+        />
+
+    <Button
+        android:id="@+id/btngetstart"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/andalemono"
+        android:text="Let’s Go! ---->"
+        android:backgroundTint="@color/maubuton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        />
+</LinearLayout>
