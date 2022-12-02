@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ public class DangNhapActivity extends AppCompatActivity {
     EditText edUsername,edPassword;
     NguoiDungDAO nguoiDungDAO;
     Button btnLogin;
+    LinearLayout lienHe;
     String strUser,strPass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class DangNhapActivity extends AppCompatActivity {
         edUsername = findViewById(R.id.edUsername);
         edPassword = findViewById(R.id.edPassword);
         btnLogin = findViewById(R.id.btnLogin);
+        lienHe = findViewById(R.id.id_lienHe);
         nguoiDungDAO = new NguoiDungDAO(getApplicationContext());
         SharedPreferences pref = getSharedPreferences("USER_FILE",MODE_PRIVATE);
         String user = pref.getString("taiKhoan","");
@@ -37,9 +40,6 @@ public class DangNhapActivity extends AppCompatActivity {
                 checkLogin();
             }
         });
-        if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
-
-        }
     }
     public void checkLogin(){
         strUser = edUsername.getText().toString();
@@ -50,8 +50,7 @@ public class DangNhapActivity extends AppCompatActivity {
         else {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 finish();
             }
             else {
