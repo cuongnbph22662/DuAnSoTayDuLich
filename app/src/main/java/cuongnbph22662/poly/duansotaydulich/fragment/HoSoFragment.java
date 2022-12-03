@@ -17,7 +17,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-import cuongnbph22662.poly.duansotaydulich.DangNhapSuccess;
 import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
 import cuongnbph22662.poly.duansotaydulich.R;

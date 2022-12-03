@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import cuongnbph22662.poly.duansotaydulich.DangNhapSuccess;
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
 import cuongnbph22662.poly.duansotaydulich.fragment.HoSoFragment;

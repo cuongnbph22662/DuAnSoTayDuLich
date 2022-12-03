@@ -1,4 +1,4 @@
-package cuongnbph22662.poly.duansotaydulich;
+package cuongnbph22662.poly.duansotaydulich.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,9 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
-import cuongnbph22662.poly.duansotaydulich.activity.MainActivity;
+import cuongnbph22662.poly.duansotaydulich.R;
 
-public class helloActivity extends AppCompatActivity {
+public class ManChaoActivity extends AppCompatActivity {
     Button btngetstart ;
     ImageView imgView ;
     @Override
@@ -25,13 +24,13 @@ public class helloActivity extends AppCompatActivity {
 //        Animation animation4 = AnimationUtils.loadAnimation(helloActivity.this,R.anim.fade);
 //        imgView.startAnimation(animation4);
 
-        Animation animation = AnimationUtils.loadAnimation(helloActivity.this,R.anim.fade);
+        Animation animation = AnimationUtils.loadAnimation(ManChaoActivity.this,R.anim.fade);
         btngetstart.startAnimation(animation);
 
         btngetstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(helloActivity.this , MainActivity.class);
+                Intent intent = new Intent(ManChaoActivity.this , MainActivity.class);
                 startActivity(intent);
             }
         });
