@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".fragment.KhamPhaFragment"
+    tools:context=".fragment.TimKiemFragment"
     android:background="#F8D4D0">
  <TextView
      android:textSize="50dp"

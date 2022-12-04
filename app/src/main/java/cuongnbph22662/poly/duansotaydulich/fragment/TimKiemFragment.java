@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 import cuongnbph22662.poly.duansotaydulich.R;
 
-public class KhamPhaFragment extends Fragment {
+public class TimKiemFragment extends Fragment {
     TabLayout tabLayout;
     ViewPager viewPager;
 

@@ -1,9 +1,7 @@
 package cuongnbph22662.poly.duansotaydulich.activity;
 
-import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -16,11 +14,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.data_local.DataLocalManager;
-import cuongnbph22662.poly.duansotaydulich.databinding.ActivityMainBinding;
 import cuongnbph22662.poly.duansotaydulich.fragment.HoSoFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.HomeFragment;
-import cuongnbph22662.poly.duansotaydulich.fragment.KhamPhaFragment;
+import cuongnbph22662.poly.duansotaydulich.fragment.TimKiemFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.LichFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     replaceFrament(new LichFragment());
                     break;
                 case R.id.navigation_search:
-                    replaceFrament(new KhamPhaFragment());
+                    replaceFrament(new TimKiemFragment());
                     break;
                 case R.id.navigation_profile:
                     replaceFrament(new HoSoFragment());

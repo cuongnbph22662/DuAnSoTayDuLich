@@ -11,9 +11,8 @@
     <ImageView
         android:id="@+id/imgitem"
         android:layout_width="270dp"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:background="@drawable/img1" />
-
     <TextView
         android:id="@+id/tvtendiadiem"
         android:layout_width="wrap_content"
@@ -21,6 +20,5 @@
         android:layout_marginStart="14dp"
         android:text="Ten dia diem"
         android:textColor="@color/white"
-        android:layout_gravity="bottom"
-        />
+        android:layout_gravity="bottom" />
 </androidx.cardview.widget.CardView>

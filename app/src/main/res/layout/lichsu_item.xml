@@ -1,88 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#F8D4D0"
-    >
-<LinearLayout
-    android:background="@color/white"
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
     android:orientation="vertical">
-    <TextView
-        android:text="Địa điểm :"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TextView>
-    <TextView
-        android:text="Ngày đi :"
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TextView>
-    <TextView
-        android:text="Số điện thoại :"
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TextView>
     <LinearLayout
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <TextView
-        android:text="Đánh Giá : "
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content">
-    </TextView>
+        android:orientation="vertical">
         <TextView
-            android:background="@drawable/icon_ngoisao"
-            android:layout_width="30dp"
-            android:layout_height="30dp">
+            android:textStyle="bold"
+            android:text="Địa điểm :"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         </TextView>
         <TextView
-            android:background="@drawable/icon_ngoisao"
-            android:layout_width="30dp"
-            android:layout_height="30dp">
+            android:text="Ngày đi :"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         </TextView>
         <TextView
-            android:background="@drawable/icon_ngoisao"
-            android:layout_width="30dp"
-            android:layout_height="30dp">
+            android:text="Số điện thoại :"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         </TextView>
-        <TextView
-            android:background="@drawable/icon_ngoisao"
-            android:layout_width="30dp"
-            android:layout_height="30dp">
-        </TextView>
-        <TextView
-            android:background="@drawable/icon_ngoisao"
-            android:layout_width="30dp"
-            android:layout_height="30dp">
-        </TextView>
-    </LinearLayout>
-</LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
