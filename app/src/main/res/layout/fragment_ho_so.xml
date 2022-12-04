@@ -28,7 +28,11 @@
             android:textSize="18sp"
             android:text="Hãy đăng nhập để bắt đầu lập kế hoạch cho chuyến du lịch của bạn."/>
 
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/exitDangNhap">
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_marginTop="40dp"
@@ -64,7 +68,9 @@
                     android:text="Đăng ký"/>
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout
+    </LinearLayout>
+
+    <LinearLayout
             android:id="@+id/id_lienHe"
             android:layout_marginTop="30dp"
             android:weightSum="10"

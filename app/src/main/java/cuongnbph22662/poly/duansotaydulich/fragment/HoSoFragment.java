@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import cuongnbph22662.poly.duansotaydulich.DangNhapSuccess;
@@ -43,6 +44,7 @@ public class HoSoFragment extends Fragment {
         tvTaoTaiKhoan = view.findViewById(R.id.tvDangKi);
         lienHe = view.findViewById(R.id.id_lienHe);
         theoDoi = view.findViewById(R.id.id_theoDoi);
+        ExitDangNhap = view.findViewById(R.id.exitDangNhap);
         dieuKhoan = view.findViewById(R.id.id_dieuKhoan);
         quyenRiengTu = view.findViewById(R.id.id_quyenRiengTu);
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +69,6 @@ public class HoSoFragment extends Fragment {
             }
         });
 
-
         return view;
     }
 
@@ -76,6 +77,4 @@ public class HoSoFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
     }
-
-
 }

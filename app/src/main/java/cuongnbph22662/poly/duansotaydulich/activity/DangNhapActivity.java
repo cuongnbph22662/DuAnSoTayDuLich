@@ -23,7 +23,7 @@ public class DangNhapActivity extends AppCompatActivity {
     Button btnLogin;
     LinearLayout lienHe;
     String strUser,strPass;
-
+    Boolean t = true;
     LinearLayout ExitDangNhap;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -49,7 +49,9 @@ public class DangNhapActivity extends AppCompatActivity {
             }
         });
     }
+
     public void checkLogin(){
+        Boolean t = false;
         strUser = edUsername.getText().toString();
         strPass = edPassword.getText().toString();
         if(strUser.isEmpty()||strPass.isEmpty()){
@@ -59,7 +61,7 @@ public class DangNhapActivity extends AppCompatActivity {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), HoSoFragment.class);
-                intent.putExtra("user", strUser);
+                intent.putExtra("user","all");
                 startActivity(intent);
                 finish();
 
