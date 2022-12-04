@@ -1,7 +1,9 @@
 package cuongnbph22662.poly.duansotaydulich.activity;
 
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 
 import cuongnbph22662.poly.duansotaydulich.R;
+import cuongnbph22662.poly.duansotaydulich.data_local.DataLocalManager;
 import cuongnbph22662.poly.duansotaydulich.databinding.ActivityMainBinding;
 import cuongnbph22662.poly.duansotaydulich.fragment.HoSoFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.HomeFragment;
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        khoiDongManChao();
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
         replaceFrament(new HomeFragment());
@@ -45,7 +49,14 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+
     }
+
+    private void khoiDongManChao() {
+
+    }
+
+
     private  void  replaceFrament(Fragment fragment){
         FragmentManager fragmentManager  = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();

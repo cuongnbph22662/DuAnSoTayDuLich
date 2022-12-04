@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:background="#F8D4D0"
     tools:context=".activity.DangNhapActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -15,9 +16,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0">
+        app:layout_constraintVertical_bias="1.0">
 
 
         <TextView
@@ -95,8 +97,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="326dp"
+            android:layout_height="43dp"
             android:layout_gravity="center"
             android:background="@drawable/background_btn_dangnhap"
             android:elevation="3dp"
@@ -107,11 +109,110 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintHorizontal_bias="0.482"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintVertical_bias="0.418"
             app:layout_constraintWidth_percent="0.7" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.393"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            app:layout_constraintVertical_bias="0.175">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn chưa có tài khoản?"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDangKi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Đăng ký"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/id_manChao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1CACA"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="2dp">
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/arialbold"
+            android:text="Travenus"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/arialbold"
+            android:text="Cùng bạn đi muôn nơi"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/robotolight"
+            android:text="Chào mừng bạn đến với travenus,"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/robotolight"
+            android:text="bạn đã có tài khoản chưa !"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/robotolight"
+            android:text="Bắt đầu tạo tài khoản nhé"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBatDau"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/background_btn_dangnhap"
+            android:elevation="3dp"
+            android:text="Bắt đầu thôi! ---->"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
