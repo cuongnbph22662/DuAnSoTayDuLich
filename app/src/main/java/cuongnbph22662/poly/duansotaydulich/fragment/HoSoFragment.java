@@ -68,6 +68,13 @@ public class HoSoFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        Intent intent = getActivity().getIntent();
+        String t = intent.getStringExtra("user");
+        String kt = "all";
+        if (kt.equals(t)){
+            ExitDangNhap.setVisibility(View.GONE);
+        }
+
 
         return view;
     }

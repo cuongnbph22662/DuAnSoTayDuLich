@@ -38,6 +38,8 @@ public class DangNhapActivity extends AppCompatActivity {
         nguoiDungDAO = new NguoiDungDAO(getApplicationContext());
         SharedPreferences pref = getSharedPreferences("USER_FILE",MODE_PRIVATE);
         String user = pref.getString("taiKhoan","");
+        String hoTen = pref.getString("hoTen","");
+        String sdt = pref.getString("soDienThoai","");
         String pass = pref.getString("matKhau","");
         edUsername.setText(user);
         edPassword.setText(pass);
@@ -60,7 +62,8 @@ public class DangNhapActivity extends AppCompatActivity {
         else {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), HoSoFragment.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("ten",strUser);
                 intent.putExtra("user","all");
                 startActivity(intent);
                 finish();
