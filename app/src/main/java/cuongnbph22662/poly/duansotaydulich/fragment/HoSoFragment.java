@@ -44,6 +44,7 @@ public class HoSoFragment extends Fragment {
         theoDoi = view.findViewById(R.id.id_theoDoi);
         dieuKhoan = view.findViewById(R.id.id_dieuKhoan);
         quyenRiengTu = view.findViewById(R.id.id_quyenRiengTu);
+
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
