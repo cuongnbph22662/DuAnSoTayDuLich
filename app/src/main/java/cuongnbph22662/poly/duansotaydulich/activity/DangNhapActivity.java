@@ -53,7 +53,6 @@ public class DangNhapActivity extends AppCompatActivity {
     }
 
     public void checkLogin(){
-        Boolean t = false;
         strUser = edUsername.getText().toString();
         strPass = edPassword.getText().toString();
         if(strUser.isEmpty()||strPass.isEmpty()){
