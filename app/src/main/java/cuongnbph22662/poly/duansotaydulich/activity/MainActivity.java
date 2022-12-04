@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 
 import cuongnbph22662.poly.duansotaydulich.R;
+import cuongnbph22662.poly.duansotaydulich.databinding.ActivityMainBinding;
 import cuongnbph22662.poly.duansotaydulich.fragment.HoSoFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.HomeFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.TimKiemFragment;
