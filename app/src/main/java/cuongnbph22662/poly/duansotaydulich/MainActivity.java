@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerViewitem2 ;
 
 
+
    // ActivityMainBinding activityMainBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
