@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="#2196F3"
+            android:background="@color/maunen"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView

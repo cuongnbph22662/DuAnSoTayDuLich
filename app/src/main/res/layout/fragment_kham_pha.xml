@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".fragment.TimKiemFragment"
-    android:background="#F8D4D0">
+    android:background="@color/maunen">
  <TextView
      android:textSize="50dp"
      android:layout_width="wrap_content"

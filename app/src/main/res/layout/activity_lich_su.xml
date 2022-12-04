@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.LichSuActivity"
     android:orientation="vertical"
-    android:background="#F8D4D0">
+    android:background="@color/maunen">
 
     <ImageView
         android:layout_marginLeft="8dp"
