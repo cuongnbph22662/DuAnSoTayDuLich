@@ -40,26 +40,26 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-            <LinearLayout
-                android:layout_marginTop="18dp"
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:textSize="18dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bạn chưa có tài khoản?"/>
-                <TextView
-                    android:layout_marginLeft="5dp"
-                    android:id="@+id/tvDangKi"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Đăng ký"/>
-            </LinearLayout>
+                android:text="Bạn chưa có tài khoản?"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvDangKi"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"/>
+        </LinearLayout>
         <TextView
             android:layout_marginTop="50dp"
             android:layout_marginBottom="15dp"
