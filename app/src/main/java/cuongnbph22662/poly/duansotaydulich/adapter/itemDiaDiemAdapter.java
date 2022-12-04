@@ -1,5 +1,7 @@
 package cuongnbph22662.poly.duansotaydulich.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +14,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
+import cuongnbph22662.poly.duansotaydulich.activity.DiaDiemActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.MainActivity;
 import cuongnbph22662.poly.duansotaydulich.model.itemdiadiem;
 
 public class itemDiaDiemAdapter extends RecyclerView.Adapter<itemDiaDiemAdapter.itemDiaDiemViewHolder>{
 
     private List<itemdiadiem> mItemdiadiem ;
+    Context context;
 
-    public itemDiaDiemAdapter(List<itemdiadiem> mItemdiadiem) {
+    public itemDiaDiemAdapter(List<itemdiadiem> mItemdiadiem, Context context) {
         this.mItemdiadiem = mItemdiadiem;
+        this.context = context;
     }
 
     public void setData(List<itemdiadiem> list){
@@ -42,6 +48,13 @@ public class itemDiaDiemAdapter extends RecyclerView.Adapter<itemDiaDiemAdapter.
         }
         holder.imgItem.setBackgroundResource(diadiem.getImg());
         holder.tvTittle.setText(diadiem.getTittle());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DiaDiemActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

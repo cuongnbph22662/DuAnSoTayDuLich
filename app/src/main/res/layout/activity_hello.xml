@@ -10,13 +10,13 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="153dp"
-        android:layout_height="141dp"
+        android:layout_width="339dp"
+        android:layout_height="397dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_app" />
+        app:srcCompat="@drawable/logo" />
     <LinearLayout
         android:id="@+id/id_manChao"
         android:layout_width="match_parent"

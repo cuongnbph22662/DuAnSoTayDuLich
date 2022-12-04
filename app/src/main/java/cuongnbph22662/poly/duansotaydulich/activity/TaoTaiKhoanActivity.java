@@ -39,7 +39,7 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
         edDiaChi = findViewById(R.id.edDiaChi);
         edSDT = findViewById(R.id.edSoDienThoai);
         btnDangKi = findViewById(R.id.btnDangKi);
-
-
     }
+
+
 }

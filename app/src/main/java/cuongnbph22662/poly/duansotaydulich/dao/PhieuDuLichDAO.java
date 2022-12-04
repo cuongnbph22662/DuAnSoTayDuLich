@@ -66,4 +66,10 @@ public class PhieuDuLichDAO {
         List<PhieuDuLich> list = getData(sql,id);
         return list.get(0);
     }
+
+    public List<PhieuDuLich> timTheoTen(String diachi){
+        String sql = "SELECT * FROM PhieuDuLich WHERE diaChi=?";
+        List<PhieuDuLich> list = getData(sql, diachi);
+        return (List<PhieuDuLich>) list.get(0);
+    }
 }

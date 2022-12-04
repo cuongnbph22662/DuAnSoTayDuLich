@@ -57,7 +57,7 @@ public class HomeFragment extends Fragment {
         recyclerViewThanhPho.setAdapter(thanhPhoAdapter);
 
 
-        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList);
+        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList, getContext());
         LinearLayoutManager LinLayoutManager1 = new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false);
         recyclerViewitem.setLayoutManager(LinLayoutManager1);
         RecyclerView.ItemDecoration itemDecoration1 = new DividerItemDecoration(getActivity(),DividerItemDecoration.HORIZONTAL);
@@ -65,14 +65,14 @@ public class HomeFragment extends Fragment {
         recyclerViewitem.setAdapter(mitemDiaDiemAdapter);
 
 
-        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList);
+        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList, getContext());
         LinearLayoutManager LinLayoutManager2 = new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false);
         recyclerViewitem1.setLayoutManager(LinLayoutManager2);
         RecyclerView.ItemDecoration itemDecoration2 = new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL);
         recyclerViewitem1.addItemDecoration(itemDecoration2);
         recyclerViewitem1.setAdapter(mitemDiaDiemAdapter);
 
-        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList);
+        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList, getContext());
         LinearLayoutManager LinLayoutManager3 = new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false);
         recyclerViewitem2.setLayoutManager(LinLayoutManager3);
         RecyclerView.ItemDecoration itemDecoration3 = new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL);
