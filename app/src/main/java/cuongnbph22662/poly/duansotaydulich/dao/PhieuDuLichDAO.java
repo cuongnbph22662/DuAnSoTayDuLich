@@ -23,17 +23,19 @@ public class PhieuDuLichDAO {
     public long insert(PhieuDuLich obj){
         ContentValues values = new ContentValues();
         values.put("maTheLoai",obj.getMaTheLoai());
+        values.put("tenDiaDiem", obj.getTenDiaDiem());
         values.put("giaThue",obj.getGiaThue());
         values.put("noiDung",obj.getNoiDung());
-        values.put("diaChi",obj.getDiaChi());
+        values.put("viTri",obj.getDiaChi());
         return db.insert("PhieuDuLich",null,values);
     }
     public int update (PhieuDuLich obj){
         ContentValues values = new ContentValues();
         values.put("maTheLoai",obj.getMaTheLoai());
+        values.put("tenDiaDiem", obj.getTenDiaDiem());
         values.put("giaThue",obj.getGiaThue());
         values.put("noiDung",obj.getNoiDung());
-        values.put("diaChi",obj.getDiaChi());
+        values.put("viTri",obj.getDiaChi());
         return db.update("PhieuDuLich",values,"maPhieu=?",new String[]{String.valueOf(obj.getMaPhieu())});
     }
     public int delete(String id){
@@ -49,9 +51,10 @@ public class PhieuDuLichDAO {
             PhieuDuLich obj = new PhieuDuLich();
             obj.setMaPhieu(Integer.parseInt(c.getString(c.getColumnIndex("maPhieu"))));
             obj.setMaTheLoai(Integer.parseInt(c.getString(c.getColumnIndex("maTheLoai"))));
+            obj.setTenDiaDiem(c.getString(c.getColumnIndex("tenDiaDiem")));
             obj.setGiaThue(Integer.parseInt(c.getString(c.getColumnIndex("giaThue"))));
             obj.setNoiDung(c.getString(c.getColumnIndex("noiDung")));
-            obj.setDiaChi(c.getString(c.getColumnIndex("diaChi")));
+            obj.setDiaChi(c.getString(c.getColumnIndex("viTri")));
             Log.i("//=======", obj.toString());
             list.add(obj);
         }

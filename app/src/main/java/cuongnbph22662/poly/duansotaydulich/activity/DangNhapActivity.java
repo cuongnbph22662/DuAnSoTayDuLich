@@ -57,6 +57,7 @@ public class DangNhapActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("user", strUser);
+                intent.putExtra("trangthai", "anhien");
                 startActivity(intent);
                 finish();
 

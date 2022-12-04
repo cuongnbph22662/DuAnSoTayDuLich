@@ -5,15 +5,19 @@ public class NguoiDung {
     private String hoTen;
     private String matKhau;
     private String soDienThoai;
+    private int namSinh;
+    private String diaChi;
 
     public NguoiDung() {
     }
 
-    public NguoiDung(String taiKhoan, String hoTen, String matKhau, String soDienThoai) {
+    public NguoiDung(String taiKhoan, String hoTen, String matKhau, String soDienThoai, int namSinh, String diaChi) {
         this.taiKhoan = taiKhoan;
         this.hoTen = hoTen;
         this.matKhau = matKhau;
         this.soDienThoai = soDienThoai;
+        this.namSinh = namSinh;
+        this.diaChi = diaChi;
     }
 
     public String getTaiKhoan() {
@@ -46,6 +50,22 @@ public class NguoiDung {
 
     public void setSoDienThoai(String soDienThoai) {
         this.soDienThoai = soDienThoai;
+    }
+
+    public int getNamSinh() {
+        return namSinh;
+    }
+
+    public void setNamSinh(int namSinh) {
+        this.namSinh = namSinh;
+    }
+
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
     }
 
     @Override

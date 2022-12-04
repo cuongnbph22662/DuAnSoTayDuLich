@@ -26,6 +26,8 @@ public class NguoiDungDAO {
         values.put("hoTen",obj.getHoTen());
         values.put("matKhau",obj.getMatKhau());
         values.put("soDienThoai",obj.getSoDienThoai());
+        values.put("namSinh", obj.getNamSinh());
+        values.put("diaChi", obj.getDiaChi());
         return db.insert("NguoiDung",null,values);
     }
     public int update (NguoiDung obj){
@@ -34,6 +36,8 @@ public class NguoiDungDAO {
         values.put("hoTen",obj.getHoTen());
         values.put("matKhau",obj.getMatKhau());
         values.put("soDienThoai",obj.getSoDienThoai());
+        values.put("namSinh", obj.getNamSinh());
+        values.put("diaChi", obj.getDiaChi());
         return db.update("NguoiDung",values,"taiKhoan=?",new String[]{String.valueOf(obj.getTaiKhoan())});
     }
     public int delete(String id){
@@ -49,6 +53,8 @@ public class NguoiDungDAO {
             obj.setHoTen(c.getString(c.getColumnIndex("hoTen")));
             obj.setHoTen(c.getString(c.getColumnIndex("matKhau")));
             obj.setHoTen(c.getString(c.getColumnIndex("soDienThoai")));
+            obj.setNamSinh(Integer.parseInt(c.getString(c.getColumnIndex("namSinh"))));
+            obj.setDiaChi(c.getString(c.getColumnIndex("diaChi")));
             Log.i("//=======", obj.toString());
             list.add(obj);
         }

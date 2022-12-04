@@ -13,16 +13,19 @@ public class DB_Helper extends SQLiteOpenHelper {
             "taiKhoan TEXT PRIMARY KEY," +
             "hoTen TEXT NOT NULL," +
             "matKhau TEXT NOT NULL," +
-            "soDienThoai TEXT NOT NULL)";
+            "soDienThoai TEXT NOT NULL," +
+            "namSinh INTEGER NOT NULL," +
+            "diaChi TEXT NOT NULL)";
     static final String CREATE_TABLE_THELOAI = "CREATE TABLE TheLoai (" +
             "maTheLoai INTEGER PRIMARY KEY AUTOINCREMENT," +
             "tenTheLoai TEXT NOT NULL)";
     static final String CREATE_TABLE_PHIEU_DU_LICH = "CREATE TABLE PhieuDuLich(" +
             "maPhieu INTEGER PRIMARY KEY AUTOINCREMENT," +
             "maTheLoai INTEGER REFERENCES TheLoai(maTheLoai)," +
+            "tenDiaDiem TEXT NOT NULL," +
             "giaThue INTEGER NOT NULL," +
             "noiDung TEXT NOT NULL," +
-            "diaChi TEXT NOT NULL)";
+            "viTri TEXT NOT NULL)";
     static final String CREATE_TABLE_PHIEU_CHI_TIET = "CREATE TABLE PhieuDLChiTiet(" +
             "maPhieuChiTiet INTEGER PRIMARY KEY AUTOINCREMENT," +
             "taiKhoan TEXT REFERENCES NguoiDung(taiKhoan)," +

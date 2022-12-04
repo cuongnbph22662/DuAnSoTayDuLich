@@ -1,5 +1,6 @@
 package cuongnbph22662.poly.duansotaydulich.adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,16 +9,23 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.model.ThanhPho;
+import cuongnbph22662.poly.duansotaydulich.model.TheLoai;
 
 public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhPhoViewHolder>{
-    private List<ThanhPho> mythanhPhoList ;
+    private Context mContext;
+    private List<TheLoai> listTP = new ArrayList<>();
 
-    public ThanhPhoAdapter(List<ThanhPho> mythanhPhoList) {
-        this.mythanhPhoList = mythanhPhoList;
+    public ThanhPhoAdapter(Context mContext) {
+        this.mContext = mContext;
+    }
+
+    public void setListTP(ArrayList<TheLoai> list){
+        this.listTP = list;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -30,17 +38,17 @@ public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhP
 
     @Override
     public void onBindViewHolder(@NonNull ThanhPhoViewHolder holder, int position) {
-      ThanhPho thanhPho = mythanhPhoList.get(position);
-      if(thanhPho == null){
+      TheLoai obj = listTP.get(position);
+      if(obj == null){
         return;
       }
-      holder.TVthanhpho.setText(thanhPho.getTenTP());
+      holder.TVthanhpho.setText(obj.getTenTheLoai());
     }
 
     @Override
     public int getItemCount() {
-        if(mythanhPhoList != null ){
-            return mythanhPhoList.size();
+        if(listTP != null ){
+            return listTP.size();
         }
         return 0;
     }
