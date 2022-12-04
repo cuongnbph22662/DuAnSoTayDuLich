@@ -17,12 +17,12 @@ import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.activity.DiaDiemActivity;
 import cuongnbph22662.poly.duansotaydulich.model.itemdiadiem;
 
-public class itemDiaDiemAdapter extends RecyclerView.Adapter<itemDiaDiemAdapter.itemDiaDiemViewHolder>{
+public class SlideShowAdapter extends RecyclerView.Adapter<SlideShowAdapter.itemDiaDiemViewHolder>{
 
     private List<itemdiadiem> mItemdiadiem ;
     private Context context;
 
-    public itemDiaDiemAdapter(List<itemdiadiem> mItemdiadiem, Context context) {
+    public SlideShowAdapter(List<itemdiadiem> mItemdiadiem, Context context) {
         this.mItemdiadiem = mItemdiadiem;
         this.context = context;
     }

@@ -32,16 +32,16 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_dialog_Huy"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
             android:backgroundTint="@color/xanhla"
             android:text="Hủy"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_dialog_Thoat"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
             android:layout_marginLeft="16dp"
             android:backgroundTint="@color/red"
             android:text="Thoát"

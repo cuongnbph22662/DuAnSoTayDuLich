@@ -15,11 +15,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.adapter.ThanhPhoAdapter;
-import cuongnbph22662.poly.duansotaydulich.adapter.itemDiaDiemAdapter;
+import cuongnbph22662.poly.duansotaydulich.adapter.SlideShowAdapter;
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.dao.PhieuDuLichDAO;
 import cuongnbph22662.poly.duansotaydulich.dao.TheLoaiDAO;
-import cuongnbph22662.poly.duansotaydulich.model.PhieuDLChiTiet;
 import cuongnbph22662.poly.duansotaydulich.model.PhieuDuLich;
 import cuongnbph22662.poly.duansotaydulich.model.TheLoai;
 import cuongnbph22662.poly.duansotaydulich.model.itemdiadiem;
@@ -31,7 +30,7 @@ public class HomeFragment extends Fragment {
     static TheLoaiDAO theLoaiDAO;
 
     private List<itemdiadiem> itemList = new ArrayList<>();
-    private itemDiaDiemAdapter mitemDiaDiemAdapter ;
+    private SlideShowAdapter mitemDiaDiemAdapter ;
 
     private RecyclerView recyclerViewitem ;
     private RecyclerView recyclerViewitem1 ;
@@ -58,7 +57,7 @@ public class HomeFragment extends Fragment {
         loadDataThanhPho();
 
 
-        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList, getContext());
+        mitemDiaDiemAdapter = new SlideShowAdapter(itemList, getContext());
         LinearLayoutManager LinLayoutManager1 = new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false);
         recyclerViewitem.setLayoutManager(LinLayoutManager1);
         RecyclerView.ItemDecoration itemDecoration1 = new DividerItemDecoration(getActivity(),DividerItemDecoration.HORIZONTAL);
@@ -66,14 +65,14 @@ public class HomeFragment extends Fragment {
         recyclerViewitem.setAdapter(mitemDiaDiemAdapter);
 
 
-        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList, getContext());
+        mitemDiaDiemAdapter = new SlideShowAdapter(itemList, getContext());
         LinearLayoutManager LinLayoutManager2 = new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false);
         recyclerViewitem1.setLayoutManager(LinLayoutManager2);
         RecyclerView.ItemDecoration itemDecoration2 = new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL);
         recyclerViewitem1.addItemDecoration(itemDecoration2);
         recyclerViewitem1.setAdapter(mitemDiaDiemAdapter);
 
-        mitemDiaDiemAdapter = new itemDiaDiemAdapter(itemList, getContext());
+        mitemDiaDiemAdapter = new SlideShowAdapter(itemList, getContext());
         LinearLayoutManager LinLayoutManager3 = new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false);
         recyclerViewitem2.setLayoutManager(LinLayoutManager3);
         RecyclerView.ItemDecoration itemDecoration3 = new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL);

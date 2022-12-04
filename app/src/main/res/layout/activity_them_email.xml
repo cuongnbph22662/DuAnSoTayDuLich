@@ -40,16 +40,18 @@
         android:hint="hungmno123@gmail.com"
         android:background="@drawable/round_edittext"
         android:padding="5dp"/>
-        <Button
-            android:textColor="@color/white"
-            android:layout_marginTop="34dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lưu"
-            android:textSize="20dp"
-            android:backgroundTint="#E66F6F"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="40dp"
+        android:id="@+id/btnGuiTinNhan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_btn_dangnhap"
+        android:elevation="3dp"
+        android:text="Gửi tin nhắn"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
 
 
 
