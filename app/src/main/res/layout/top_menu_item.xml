@@ -4,11 +4,13 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:background="@color/maunen"
-    android:layout_height="wrap_content">
+    android:layout_height="50dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hà Nội"
             android:id="@+id/tvThanhPho"
-            android:textColor="@color/white" />
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
 </LinearLayout>

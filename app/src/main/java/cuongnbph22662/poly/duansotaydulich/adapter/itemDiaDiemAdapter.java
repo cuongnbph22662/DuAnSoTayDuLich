@@ -15,13 +15,12 @@ import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.activity.DiaDiemActivity;
-import cuongnbph22662.poly.duansotaydulich.activity.MainActivity;
 import cuongnbph22662.poly.duansotaydulich.model.itemdiadiem;
 
 public class itemDiaDiemAdapter extends RecyclerView.Adapter<itemDiaDiemAdapter.itemDiaDiemViewHolder>{
 
     private List<itemdiadiem> mItemdiadiem ;
-    Context context;
+    private Context context;
 
     public itemDiaDiemAdapter(List<itemdiadiem> mItemdiadiem, Context context) {
         this.mItemdiadiem = mItemdiadiem;
@@ -36,7 +35,7 @@ public class itemDiaDiemAdapter extends RecyclerView.Adapter<itemDiaDiemAdapter.
     @NonNull
     @Override
     public itemDiaDiemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-       View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.itemlistitem1,parent,false);
+       View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.slide_show_item,parent,false);
         return new itemDiaDiemViewHolder(view);
     }
 
