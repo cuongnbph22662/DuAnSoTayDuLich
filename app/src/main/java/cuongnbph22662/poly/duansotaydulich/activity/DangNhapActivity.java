@@ -1,6 +1,7 @@
 package cuongnbph22662.poly.duansotaydulich.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -55,7 +56,7 @@ public class DangNhapActivity extends AppCompatActivity {
         else {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
-                luuTaiKhoan(strUser, strPass);
+                luuTaiKhoan(strUser);
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("user", strUser);
                 intent.putExtra("trangthai", "anhien");
@@ -70,15 +71,12 @@ public class DangNhapActivity extends AppCompatActivity {
 
     }
 
-    public void luuTaiKhoan(String user, String pass){
-        SharedPreferences pref = getSharedPreferences("USER_FILE",MODE_PRIVATE);
-        SharedPreferences.Editor edit = pref.edit();
-        edit.putBoolean("luuDangNhap", true);
-            // lưu dữ liệu
-        edit.putString("taiKhoan", user);
-        edit.putString("matKhau", pass);
-        // lưu loại toàn bộ
-        edit.apply();
+    public void luuTaiKhoan(String username){
+        SharedPreferences sharedPreferences2 = DangNhapActivity.this.getSharedPreferences("Luu_dangNhap", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences2.edit();
+        editor.putBoolean("luuDangNhap", true);
+        editor.putString("tenDangNhap", username);
+        editor.apply();
     }
 
 

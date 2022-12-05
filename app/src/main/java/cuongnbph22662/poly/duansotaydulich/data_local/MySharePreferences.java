@@ -1,6 +1,5 @@
 package cuongnbph22662.poly.duansotaydulich.data_local;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.SharedPreferences;
 

@@ -4,6 +4,7 @@ import android.content.Context;
 
 public class DataLocalManager {
     private static final String PREF_FIRST_INSTALL = "PREF_FIRST_INSTALL";
+    private static final String TRANG_THAI = "TRANG_THAI";
     private static DataLocalManager instance;
     private MySharePreferences mySharePreferences;
 
@@ -26,5 +27,13 @@ public class DataLocalManager {
 
     public static boolean getFirstInstalled(){
         return DataLocalManager.getInstance().mySharePreferences.getBooleanValue(PREF_FIRST_INSTALL);
+    }
+
+    public static void setTrangThaiDangNhap(Boolean isFirst){
+        DataLocalManager.getInstance().mySharePreferences.putBooleanValue(TRANG_THAI, isFirst);
+    }
+
+    public static boolean layTrangThaiDangNhap(){
+        return DataLocalManager.getInstance().mySharePreferences.getBooleanValue(TRANG_THAI);
     }
 }

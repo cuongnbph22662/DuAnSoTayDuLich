@@ -3,12 +3,8 @@ package cuongnbph22662.poly.duansotaydulich.fragment;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,21 +12,25 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
+import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.activity.CongDongActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.DoiMatKhauActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.LichSuActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.LienHeActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.MainActivity;
-import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
-import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
-import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
 
 public class HoSoFragment extends Fragment {
     Button btnDangNhap;
     TextView tvTaoTaiKhoan;
     LinearLayout hoSoCaNhan, hoSoCuaBan,
-                ThongTinCaNhan, DangXuat, CongDong, LichSuDi, HoTro,DieuKhoan, QuyenRiengTu,
+                ThongTinCaNhan,DoiMatKhau, DangXuat, CongDong, LichSuDi, HoTro,DieuKhoan, QuyenRiengTu,
             dieuKhoan, quyenRiengTu;
 
     @Override
@@ -79,6 +79,12 @@ public class HoSoFragment extends Fragment {
                 startActivity(new Intent(getActivity(), TTCaNhanActivity.class));
             }
         });
+        DoiMatKhau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), DoiMatKhauActivity.class));
+            }
+        });
         LichSuDi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,6 +103,7 @@ public class HoSoFragment extends Fragment {
                 startActivity(new Intent(getActivity(), MainActivity.class));
                 hoSoCaNhan.setVisibility(View.VISIBLE);
                 hoSoCuaBan.setVisibility(View.GONE);
+                clearLuuDangNhap();
             }
         });
         // chưa làm
@@ -138,11 +145,19 @@ public class HoSoFragment extends Fragment {
 
         ThongTinCaNhan = view.findViewById(R.id.id_ThongTinCaNhan);
         DangXuat = view.findViewById(R.id.id_DangXuat);
+        DoiMatKhau = view.findViewById(R.id.id_DoiMatKhau);
         CongDong = view.findViewById(R.id.id_CongDong);
         LichSuDi = view.findViewById(R.id.id_LichSuChuyenDi);
         HoTro = view.findViewById(R.id.id_PhanHoi);
         DieuKhoan = view.findViewById(R.id.id_DieuKhoan);
         QuyenRiengTu = view.findViewById(R.id.id_QuyenRiengTu);
+    }
+
+    private void clearLuuDangNhap() {
+        SharedPreferences sharedPreferences2 = getActivity().getSharedPreferences("Luu_dangNhap", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences2.edit();
+        editor.putBoolean("luuDangNhap", false);
+        editor.apply();
     }
 
     @Override
