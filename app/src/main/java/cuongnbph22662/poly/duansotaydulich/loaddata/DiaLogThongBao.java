@@ -1,5 +1,5 @@
 package cuongnbph22662.poly.duansotaydulich.loaddata;
 
-public class DiaLogThongBao {
-
+public interface DiaLogThongBao {
+    void dialog(String thongbao);
 }

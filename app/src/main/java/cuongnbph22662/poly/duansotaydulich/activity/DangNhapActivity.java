@@ -5,21 +5,26 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
+import cuongnbph22662.poly.duansotaydulich.loaddata.DiaLogThongBao;
+import cuongnbph22662.poly.duansotaydulich.model.NguoiDung;
 
 public class DangNhapActivity extends AppCompatActivity {
     EditText edUsername,edPassword;
     NguoiDungDAO nguoiDungDAO;
     Button btnLogin;
     String strUser,strPass;
+    DiaLogThongBao diaLogThongBao;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +32,12 @@ public class DangNhapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dang_nhap);
         anhXa();
         nguoiDungDAO = new NguoiDungDAO(getApplicationContext());
-        SharedPreferences pref = getSharedPreferences("USER_FILE",MODE_PRIVATE);
-        String user = pref.getString("taiKhoan","");
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("MY_SF",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        String user = pref.getString("tenDangNhap","");
         String pass = pref.getString("matKhau","");
+        ArrayList<NguoiDung> list = (ArrayList<NguoiDung>) nguoiDungDAO.getAll();
+        Log.i("//++++++", list+"");
         edUsername.setText(user);
         edPassword.setText(pass);
 
@@ -51,33 +59,29 @@ public class DangNhapActivity extends AppCompatActivity {
         strUser = edUsername.getText().toString();
         strPass = edPassword.getText().toString();
         if(strUser.isEmpty()||strPass.isEmpty()){
-            Toast.makeText(getApplicationContext(),"Tên đăng nhập và mật khẩu không được bỏ trống", Toast.LENGTH_SHORT).show();
+            diaLogThongBao.dialog("Tài khoản hoặc mật khẩu không được để trống");
+
         }
         else {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
-                Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
-                luuTaiKhoan(strUser);
+                diaLogThongBao.dialog("Đăng nhập thành công");
+                luuTaiKhoan(strUser, strPass);
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("user", strUser);
+                intent.putExtra("tenDangNhap", strUser);
                 intent.putExtra("trangthai", "anhien");
                 startActivity(intent);
                 finish();
 
             }
             else {
-                Toast.makeText(getApplicationContext(),"Tên đăng nhập và mật khẩu không đúng",Toast.LENGTH_SHORT).show();
+                diaLogThongBao.dialog("Tên đăng nhập và mật khẩu không đúng");
             }
         }
 
     }
 
-    public void luuTaiKhoan(String username){
-        SharedPreferences sharedPreferences2 = DangNhapActivity.this.getSharedPreferences("Luu_dangNhap", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences2.edit();
-        editor.putBoolean("luuDangNhap", true);
-        editor.putString("tenDangNhap", username);
-        editor.apply();
-    }
+    public void luuTaiKhoan(String username, String pass){
 
+    }
 
 }

@@ -26,8 +26,8 @@ public class ManChaoActivity extends AppCompatActivity {
         btngetstart = findViewById(R.id.btnBatDau);
         manChao = findViewById(R.id.id_manChao);
         // set lần đầu vào app
-        if(!DataLocalManager.getFirstInstalled()){
-            Animation animation = AnimationUtils.loadAnimation(ManChaoActivity.this,R.anim.fade);
+        if(!DataLocalManager.getLanDauVaoApp()){
+           Animation animation = AnimationUtils.loadAnimation(ManChaoActivity.this,R.anim.fade);
             btngetstart.startAnimation(animation);
             btngetstart.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -36,7 +36,7 @@ public class ManChaoActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-            DataLocalManager.setFirstInstalled(true);
+            DataLocalManager.setLanDauVaoApp(true);
         }else{
             manChao.setVisibility(View.INVISIBLE);
             new Handler().postDelayed(new Runnable() {
@@ -48,8 +48,14 @@ public class ManChaoActivity extends AppCompatActivity {
             }, 2000);
         }
 
-//        Animation animation4 = AnimationUtils.loadAnimation(helloActivity.this,R.anim.fade);
-//        imgView.startAnimation(animation4);
+//        manChao.setVisibility(View.INVISIBLE);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                startActivity(new Intent(ManChaoActivity.this, MainActivity.class));
+//                finish();
+//            }
+//        }, 2000);
 
     }
 }

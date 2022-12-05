@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,7 @@ import cuongnbph22662.poly.duansotaydulich.activity.DangNhapActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.DoiMatKhauActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.LichSuActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.LienHeActivity;
-import cuongnbph22662.poly.duansotaydulich.activity.MainActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.ManChaoActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
 
@@ -100,7 +101,7 @@ public class HoSoFragment extends Fragment {
         DangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), MainActivity.class));
+                startActivity(new Intent(getActivity(), ManChaoActivity.class));
                 hoSoCaNhan.setVisibility(View.VISIBLE);
                 hoSoCuaBan.setVisibility(View.GONE);
                 clearLuuDangNhap();
@@ -123,14 +124,18 @@ public class HoSoFragment extends Fragment {
             public void onClick(View view) {
             }
         });
-
         Intent intent = getActivity().getIntent();
+        Log.i("//=======", intent+"");
         String trangthai = intent.getStringExtra("trangthai");
         String kt = "anhien";
         if (kt.equals(trangthai)){
             hoSoCaNhan.setVisibility(View.GONE);
             hoSoCuaBan.setVisibility(View.VISIBLE);
         }
+        SharedPreferences sharedPreferences2 = getActivity().getSharedPreferences("MY_SF", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences2.edit();
+        editor.putBoolean("luuDangNhap", true);
+        editor.commit();
         return view;
     }
 
@@ -154,10 +159,11 @@ public class HoSoFragment extends Fragment {
     }
 
     private void clearLuuDangNhap() {
-        SharedPreferences sharedPreferences2 = getActivity().getSharedPreferences("Luu_dangNhap", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences2 = getActivity().getSharedPreferences("MY_SF", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences2.edit();
         editor.putBoolean("luuDangNhap", false);
         editor.apply();
+        editor.commit();
     }
 
     @Override

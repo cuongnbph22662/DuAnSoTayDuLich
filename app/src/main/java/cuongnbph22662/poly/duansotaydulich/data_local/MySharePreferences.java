@@ -23,6 +23,18 @@ public class MySharePreferences {
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(MY_SF, Context.MODE_PRIVATE);
         return sharedPreferences.getBoolean(key, false);
     }
+    // lấy trạng thái đăng nhập
+    public void putTrangThai(String key, Boolean value){
+        SharedPreferences sharedPreferences = mContext.getSharedPreferences(MY_SF, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(key, value);
+        editor.apply();
+    }
+
+    public boolean getTrangThai(String key){
+        SharedPreferences sharedPreferences = mContext.getSharedPreferences(MY_SF, Context.MODE_PRIVATE);
+        return sharedPreferences.getBoolean(key, false);
+    }
 
     // lấy dữ liệu kiểu string
     public void putStringValue(String key, String value){

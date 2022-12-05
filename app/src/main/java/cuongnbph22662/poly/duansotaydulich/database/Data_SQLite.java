@@ -2,11 +2,11 @@ package cuongnbph22662.poly.duansotaydulich.database;
 
 public class Data_SQLite {
     public static final String INSERT_NGUOI_DUNG= "INSERT INTO NguoiDung(taiKhoan,hoTen,matKhau,soDienThoai,namSinh,diaChi) VALUES " +
-            "('cuongnb','Nguyễn Bá Cường','1','0339760892',2003,'Ha Noi')," +
-            "('thuynt','Nguyễn Thanh Thúy','1','0339760892',2004,'Mi Dinh')," +
-            "('hoangttm','Tạ Trần Minh Hoàng','1','0339760892',2005,'Moc Chau')," +
-            "('hungvh','Vũ Hải Hưng','1','0339760892',2006,'Ha Nam')," +
-            "('thanhnh','Nguyễn Hiếu Thành','1','0339760892',2006,'Thai Nguyen')";
+            "('cuongnb1','Nguyễn Bá Cường','1','0339760892',2003,'Ha Noi')," +
+            "('thuynt2','Nguyễn Thanh Thúy','2','0339760893',2004,'Mi Dinh')," +
+            "('hoangttm3','Tạ Trần Minh Hoàng','3','0339760894',2005,'Moc Chau')," +
+            "('hungvh4','Vũ Hải Hưng','4','0339760895',2006,'Ha Nam')," +
+            "('thanhnh5','Nguyễn Hiếu Thành','5','0339760896',2006,'Thai Nguyen')";
     public static final String INSERT_THE_LOAI = "INSERT INTO TheLoai(tenTheLoai) VALUES " +
             "('Hà Nội')," +
             "('Hồ Chí Minh')," +

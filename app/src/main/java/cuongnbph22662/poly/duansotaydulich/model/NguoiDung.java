@@ -75,6 +75,8 @@ public class NguoiDung {
                 ", hoTen='" + hoTen + '\'' +
                 ", matKhau='" + matKhau + '\'' +
                 ", soDienThoai='" + soDienThoai + '\'' +
+                ", namSinh=" + namSinh +
+                ", diaChi='" + diaChi + '\'' +
                 '}';
     }
 }

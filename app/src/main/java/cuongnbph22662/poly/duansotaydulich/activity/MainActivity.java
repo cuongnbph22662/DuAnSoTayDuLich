@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,15 +13,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.databinding.ActivityMainBinding;
 import cuongnbph22662.poly.duansotaydulich.fragment.HoSoFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.HomeFragment;
-import cuongnbph22662.poly.duansotaydulich.fragment.TimKiemFragment;
 import cuongnbph22662.poly.duansotaydulich.fragment.LichFragment;
+import cuongnbph22662.poly.duansotaydulich.fragment.TimKiemFragment;
+import cuongnbph22662.poly.duansotaydulich.loaddata.DiaLogThongBao;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements DiaLogThongBao {
     ActivityMainBinding activityMainBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,8 +83,27 @@ public class MainActivity extends AppCompatActivity {
         btnHuy.setOnClickListener(v -> alertDialog.dismiss());
     }
 
+
     @Override
     public void onBackPressed() {
         Exit();
+    }
+
+    @Override
+    public void dialog(String thongbao) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.dialog_thongbao, null);
+        builder.setView(view);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        alertDialog.show();
+        TextView tvThongbao = view.findViewById(R.id.tvMess);
+        // dialog
+        Button btnThongBao = view.findViewById(R.id.btnThongBao);
+        tvThongbao.setText(thongbao);
+
+        btnThongBao.setOnClickListener(view1 -> {
+            alertDialog.dismiss();
+        });
     }
 }
