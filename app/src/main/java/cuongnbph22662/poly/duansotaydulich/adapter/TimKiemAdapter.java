@@ -5,33 +5,41 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class TimKiemAdapter extends RecyclerView.Adapter<TimKiemAdapter.ViewHoder> {
-    Context context;
-    java.util.ArrayList<Sach> list;
+import java.util.ArrayList;
 
-    public TimKiemAdapter(Context context, java.util.ArrayList<Sach> list) {
+import cuongnbph22662.poly.duansotaydulich.R;
+import cuongnbph22662.poly.duansotaydulich.model.PhieuDuLich;
+
+public class TimKiemAdapter extends RecyclerView.Adapter<TimKiemAdapter.ViewHodel> {
+    Context context;
+    ArrayList<PhieuDuLich> list;
+
+    public TimKiemAdapter(Context context, ArrayList<PhieuDuLich> list) {
         this.context = context;
         this.list = list;
     }
 
     @NonNull
     @Override
-    public ViewHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public TimKiemAdapter.ViewHodel onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-        View view = inflater.inflate(R.layout.recycler_top10, parent, false);
-        return new ViewHoder(view);
+        View view = inflater.inflate(R.layout.kham_pha_item,parent,false);
+        return new ViewHodel(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHoder holder, int position) {
-        holder.txtMasach_Top10.setText("MÃ SÁCH:" + String.valueOf(list.get(position).getMasach()));
-        holder.txtTenSach_Top10.setText("TÊN SÁCH:" + list.get(position).getTensach());
-        holder.txtSoLuong_Top10.setText("SỐ LƯỢNG MƯỢN:" + String.valueOf(list.get(position).getSoluongdamuon()));
+    public void onBindViewHolder(@NonNull TimKiemAdapter.ViewHodel holder, int position) {
+        PhieuDuLich model = list.get(position);
+        holder.KhamPha.setImageResource(R.drawable.dalat);
+        holder.tenDiaDiem.setText(model.getTenDiaDiem());
+        holder.diaDiem.setText(model.getDiaChi());
+        holder.gia.setText(model.getGiaThue());
     }
 
     @Override
@@ -39,14 +47,18 @@ public class TimKiemAdapter extends RecyclerView.Adapter<TimKiemAdapter.ViewHode
         return list.size();
     }
 
-    public class ViewHoder extends RecyclerView.ViewHolder {
-        TextView txtMasach_Top10, txtTenSach_Top10, txtSoLuong_Top10;
+    public class ViewHodel extends RecyclerView.ViewHolder {
+        ImageView KhamPha;
+        TextView tenDiaDiem,gia,diaDiem;
 
-        public ViewHoder(@NonNull View itemView) {
+
+        public ViewHodel(@NonNull View itemView) {
             super(itemView);
-            txtMasach_Top10 = itemView.findViewById(R.id.txtMasach_Top10);
-            txtTenSach_Top10 = itemView.findViewById(R.id.txtTenSach_Top10);
-            txtSoLuong_Top10 = itemView.findViewById(R.id.txtSoLuong_Top10);
+            gia = itemView.findViewById(R.id.tvGia);
+            diaDiem = itemView.findViewById(R.id.tv_DiaDiem);
+            KhamPha = itemView.findViewById(R.id.imgkhampha);
+            tenDiaDiem = itemView.findViewById(R.id.tvNameDiaDiem);
+
         }
     }
 }

@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".fragment.TimKiemFragment"
-    android:background="@color/maunen">
+    android:background="@color/maunen"
+>
     <androidx.appcompat.widget.Toolbar
         android:layout_marginRight="15dp"
         android:id="@+id/toolbar"
