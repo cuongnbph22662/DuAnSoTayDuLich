@@ -61,8 +61,7 @@ public class DangNhapActivity extends AppCompatActivity {
         else {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("ten",strUser);
+                Intent intent = new Intent(DangNhapActivity.this, MainActivity.class);
                 intent.putExtra("user","all");
                 startActivity(intent);
                 finish();
