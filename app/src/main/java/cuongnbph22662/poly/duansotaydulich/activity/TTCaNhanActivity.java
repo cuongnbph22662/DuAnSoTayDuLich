@@ -24,13 +24,15 @@ public class TTCaNhanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ttca_nhan);
         tvTen = findViewById(R.id.tvTen);
         tvSDT = findViewById(R.id.tvSDT);
-        Bundle bundle = this.getIntent().getExtras();
-        String user = bundle.getString("ten");
-        Toast.makeText(getApplicationContext(),user+"1111",Toast.LENGTH_SHORT).show();
-//        dao = new NguoiDungDAO(this);
-//        NguoiDung nguoiDung = dao.getID(user);
-//        String userName = nguoiDung.getHoTen();
-//        tvTen.setText(userName);
-
+        Intent intent = getIntent();
+        String user = intent.getStringExtra("ten");
+//        Toast.makeText(getApplicationContext(),user+"1111",Toast.LENGTH_SHORT).show();
+        dao = new NguoiDungDAO(this);
+        NguoiDung nguoiDung = dao.getID(user);
+        String userName = nguoiDung.getHoTen();
+        String SDT = nguoiDung.getSoDienThoai();
+        tvSDT.setText(SDT);
+        tvTen.setText(userName);
+//        Toast.makeText(getApplicationContext(),"0"+userName,Toast.LENGTH_SHORT).show();
     }
 }

@@ -45,11 +45,11 @@ public class NguoiDungDAO {
         Cursor c = db.rawQuery(sql,selectionArgs);
         while (c.moveToNext()){
             NguoiDung obj = new NguoiDung();
-            obj.setHoTen(c.getString(c.getColumnIndex("taiKhoan")));
+            obj.setTaiKhoan(c.getString(c.getColumnIndex("taiKhoan")));
             obj.setHoTen(c.getString(c.getColumnIndex("hoTen")));
-            obj.setHoTen(c.getString(c.getColumnIndex("matKhau")));
-            obj.setHoTen(c.getString(c.getColumnIndex("soDienThoai")));
-            Log.i("//=======", obj.toString());
+            obj.setMatKhau(c.getString(c.getColumnIndex("matKhau")));
+            obj.setSoDienThoai(c.getString(c.getColumnIndex("soDienThoai")));
+//            Log.i("//=======", obj.toString());
             list.add(obj);
         }
         return list;
