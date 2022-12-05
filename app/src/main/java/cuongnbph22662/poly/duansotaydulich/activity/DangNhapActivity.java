@@ -73,6 +73,7 @@ public class DangNhapActivity extends AppCompatActivity {
     public void luuTaiKhoan(String user, String pass){
         SharedPreferences pref = getSharedPreferences("USER_FILE",MODE_PRIVATE);
         SharedPreferences.Editor edit = pref.edit();
+        edit.putBoolean("luuDangNhap", true);
             // lưu dữ liệu
         edit.putString("taiKhoan", user);
         edit.putString("matKhau", pass);
