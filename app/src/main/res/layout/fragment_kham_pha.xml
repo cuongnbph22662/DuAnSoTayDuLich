@@ -5,77 +5,35 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".fragment.KhamPhaFragment"
-    android:background="#F8DDDD">
- <TextView
-     android:textSize="50dp"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="Travenus offer"
-     android:textColor="#D33D7E"
-     android:layout_gravity="center_horizontal"
-   />
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-      android:orientation="horizontal"
-       android:weightSum="10"
-      >
-      <EditText
-         android:layout_weight="8"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="Serch"
-         android:id="@+id/ed_search"/>
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:backgroundTint="@color/white"
-          android:textColor="#12334C"
-         android:text="Find"/>
-
-   </LinearLayout>
-   <com.google.android.material.tabs.TabLayout
-       android:layout_width="match_parent"
-       android:layout_height="?actionBarSize"
-       android:id="@+id/tab_layout"
-       android:background="@color/white"
-       app:tabInlineLabel="true"
-       app:tabTextColor="@color/teal_700"
-       app:tabIndicatorColor="@color/teal_700"
-       app:tabSelectedTextColor="@color/teal_700"
-       app:tabTextAppearance="@style/TextAppearance.AppCompat.Small">
-
-
-
-
-   </com.google.android.material.tabs.TabLayout>
-    <LinearLayout
+    android:padding="10dp"
+    tools:context=".fragment.TimKiemFragment"
+    android:background="@color/maunen">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginRight="15dp"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Spinner
-            android:id="@+id/simpleSpinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/maunen">
 
-            android:layout_marginTop="10dp" />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Travenus Top 10"
-        android:textColor="#D33D7E"
-        android:textSize="25dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.Toolbar>
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerView"/>
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/view_pager"/>
 
 
 

@@ -3,16 +3,18 @@ package cuongnbph22662.poly.duansotaydulich.model;
 public class PhieuDuLich {
     private int maPhieu;
     private int maTheLoai;
+    private String tenDiaDiem;
     private int giaThue;
     private String noiDung;
-    private String diaChi;
+    private String viTri;
 
-    public PhieuDuLich(int maPhieu, int maTheLoai, int giaThue, String noiDung, String diaChi) {
+    public PhieuDuLich(int maPhieu, int maTheLoai, String tenDiaDiem, int giaThue, String noiDung, String viTri) {
         this.maPhieu = maPhieu;
         this.maTheLoai = maTheLoai;
+        this.tenDiaDiem = tenDiaDiem;
         this.giaThue = giaThue;
         this.noiDung = noiDung;
-        this.diaChi = diaChi;
+        this.viTri = viTri;
     }
 
     public PhieuDuLich() {
@@ -51,11 +53,27 @@ public class PhieuDuLich {
     }
 
     public String getDiaChi() {
-        return diaChi;
+        return viTri;
     }
 
     public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
+        this.viTri = diaChi;
+    }
+
+    public String getTenDiaDiem() {
+        return tenDiaDiem;
+    }
+
+    public void setTenDiaDiem(String tenDiaDiem) {
+        this.tenDiaDiem = tenDiaDiem;
+    }
+
+    public String getViTri() {
+        return viTri;
+    }
+
+    public void setViTri(String viTri) {
+        this.viTri = viTri;
     }
 
     @Override
@@ -65,7 +83,7 @@ public class PhieuDuLich {
                 ", maTheLoai=" + maTheLoai +
                 ", giaThue=" + giaThue +
                 ", noiDung='" + noiDung + '\'' +
-                ", diaChi='" + diaChi + '\'' +
+                ", diaChi='" + viTri + '\'' +
                 '}';
     }
 }

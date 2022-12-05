@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home" />
+        android:icon="@drawable/icon_menu_trangchu"
+        android:title="Trang Chủ" />
     <item
         android:id="@+id/navigation_calendar"
-        android:icon="@drawable/ic_baseline_calendar_month_24"
-        android:title="Lịch" />
+        android:icon="@drawable/icon_menu_sukien"
+        android:title="Sự Kiện" />
     <item
         android:id="@+id/navigation_search"
-        android:icon="@drawable/ic_baseline_search_24"
-        android:title="Khám phá"/>
+        android:icon="@drawable/icon_menu_timkiem"
+        android:title="Tìm kiếm"/>
 
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_baseline_person_24"
+        android:icon="@drawable/icon_menu_canhan"
         android:title="Cá nhân" />
 </menu>
