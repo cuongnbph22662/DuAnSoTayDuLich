@@ -135,13 +135,7 @@
                 android:textSize="18dp"
                 android:textColor="@color/black"
                 android:text="     Hàng năm, phố đi bộ đều là tụ điểm tổ chức đại nhạc hội và bắn pháo hoa, nếu đi du lịch Tết Hà Nội , bạn có thể đến sớm hơn một chút để cùng người dân Hà Nội đếm ngược khoảnh khắc tạm biệt năm cũ, đón chào năm mới."/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:text=""
-                android:layout_marginTop="10dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -598,15 +592,9 @@
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Nha Trang là địa điểm đi chơi Tết được nhiều người lựa chọn. Từ trước tới nay được mệnh danh là thiên đường du lịch biển. Tạo hóa mang đến cho Nha Trang các bãi biển trải dài với những bờ cát vàng lấp lánh dưới ánh nắng tuyệt đẹp."
                 android:layout_marginTop="10dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:text=""
-                android:layout_marginTop="10dp"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -639,14 +627,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:text=""
+                android:text="     Đường hoa Nguyễn Huệ đã không còn xa lại gì đối với các du khách trong và ngoài nước. Cứ mỗi dịp Tết đến xuân về, đường Nguyễn Huệ sẽ được trang trí vô cùng hoành tráng với hoa, tranh được bày trí dọc hết cả con đường. Đây được xem là “thương hiệu” của Sài Gòn vào dịp Tết. Đây sẽ là một nơi vô cùng phù hợp để check in sống ảo vào dịp Tết cùng bạn bè, người thương và gia đình."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -680,14 +661,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Cầu Vàng Đà Nẵng được xem như một tuyệt tác kiến trúc đương đại, được giới chuyên môn đánh giá cao, và du khách đặc biệt yêu thích khi đến Đà Nẵng."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Đây là nơi thu nhiều lượt check-in trên mạng xã hội và được truyền thông trong nước lẫn quốc tế quan tâm, hết lời khen ngợi."
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
         <LinearLayout
