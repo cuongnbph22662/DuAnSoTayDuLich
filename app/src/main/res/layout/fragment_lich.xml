@@ -8,6 +8,7 @@
     tools:context=".fragment.LichFragment"
     android:padding="20dp"
     android:background="@color/maunen">
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,7 +91,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -121,14 +122,14 @@
         android:layout_marginTop="10dp"
         android:textSize="18dp"
         android:textColor="@color/black"
-        android:text="     Hồ Hoàn Kiếm hay còn gọi là Hồ Gươm, là một hồ nước ngọt tự nhiên của thành phố Hà Nội. Trước kia hồ có các tên gọi như hồ Lục Thủy (nước có màu xanh quanh năm), hồ Thủy Quân (nơi duyệt thủy binh), hồ Tả Vọng và Hữu Vọng (thời Lê mạt)[3]. Tên gọi hồ Hoàn Kiếm xuất hiện vào đầu thế kỷ 15, gắn với truyền thuyết vua Lê Thái Tổ trả lại gươm báu cho Rùa thần. Tên hồ được đặt cho một quận của Hà Nội, là quận Hoàn Kiếm"/>
+        android:text="     Hồ Hoàn Kiếm hay còn gọi là Hồ Gươm nằm ở trung tâm quận Hoàn Kiếm, thủ đô Hà Nội, là một hồ nước ngọt tự nhiên của thành phố Hà Nội. Tên hồ được đặt cho một quận của Hà Nội, là quận Hoàn Kiếm"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="18dp"
         android:textColor="@color/black"
-        android:text=""/>
+        android:text="     Hàng năm, phố đi bộ đều là tụ điểm tổ chức đại nhạc hội và bắn pháo hoa, nếu đi du lịch Tết Hà Nội , bạn có thể đến sớm hơn một chút để cùng người dân Hà Nội đếm ngược khoảnh khắc tạm biệt năm cũ, đón chào năm mới."/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -140,7 +141,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_vertical">
         <ImageView
             android:layout_width="wrap_content"
@@ -156,11 +157,23 @@
             android:textColor="@color/black"
             android:layout_marginLeft="10dp"/>
     </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bo_song_han"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="     Vào dịp Tết , TP. Đà Nẵng sẽ lần lượt tổ chức hàng loạt hoạt động nổi bật như Không gian check in chào năm mới 2022 dọc bờ sông Hàn"
+            android:layout_marginTop="10dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_vertical">
         <ImageView
             android:layout_width="wrap_content"
@@ -176,11 +189,30 @@
             android:textColor="@color/black"
             android:layout_marginLeft="10dp"/>
     </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/thung_lung_tinh_yeu"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="     Thành phố mộng mơ Đà Lạt là nơi đặc biệt “hút” du khách, nhất là giới trẻ không chỉ vào mỗi dịp lễ Tết mà gần như 4 mùa trong năm. Phương tiện đến Đà Lạt khá dễ dàng, vì thế sẽ không mất làm mất quá nhiều thời gian đi chuyển của du khách để có thể sớm được thoả sức chiêm ngưỡng vẻ đẹp bình yên, những triền đồi hoa đầy thơ mộng hay thưởng thức ẩm thực đặc trưng chỉ có ở tỉnh Lâm Đồng."
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="     Thung lũng Tình Yêu là một trong những danh lam thắng cảnh của Đà Lạt và là điểm check in không thể thiếu của nam thanh nữ tú mỗi khi đến đây."
+            android:layout_marginTop="10dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_vertical">
         <ImageView
             android:layout_width="wrap_content"
@@ -196,6 +228,431 @@
             android:textColor="@color/black"
             android:layout_marginLeft="10dp"/>
     </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/kinh_thanh_hue"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="     Huế là một trong những địa điểm nghỉ tết vô cùng hợp lý cho những người yêu thích không gian yên tĩnh thích tìm về quá khú. "
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="     Kinh Thành Huế là một trong số các di tích thuộc cụm Quần thể di tích Cố đô Huế được UNESCO công nhận là Di sản Văn hoá Thế giới."
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 
+<!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chamnho"
+                android:layout_marginLeft="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>
