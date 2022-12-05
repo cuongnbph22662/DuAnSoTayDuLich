@@ -91,13 +91,13 @@
     </com.google.android.material.textfield.TextInputLayout>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_marginTop="40dp"
-        android:id="@+id/btnGuiTinNhan"
+        android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_gravity="center"
         android:background="@drawable/background_btn_dangnhap"
         android:elevation="3dp"
-        android:text="Gửi tin nhắn"
+        android:text="Lưu"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp" />
