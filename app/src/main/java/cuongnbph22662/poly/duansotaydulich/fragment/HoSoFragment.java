@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import cuongnbph22662.poly.duansotaydulich.activity.CongDongActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.LichSuActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.LienHeActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.MainActivity;
@@ -102,7 +103,7 @@ public class HoSoFragment extends Fragment {
         CongDong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(), CongDongActivity.class));
             }
         });
         DieuKhoan.setOnClickListener(new View.OnClickListener() {
