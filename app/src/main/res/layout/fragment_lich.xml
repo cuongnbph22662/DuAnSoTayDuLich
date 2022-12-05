@@ -76,13 +76,15 @@
                 android:textSize="18dp"
                 android:textColor="@color/black"
                 android:text="* Lịch mở cửa lăng Bác"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
                 android:text="- Vào mỗi thứ 3, thứ 4, thứ 5: Lăng Bác sẽ mở cửa lúc 7h30 phút sáng cho đến 10h30 phút sáng, không mở cửa vào buổi chiều, buổi tối."
-                android:layout_marginTop="10dp"/>
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -289,13 +291,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Đền Hùng - Việt Trì, Phú Thọ"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/anh_den_hung"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Đền Hùng là điểm đến mà mọi người nghĩ đến đầu tiên, bởi đây chính là trung tâm của các hoạt động tưởng nhớ, tri ân các vua Hùng trong ngày Giỗ Tổ Hùng Vương"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Nếu như mục đích giỗ Tổ năm nay của bạn là trải nghiệm trọn vẹn cảm xúc, không gian lịch sử, văn hóa của ngày lễ này thì hãy hành hương về đất Tổ. Trải qua hàng nghìn năm lịch sử, Phú Thọ vẫn giữ trong mình dấu vết những buổi đầu dựng nước của dân tộc."
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -311,13 +332,72 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Mộc Châu - Sơn La"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/anh_moc_chau"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Mộc Châu là một trong những điểm du lịch hấp dẫn bậc nhất Tây Bắc bởi cảnh sắc tươi đẹp. Dịp nghỉ lễ Giỗ Tổ Hùng Vương là thời gian thích hợp để bạn hoà mình vào không khí Mộc Châu."
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Mộc Châu có hệ sinh thái đa dạng và vùng thảo nguyên nhiều cảnh quan đẹp (đồng cỏ, vườn hoa), các điểm danh thắng như Ngũ Động bản Ôn, thác Dải Yếm, đỉnh Pha Luông, khu hồ sinh thái rừng thông bản Áng, đồi chè, vườn đào, vườn mận, trang trại chăn nuôi bò sữa... "
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sapa - Lào Cai"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/anh_sapa"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Kỳ nghỉ lễ Giỗ Tổ Hùng Vương năm nay, du khách có thể đến Sapa để cảm nhận được không khí “4 trong 1” (bốn mùa trong một ngày). Khí trời mát mẻ vùng núi và cảnh quan đẹp hoang sơ chính là những yếu tố giúp Sapa trở thành khu nghỉ mát nổi tiếng ở miền Bắc Việt Nam."
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Tại đây, bạn có thể chinh phục đỉnh Fansipan của dãy Hoàng Liên Sơn, ngắm vườn hoa Hàm Rồng và khám phá thung lũng Mường Hoa. Các địa điểm tham quan khác khi du lịch Sapa gồm: Thác Bạc, Thác Tình Yêu, bản Hồ, chợ phiên Sapa…"
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -333,13 +413,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Làng Sen - Nam Đàn, Nghệ An"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/lang_sen_que_bac"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Làng Sen là một ngôi làng nhỏ thơm ngát hương sen với hình ảnh thân thuộc, gần gũi, chắc chắn sẽ mang đến những cảm xúc tuyệt vời cho bạn trong hành trình du lịch Nghệ An."
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Trong chuyến đi trở về quê Bác, du khách không thể bỏ qua những hoạt động như: Đi dạo ao sen - giếng Cốc, vào thăm nhà Bác, ghé cụm di tích lịch sử cây Đa, sân vận động, đền làng Sen, thăm mộ cụ Hoàng Thị Loan (mẹ Bác)"
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -355,35 +454,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Phố cổ Hội An"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
-
-            <LinearLayout
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_chamnho"
-                    android:layout_marginLeft="35dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Phố cổ Hội An cũng là một trong những địa điểm du lịch thú vị ở miền Trung trong dịp nghỉ lễ Giỗ Tổ Hùng Vương . Đến phố cổ Hội An dịp này, du khách sẽ được khám phá những cảnh đẹp bình dị của những dãy nhà cổ, những công trình kiến trúc cổ nổi tiếng như Chùa Cầu, nhà cổ Tấn Ký, hội quán Quảng Đông... Đây luôn là điểm đến du khách tới Quảng Nam và Đà Nẵng."
+                android:layout_marginTop="10dp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -403,7 +492,222 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Tết Nguyên Đán"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đà Lạt"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_hoa"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Đà Lạt, xứ sở ngàn hoa mà ai ai cũng phải ghé qua một lần trong đời. Vào dịp Tết Đà Lạt trăm hoa đua nở, muôn màu muôn sắc, sẽ mang đến cho bạn cảm giác như sống trong thế giới cổ tích. Vào buổi tối không khí se lạnh, bạn sẽ được tận hưởng những cốc sữa đậu nành nóng hổi bên những ánh đèn đường mờ ảo vô cùng lãng mạn rất phù hợp để đi cùng người thương đấy."
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đảo ngọc - Phú Quốc "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dao_phu_quoc"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Đảo ngọc Phú Quốc với bốn bề là bờ biển trong xanh, nhìn từ xa như một viên ngọc bích khổng lồ tuyệt đẹp xứng đáng là mỹ cảnh của thiên nhiên. Đặc biệt, khi đến đây bạn sẽ được tha hồ hưởng thức các món hải sản tươi ngon với giá vô cùng “hạt dẻ”. Điều này giúp đảo ngọc thu hút rất nhiều khách du lịch đến thăm quan vào mỗi dịp Tết."
+                android:layout_marginTop="10dp"/>
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nha Trang"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/nha_trang"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đường hoa Nguyễn Huệ - Sài Gòn"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/duong_hoa_nguyen_hue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cầu Vàng - Đà Nẵng"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cau_vang_da_nang"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamto"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày 30/4 - 1/5"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -430,6 +734,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -452,6 +775,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -474,6 +816,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -496,6 +857,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -518,6 +898,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -536,7 +935,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Trung thu"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -563,6 +962,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -585,6 +1003,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -607,6 +1044,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -629,6 +1085,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -651,6 +1126,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -669,7 +1163,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Ngày quốc khánh 2/9"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -696,6 +1190,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -718,6 +1231,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -740,6 +1272,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -762,6 +1313,25 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -784,6 +1354,253 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamto"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lễ giáng sinh"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_co_hoi_an"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
