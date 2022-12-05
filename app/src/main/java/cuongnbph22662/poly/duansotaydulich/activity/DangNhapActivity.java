@@ -55,6 +55,7 @@ public class DangNhapActivity extends AppCompatActivity {
         else {
             if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
                 Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
+                luuTaiKhoan(strUser, strPass);
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("user", strUser);
                 intent.putExtra("trangthai", "anhien");
@@ -67,6 +68,16 @@ public class DangNhapActivity extends AppCompatActivity {
             }
         }
 
+    }
+
+    public void luuTaiKhoan(String user, String pass){
+        SharedPreferences pref = getSharedPreferences("USER_FILE",MODE_PRIVATE);
+        SharedPreferences.Editor edit = pref.edit();
+            // lưu dữ liệu
+        edit.putString("taiKhoan", user);
+        edit.putString("matKhau", pass);
+        // lưu loại toàn bộ
+        edit.apply();
     }
 
 
