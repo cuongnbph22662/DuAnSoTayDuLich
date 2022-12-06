@@ -67,12 +67,18 @@ public class TimKiemFragment extends Fragment {
             RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(getContext(),DividerItemDecoration.VERTICAL);
             recyclerView.addItemDecoration(itemDecoration);
 
+            searchView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
+                }
+            });
 
     }
 
     private List<PhieuDuLich> getListUser() {
         List<PhieuDuLich> list = new ArrayList<>();
+            
            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
