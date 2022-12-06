@@ -2,26 +2,19 @@ package cuongnbph22662.poly.duansotaydulich.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
 import cuongnbph22662.poly.duansotaydulich.loaddata.DiaLogThongBao;
-import cuongnbph22662.poly.duansotaydulich.model.NguoiDung;
 
 public class DangNhapActivity extends AppCompatActivity {
     EditText edUsername,edPassword;
-    NguoiDungDAO nguoiDungDAO;
     Button btnLogin;
     String strUser,strPass;
     DiaLogThongBao diaLogThongBao;
@@ -31,13 +24,10 @@ public class DangNhapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_nhap);
         anhXa();
-        nguoiDungDAO = new NguoiDungDAO(getApplicationContext());
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MY_SF",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
         String user = pref.getString("tenDangNhap","");
         String pass = pref.getString("matKhau","");
-        ArrayList<NguoiDung> list = (ArrayList<NguoiDung>) nguoiDungDAO.getAll();
-        Log.i("//++++++", list+"");
         edUsername.setText(user);
         edPassword.setText(pass);
 
@@ -63,19 +53,19 @@ public class DangNhapActivity extends AppCompatActivity {
 
         }
         else {
-            if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
-                diaLogThongBao.dialog("Đăng nhập thành công");
-                luuTaiKhoan(strUser, strPass);
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("tenDangNhap", strUser);
-                intent.putExtra("trangthai", "anhien");
-                startActivity(intent);
-                finish();
-
-            }
-            else {
-                diaLogThongBao.dialog("Tên đăng nhập và mật khẩu không đúng");
-            }
+//            if(nguoiDungDAO.checkLogin(strUser,strPass)>0){
+//                diaLogThongBao.dialog("Đăng nhập thành công");
+//                luuTaiKhoan(strUser, strPass);
+//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//                intent.putExtra("tenDangNhap", strUser);
+//                intent.putExtra("trangthai", "anhien");
+//                startActivity(intent);
+//                finish();
+//
+//            }
+//            else {
+//                diaLogThongBao.dialog("Tên đăng nhập và mật khẩu không đúng");
+//            }
         }
 
     }

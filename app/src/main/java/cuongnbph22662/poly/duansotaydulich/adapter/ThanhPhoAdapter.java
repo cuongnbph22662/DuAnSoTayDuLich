@@ -13,17 +13,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.model.TheLoai;
+import cuongnbph22662.poly.duansotaydulich.model.ThanhPho;
 
 public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhPhoViewHolder>{
     private Context mContext;
-    private List<TheLoai> listTP = new ArrayList<>();
+    private List<ThanhPho> listTP = new ArrayList<>();
 
     public ThanhPhoAdapter(Context mContext) {
         this.mContext = mContext;
     }
 
-    public void setListTP(ArrayList<TheLoai> list){
+    public void setListTP(ArrayList<ThanhPho> list){
         this.listTP = list;
         notifyDataSetChanged();
     }
@@ -38,7 +38,7 @@ public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhP
 
     @Override
     public void onBindViewHolder(@NonNull ThanhPhoViewHolder holder, int position) {
-      TheLoai obj = listTP.get(position);
+      ThanhPho obj = listTP.get(position);
       if(obj == null){
         return;
       }

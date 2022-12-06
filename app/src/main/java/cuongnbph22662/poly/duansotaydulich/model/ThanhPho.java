@@ -1,15 +1,15 @@
 package cuongnbph22662.poly.duansotaydulich.model;
 
-public class TheLoai {
+public class ThanhPho {
     private int maTheLoai;
     private String tenTheLoai;
 
-    public TheLoai(int maTheLoai, String tenTheLoai) {
+    public ThanhPho(int maTheLoai, String tenTheLoai) {
         this.maTheLoai = maTheLoai;
         this.tenTheLoai = tenTheLoai;
     }
 
-    public TheLoai() {
+    public ThanhPho() {
     }
 
     public int getMaTheLoai() {
@@ -30,7 +30,7 @@ public class TheLoai {
 
     @Override
     public String toString() {
-        return "TheLoai{" +
+        return "ThanhPho{" +
                 "maTheLoai=" + maTheLoai +
                 ", tenTheLoai='" + tenTheLoai + '\'' +
                 '}';

@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DuAnSoTayDuLich"
         tools:targetApi="31">
+
         <activity
             android:name=".activity.NhanTinActivity"
             android:exported="false" />

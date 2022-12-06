@@ -1,33 +1,27 @@
     package cuongnbph22662.poly.duansotaydulich.activity;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+    import android.content.SharedPreferences;
+    import android.os.Bundle;
+    import android.view.View;
+    import android.widget.Button;
+    import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+    import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.textfield.TextInputEditText;
+    import com.google.android.material.textfield.TextInputEditText;
 
-import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
-import cuongnbph22662.poly.duansotaydulich.model.NguoiDung;
+    import cuongnbph22662.poly.duansotaydulich.R;
 
-    public class DoiMatKhauActivity extends AppCompatActivity {
+public class DoiMatKhauActivity extends AppCompatActivity {
+
     TextInputEditText edPassOld,edPass,edRePass;
     Button btnSave;
-    NguoiDungDAO nguoiDungDAO;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doi_mk);
         edPassOld = findViewById(R.id.ed_MKCu);
         edPass = findViewById(R.id.ed_MKMoi);
-        nguoiDungDAO = new NguoiDungDAO(getApplicationContext());
         edRePass = findViewById(R.id.ed_XacNhanMKMoi);
         btnSave = findViewById(R.id.btnSave);
         btnSave.setOnClickListener(new View.OnClickListener() {
@@ -36,19 +30,19 @@ import cuongnbph22662.poly.duansotaydulich.model.NguoiDung;
                 SharedPreferences preferences = getSharedPreferences("USER_FILE",MODE_PRIVATE);
                 String user = preferences.getString("taiKhoan","");
 
-                if (validate()>0){
-                    NguoiDung nguoiDung = nguoiDungDAO.getID(user);
-                    nguoiDung.setMatKhau(edPass.getText().toString());
-                    if (nguoiDungDAO.update(nguoiDung)>0){
-                        Toast.makeText(getApplicationContext(),"Thay đôie mật khẩu thành công",Toast.LENGTH_SHORT).show();
-                        edPassOld.setText("");
-                        edPass.setText("");
-                        edRePass.setText("");
-                    }
-                    else{
-                        Toast.makeText(getApplicationContext(),"Thay đôie mật khẩu không thành công",Toast.LENGTH_SHORT).show();
-                    }
-                }
+//                if (validate()>0){
+//                    NguoiDung nguoiDung = nguoiDungDAO.getID(user);
+//                    nguoiDung.setMatKhau(edPass.getText().toString());
+//                    if (nguoiDungDAO.update(nguoiDung)>0){
+//                        Toast.makeText(getApplicationContext(),"Thay đôie mật khẩu thành công",Toast.LENGTH_SHORT).show();
+//                        edPassOld.setText("");
+//                        edPass.setText("");
+//                        edRePass.setText("");
+//                    }
+//                    else{
+//                        Toast.makeText(getApplicationContext(),"Thay đôie mật khẩu không thành công",Toast.LENGTH_SHORT).show();
+//                    }
+//                }
             }
         });
 
