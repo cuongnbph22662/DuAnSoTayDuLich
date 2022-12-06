@@ -78,7 +78,7 @@ public class TimKiemFragment extends Fragment {
 
     private List<PhieuDuLich> getListUser() {
         List<PhieuDuLich> list = new ArrayList<>();
-            
+
            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
