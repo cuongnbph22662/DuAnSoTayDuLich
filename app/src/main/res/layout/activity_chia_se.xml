@@ -6,47 +6,67 @@
     android:layout_height="match_parent"
     android:background="@color/maunen"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".activity.ChiaSeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Travenus"
-            android:textColor="@color/white"
-            android:textSize="40dp" />
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/img_trove_chiase"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_tro_ve_trai" />
+
+            <TextView
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Travenus"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chia sẻ khoảnh khắc của bạn"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/anh_chiase"/>
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_image" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiêu đề" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnChiaSe"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_btn_dangnhap"
+            android:elevation="3dp"
+            android:text="Chia sẻ với mọi người"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chia sẻ khoảnh khắc của bạn"
-        android:textSize="30dp"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:layout_margin="10dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/anh_chiase"/>
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icon_image"
-        android:layout_margin="10dp"/>
-
-    <EditText
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Tiêu đề" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#C9AE82"
-        android:text="Đăng tin"
-        android:layout_margin="20dp"/>
 </LinearLayout>

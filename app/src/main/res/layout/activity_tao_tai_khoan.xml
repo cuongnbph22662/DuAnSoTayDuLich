@@ -1,80 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/maunen"
+    android:padding="40dp"
     tools:context=".activity.TaoTaiKhoanActivity">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0">
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <TextView
+            android:layout_gravity="center"
             android:id="@+id/tvDangKi"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/strDangKi"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.05" />
-
+            android:layout_marginBottom="50dp"/>
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout1"
+            android:layout_marginBottom="20dp"
             style="@style/TextInputLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/strTenDangNhap"
-            app:endIconMode="clear_text"
-            app:errorEnabled="true"
-            app:helperTextEnabled="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDangKi"
-            app:layout_constraintVertical_bias="0.01"
-            app:layout_constraintWidth_percent="0.8">
-
+            android:hint="@string/strTenDangNhap">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edTenDangNhap"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:drawablePadding="8dp"
-                android:textColor="@color/white"
-                android:textSize="14sp" />
-
+                android:textColor="@color/black"
+                android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
             style="@style/TextInputLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/strHoTen"
-            app:endIconMode="clear_text"
-            app:errorEnabled="true"
-            app:helperTextEnabled="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintWidth_percent="0.8">
+            android:hint="@string/strHoTen">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edHoTen"
@@ -83,29 +50,34 @@
                 android:drawablePadding="8dp"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             style="@style/TextInputLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giới Tính">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/strNamSinh"
             app:counterEnabled="true"
             app:counterMaxLength="4"
             app:endIconMode="clear_text"
             app:errorEnabled="true"
-            app:helperTextEnabled="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintWidth_percent="0.8">
-
+            app:helperTextEnabled="true">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edNamSinh"
                 android:layout_width="match_parent"
@@ -114,28 +86,20 @@
                 android:inputType="number"
                 android:maxLength="4"
                 android:maxLines="1"
-                android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout4"
             style="@style/TextInputLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/strSodienThoai"
             app:counterEnabled="true"
             app:counterMaxLength="10"
             app:endIconMode="clear_text"
             app:errorEnabled="true"
-            app:helperTextEnabled="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintWidth_percent="0.8">
+            app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edSoDienThoai"
@@ -145,26 +109,18 @@
                 android:inputType="number"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout5"
             style="@style/TextInputLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/strDiaChi"
             app:endIconMode="clear_text"
             app:errorEnabled="true"
-            app:helperTextEnabled="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintWidth_percent="0.8">
+            app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edDiaChi"
@@ -173,27 +129,19 @@
                 android:drawablePadding="8dp"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout6"
             style="@style/TextInputLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/strMatKhau"
             app:counterEnabled="true"
             app:endIconMode="password_toggle"
             app:errorEnabled="true"
-            app:helperTextEnabled="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintWidth_percent="0.8">
+            app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edMatKhau"
@@ -202,14 +150,13 @@
                 android:drawablePadding="8dp"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
         <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="50dp"
             android:id="@+id/btnDangKi"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:background="@drawable/background_btn_dangnhap"
@@ -217,14 +164,6 @@
             android:text="@string/strDangKi"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.05"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
-            app:layout_constraintVertical_bias="0.4"
-            app:layout_constraintWidth_percent="0.7" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

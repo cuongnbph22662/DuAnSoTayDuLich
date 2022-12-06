@@ -27,7 +27,7 @@ public class ManChaoActivity extends AppCompatActivity {
         manChao = findViewById(R.id.id_manChao);
         // set lần đầu vào app
         if(!DataLocalManager.getLanDauVaoApp()){
-           Animation animation = AnimationUtils.loadAnimation(ManChaoActivity.this,R.anim.fade);
+            Animation animation = AnimationUtils.loadAnimation(ManChaoActivity.this,R.anim.fade);
             btngetstart.startAnimation(animation);
             btngetstart.setOnClickListener(new View.OnClickListener() {
                 @Override

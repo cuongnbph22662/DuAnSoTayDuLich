@@ -1,5 +1,6 @@
 package cuongnbph22662.poly.duansotaydulich.activity;
 
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -26,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements DiaLogThongBao {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        khoiDongManChao();
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
         replaceFrament(new HomeFragment());
@@ -48,11 +48,10 @@ public class MainActivity extends AppCompatActivity implements DiaLogThongBao {
             return true;
         });
 
+        Intent intent = getIntent();
+        String taiKhoan = intent.getStringExtra("taikhoan");
     }
 
-    private void khoiDongManChao() {
-
-    }
 
 
     private  void  replaceFrament(Fragment fragment){
@@ -105,5 +104,10 @@ public class MainActivity extends AppCompatActivity implements DiaLogThongBao {
         btnThongBao.setOnClickListener(view1 -> {
             alertDialog.dismiss();
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 }

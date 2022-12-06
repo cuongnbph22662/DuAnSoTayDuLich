@@ -1,12 +1,12 @@
 package cuongnbph22662.poly.duansotaydulich.database;
 
 public class Data_SQLite {
-    public static final String INSERT_NGUOI_DUNG= "INSERT INTO NguoiDung(taiKhoan,hoTen,matKhau,soDienThoai,namSinh,diaChi) VALUES " +
-            "('cuongnb1','Nguyễn Bá Cường','1','0339760892',2003,'Ha Noi')," +
-            "('thuynt2','Nguyễn Thanh Thúy','2','0339760893',2004,'Mi Dinh')," +
-            "('hoangttm3','Tạ Trần Minh Hoàng','3','0339760894',2005,'Moc Chau')," +
-            "('hungvh4','Vũ Hải Hưng','4','0339760895',2006,'Ha Nam')," +
-            "('thanhnh5','Nguyễn Hiếu Thành','5','0339760896',2006,'Thai Nguyen')";
+    public static final String INSERT_NGUOI_DUNG= "INSERT INTO NguoiDung(taiKhoan,hoTen,matKhau,soDienThoai,namSinh,diaChi,gioiTinh) VALUES " +
+            "('cuongnb','Nguyễn Bá Cường','1','0339760892',2003,'Ha Noi','Nam')," +
+            "('thuynt','Nguyễn Thanh Thúy','2','0339760893',2004,'Mi Dinh','Nữ')," +
+            "('hoangttm','Tạ Trần Minh Hoàng','3','0339760894',2005,'Moc Chau','Nam')," +
+            "('hungvh','Vũ Hải Hưng','4','0339760895',2006,'Ha Nam','Nam')," +
+            "('thanhnh','Nguyễn Hiếu Thành','5','0339760896',2006,'Thai Nguyen','Nam')";
     public static final String INSERT_THANH_PHO = "INSERT INTO ThanhPho(tenThanhPho) VALUES " +
             "('Hà Nội')," +
             "('Hồ Chí Minh')," +

@@ -15,7 +15,8 @@ public class DB_Helper extends SQLiteOpenHelper {
             "matKhau TEXT NOT NULL," +
             "soDienThoai TEXT NOT NULL," +
             "namSinh INTEGER NOT NULL," +
-            "diaChi TEXT NOT NULL)";
+            "diaChi TEXT NOT NULL," +
+            "gioiTinh TEXT NOT NULL)";
     static final String CREATE_TABLE_THANH_PHO = "CREATE TABLE ThanhPho (" +
             "maThanhPho INTEGER PRIMARY KEY AUTOINCREMENT," +
             "tenThanhPho TEXT NOT NULL)";

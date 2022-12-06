@@ -7,17 +7,27 @@ public class NguoiDung {
     private String soDienThoai;
     private int namSinh;
     private String diaChi;
+    private String gioiTinh;
 
     public NguoiDung() {
     }
 
-    public NguoiDung(String taiKhoan, String hoTen, String matKhau, String soDienThoai, int namSinh, String diaChi) {
+    public NguoiDung(String taiKhoan, String hoTen, String matKhau, String soDienThoai, int namSinh, String diaChi, String gioiTinh) {
         this.taiKhoan = taiKhoan;
         this.hoTen = hoTen;
         this.matKhau = matKhau;
         this.soDienThoai = soDienThoai;
         this.namSinh = namSinh;
         this.diaChi = diaChi;
+        this.gioiTinh = gioiTinh;
+    }
+
+    public String getGioiTinh() {
+        return gioiTinh;
+    }
+
+    public void setGioiTinh(String gioiTinh) {
+        this.gioiTinh = gioiTinh;
     }
 
     public String getTaiKhoan() {
@@ -77,6 +87,7 @@ public class NguoiDung {
                 ", soDienThoai='" + soDienThoai + '\'' +
                 ", namSinh=" + namSinh +
                 ", diaChi='" + diaChi + '\'' +
+                ", gioiTinh='" + gioiTinh + '\'' +
                 '}';
     }
 }

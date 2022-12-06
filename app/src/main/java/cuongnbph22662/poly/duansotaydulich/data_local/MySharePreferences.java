@@ -37,14 +37,14 @@ public class MySharePreferences {
     }
 
     // lấy dữ liệu kiểu string
-    public void putStringValue(String key, String value){
+    public void putUser(String key, String value){
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(MY_SF, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(key, value);
         editor.apply();
     }
 
-    public String getStringValue(String key){
+    public String getUser(String key){
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(MY_SF, Context.MODE_PRIVATE);
         return sharedPreferences.getString(key, "");
     }

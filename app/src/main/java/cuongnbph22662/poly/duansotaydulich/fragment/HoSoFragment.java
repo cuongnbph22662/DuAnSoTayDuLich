@@ -1,11 +1,9 @@
 package cuongnbph22662.poly.duansotaydulich.fragment;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import cuongnbph22662.poly.duansotaydulich.R;
@@ -26,8 +25,11 @@ import cuongnbph22662.poly.duansotaydulich.activity.LienHeActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.ManChaoActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
+import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
+import cuongnbph22662.poly.duansotaydulich.data_local.DataLocalManager;
 
 public class HoSoFragment extends Fragment {
+    NguoiDungDAO nguoiDungDAO;
     Button btnDangNhap;
     TextView tvTaoTaiKhoan;
     LinearLayout hoSoCaNhan, hoSoCuaBan,
@@ -101,19 +103,16 @@ public class HoSoFragment extends Fragment {
         DangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ManChaoActivity.class));
-                hoSoCaNhan.setVisibility(View.VISIBLE);
-                hoSoCuaBan.setVisibility(View.GONE);
-                clearLuuDangNhap();
+                dialogDangXuat();
             }
         });
-        // chưa làm
         CongDong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), CongDongActivity.class));
             }
         });
+        // chưa làm
         DieuKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -124,19 +123,37 @@ public class HoSoFragment extends Fragment {
             public void onClick(View view) {
             }
         });
-        Intent intent = getActivity().getIntent();
-        Log.i("//=======", intent+"");
-        String trangthai = intent.getStringExtra("trangthai");
-        String kt = "anhien";
-        if (kt.equals(trangthai)){
+
+
+        if(DataLocalManager.layTrangThaiDangNhap() == true){
             hoSoCaNhan.setVisibility(View.GONE);
             hoSoCuaBan.setVisibility(View.VISIBLE);
         }
-        SharedPreferences sharedPreferences2 = getActivity().getSharedPreferences("MY_SF", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences2.edit();
-        editor.putBoolean("luuDangNhap", true);
-        editor.commit();
         return view;
+    }
+
+    private void dialogDangXuat() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_dangxuat, null);
+        builder.setView(view);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        alertDialog.show();
+        // dialog
+        Button btnHuy = view.findViewById(R.id.btnHuyDX);
+        Button btnOK = view.findViewById(R.id.btnDangXuat);
+
+        btnHuy.setOnClickListener(view1 -> {
+            alertDialog.dismiss();
+        });
+
+        btnOK.setOnClickListener(view1 -> {
+            startActivity(new Intent(getActivity(), ManChaoActivity.class));
+            hoSoCaNhan.setVisibility(View.VISIBLE);
+            hoSoCuaBan.setVisibility(View.GONE);
+            DataLocalManager.setTrangThaiDangNhap(false);
+            alertDialog.dismiss();
+        });
     }
 
     private void anhXa(View view) {
@@ -156,14 +173,6 @@ public class HoSoFragment extends Fragment {
         HoTro = view.findViewById(R.id.id_PhanHoi);
         DieuKhoan = view.findViewById(R.id.id_DieuKhoan);
         QuyenRiengTu = view.findViewById(R.id.id_QuyenRiengTu);
-    }
-
-    private void clearLuuDangNhap() {
-        SharedPreferences sharedPreferences2 = getActivity().getSharedPreferences("MY_SF", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences2.edit();
-        editor.putBoolean("luuDangNhap", false);
-        editor.apply();
-        editor.commit();
     }
 
     @Override
