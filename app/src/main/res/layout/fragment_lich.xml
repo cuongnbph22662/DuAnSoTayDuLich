@@ -708,7 +708,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Đảo Cát Bà"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -717,22 +717,29 @@
             </LinearLayout>
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="250dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/img_lich_dao_cat_ba"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Quần đảo Cát Bà (Hải Phòng) gồm 367 đảo lớn nhỏ, trong đó đảo Cát Bà (hay còn gọi là đảo Ngọc) là hòn đảo được thiên nhiên ưu đãi, có nhiều tiềm năng để phát triển du lịch. Tuy được biết đến từ lâu nhưng Cát Bà vẫn giữ được nét tự nhiên nhờ sự biệt lập của mình. "
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Du lịch Cát Bà Hải Phòng rất thích hợp cho những chuyến nghỉ hè hay những kỳ nghỉ cuối tuần cùng bạn bè, gia đình."
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Mùa hè chính là thời điểm lý tưởng nhất để du lịch Cát Bà Hải Phòng. Từ tháng 4 đến tháng 10, khí hậu Cát Bà tương đối mát mẻ rất thích hợp để nghỉ dưỡng, tắm biển. Nhất là đến tháng 5,6,7, Cát Bà chật kín du khách."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -749,7 +756,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Đảo Cô Tô"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -760,20 +767,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/img_lich_dao_co_to"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Cô Tô là huyện đảo ở phía đông tỉnh Quảng Ninh, cách đất liền khoảng 80 km. Cô Tô có gần 50 đảo nhỏ, trong đó khách du lịch chủ yếu khám phá cụm đảo Cô Tô, Cô Tô Con và Thanh Lân."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Thời điểm du lịch Cô Tô đẹp nhất là mùa hè và thu. Tháng 4 và tháng 5 lý tưởng nhất vì trời không có bão, không mưa, nắng chưa nóng."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -790,7 +797,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Bãi biển Sầm Sơm- Thanh Hóa"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -801,20 +808,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/img_lich_bien_sam_son"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Biển Sầm Sơn với bãi cát vàng thoai thoải, nước trong xanh và nồng độ muối vừa phải rất phù hợp với sức khoẻ con người. Đây là nơi rất lý tưởng để thực hiện các tour du lịch ngắn ngày trong dịp hè."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Vì là miền biển và đa số du khách đến đây đều có nhu cầu tắm biển là chính nên thời gian Sầm Sơn nhộn nhịp khách du lịch gần xa nhất là tầm từ tháng 4 trở đi đến tháng 8. Thời gian này đến Sầm Sơn, bạn không những được đắm mình trong làn nước xanh mát mà còn được tận hưởng gió trời cực dễ chịu tại nơi đây. Vui chơi buổi tối, tham quan cảnh đẹp tại các địa điểm du lịch Sầm Sơn nổi tiếng cũng là những trải nghiệm hết sức thú vị mà du khách không nên bỏ lỡ khi đến đây vào mùa hè."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -831,7 +838,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Vịnh Hạ Long"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -842,20 +849,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/img_lich_vinh_ha_long"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Hạ Long là điểm du lịch thú vị cho những kì nghỉ gia đình, cho những ai muốn trải nghiệm những điều tuyệt vời tại vùng biển Quảng Ninh."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Hạ Long luôn xứng danh là di sản thiên nhiên thế giới với nhiều địa danh đẹp tự nhiên với những nét đẹp khó quên tại đây. Không có lí do gì bỏ qua địa điểm du lịch Hạ Long cho những kì nghỉ tháng 4 của bạn. Tháng 4 đã bắt đầu có những khi trời nắng nóng, bạn chỉ muốn chạy trốn tìm đến nơi mát mẻ, dễ chịu, vậy thì Hạ Long là điểm đến lí tưởng. Tháng 4 ở Hạ Long cũng có những tia nắng bao phủ nhưng thời tiết vẫn rất mát vì gần biển, thiên nhiên ưu đãi cho nơi đây bầu không khí biển rất thú vị. Bạn sẽ cảm thấy thoải mái hơn rất nhiều khi đến Hạ Long trong những ngày tháng 4 nắng nóng."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -872,7 +879,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Biển Nha Trang - Khánh Hòa"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -883,20 +890,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/img_lich_nha_trang"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="      Nha Trang được đánh giá như một thành phố biển đẹp nhất Việt Nam hiện nay - được ví như một nàng công chúa xinh đẹp với biển xanh cát trắng, phong cảnh sơn thủy hữu tình, nhiều danh lam thắng cảnh và các khu di tích đẹp tuyệt vời. Mỗi khi đêm về, khoác lên mình bộ cánh ánh sáng, nàng công chúa Nha Trang càng lộng lẫy hơn rất nhiều."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Đến đây bạn sẽ được cảm nhận tiết trời ấm áp, không khí chan hòa, nắng hòa chung với gió biển thích hợp cho nhiều hoạt động vui chơi, hòa vào làn nước trong xanh mát rượi, quẩy hết mình ở thiên đường giải trí lớn bậc nhất cả nước."
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Khi tới thành phố này đừng quên ghé thưởng thức những món ăn ngon như: Nem nướng, thịt bò nướng, bún chả cả - bún sứa, bún bò, hải sản làng chài, bánh căn, phở..."
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
         <LinearLayout
@@ -936,7 +950,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Phố Hàng Mã"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -947,20 +961,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/pho_hang_ma"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Vào khoảng thời gian gần Trung thu, phố Hàng Mã được gọi với cái tên khác là Phố đèn lồng. Đặc biệt là mỗi khi thành phố lên đèn, mọi thứ lại trở nên lung linh huyền ảo hơn. Các bạn trẻ đến đây sẽ được chiêm ngưỡng những món đồ chơi quen thuộc trong ký ức như đèn lồng, mặt nạ, đèn ông sao, đèn kéo quân…"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Có thể nói đây là địa điểm chơi trung thu tại Hà Nội mang tính biểu tượng. Đừng quên dành thời gian để chụp vài bức hình “sống ảo” cực chất tại đây nữa nhé. Hơn nữa khi cảm thấy thích món đồ chơi độc đáo, thú vị nào thì chúng ta cũng có thể mua về chơi Trung thu cho đúng điệu. Nếu bạn có nhu cầu ở lại qua đêm thì có thể tham khảo một số khách sạn quanh khu vực phố cổ."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -977,7 +991,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Văn miếu Quốc Tử Giám"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -988,20 +1002,55 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/van_mieu_quoc_tu_giam"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Bạn đang tìm kiếm một địa điểm chơi trung thu tại Hà Nội lý tưởng, chắc hẳn Văn miếu Quốc Tử Giám sẽ phù hợp với nguyện vọng của bạn. Các năm trước, nơi đây đã diễn ra loạt sự kiện “Thu vọng nguyệt” thu hút đông đảo khách du lịch trong nước và cả nước ngoài đến vui chơi, hòa cùng không khí lễ hội truyền thống. Ai đã đến đây cũng sẽ được ngắm nhìn, trải nghiệm không khí trung thu có sự hòa quyện giữa xưa và nay, giữa truyền thống và hiện đại. Không gian đầy màu sắc rộng mở đón chào mọi người đến check-in thả ga."
+                android:layout_marginTop="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phố lồng đèn Quận 5 - Lương Nhữ Học"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pho_long_den_luong_nhu_hoc"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="      Phố lồng đèn Quận 5 được xem là nơi bày bán lồng đèn lớn nhất Sài Gòn bởi phần lớn cộng đồng người Hoa tại thành phố Hồ Chí Minh đều sinh sống tại đây. Và người Hoa có tập tục ăn lễ Trung thu rất lớn. Thế nên đến đây bạn sẽ được hòa mình vào bầu không khí nô nức không thua gì ngày Tết Việt truyền thống."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Đến hẹn lại lên, cả con đường Lương Nhữ Học đã bắt đầu giăng đầy lồng đèn rực rỡ với rất nhiều mẫu mã, kiểu dáng, màu sắc. Vào rằm tháng 8 hàng năm, khu phố này đón một lượng lớn các bạn trẻ đổ xô về chụp hình sống ảo bên những chiếc đèn lồng xinh lung linh. Vì thế, nếu bạn có ý định “thả dáng” chụp ảnh thì nhớ lựa chọn thời điểm thích hợp nhé."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1018,7 +1067,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Cầu Ánh Sao - Hồ Bán Nguyệt"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1029,20 +1078,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/cau_anh_sao"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Nếu bạn đang đau đầu không biết Trung thu đi đâu chơi ở TPHCM để vừa đẹp mà đỡ ồn ào đông đúc thì cầu Ánh Sao là một lựa chọn đáng xem xét. Tọa lạc tại quận 7 yên tĩnh, cầu Ánh Sao có không gian thoáng đãng, cảnh đèn đêm ánh lên lòng hồ Bán Nguyệt rất lãng mạn. Vì lẽ đó mà nơi đây được xem là một “thánh địa” cho nhiều cặp đôi và gia đình đến ngắm cảnh, đi dạo."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Đặc biệt, vào đêm rằm tháng 8, đứng trên cầu bạn có thể chiêm ngưỡng một vầng trăng tròn sáng vằng vặc treo trên cao, hòa trong cơn gió mát lành bên mặt hồ và ánh đèn nhiều màu sắc. "
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1059,7 +1108,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Takashimaya - Saigon Center"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1070,61 +1119,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/saigon_center"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Trung tâm thương mại Takashimaya - Saigon Center là một trong những địa điểm đi chơi trung thu TPHCM “cực hot” trong những năm gần đây. Nơi đây ghi điểm trước tiên là nhờ sở hữu vị trí trung tâm thành phố, tiếp đến là ở sự đầu tư trong trang trí."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
-                android:layout_marginTop="10dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_chamnho"
-                    android:layout_marginLeft="35dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:text=""
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:text=""
+                android:text="     Cả trung tâm từ trước sảnh cho đến bên trong đều ngập tràn không khí Trung thu với đèn lồng, hoa sen, những con thú bông đáng yêu… Thế nên, nơi đây trở thành một trong những điểm sống ảo và check-in được dân Sài thành ưa chuộng nhất mỗi dịp Trung thu. "
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
         <LinearLayout
@@ -1164,7 +1172,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Lăng Bác"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1175,20 +1183,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/anh_lang_bac"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Dịp Quốc khánh 2/9 là lúc nhà nhà, người người lên kế hoạch đi chơi, du lịch khắp mọi nơi. Bạn có thể lên rừng, xuống biển, thậm chí sang nước ngoài. Tuy nhiên, cũng có rất nhiều người lựa chọn thủ đô Hà Nội và viếng thăm lăng Bác để tưởng nhớ về vị lãnh tụ vĩ đại của dân tộc Việt Nam."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Rất đông du khách trong và ngoài nước đến viếng thăm lăng Bác trong dịp Quốc khánh 2/9"
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1205,7 +1213,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Tam Đảo - Vĩnh Phúc"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1222,14 +1230,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Tam Đảo là 1 địa danh thuộc tỉnh  Vĩnh Phúc .Khu du lịch Tam đảo cách Hà Nội khoảng 80 km, bạn sẽ mất tầm 2h để đi từ thủ đô lên với Tam Đảo.Thời tiết tam đảo như ở sapa hay đà lạt vậy. Bạn có thể cảm nhận rõ 4 mùa trong ngày.  Sáng thức dậy trời se se lạnh của tiết trời mùa Xuân, đến tầm trưa là có chút nắng của mùa Hạ, sang buổi chiều khi ánh nắng xuống núi thì lại có chút cảm giác của mùa Thu và đến tối những cơn gió thổi mang không khí mùa Đông Bắc ùa về. Chính vì thời tiết Tam Đảo thay đổi liên tục trong 1 ngày nên các bạn chú ý mang theo áo khoác mỏng đi nhé."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Địa điểm check in Tam Đảo đang hot : Cổng Trời Tam Đảo – Quán Gió – Rock Cafe – Quảng Trường Trung Tâm – Nhà Thờ Đá – Cầu Mây – Cầu Mới – Đền Bà Chúa Thượng Ngàn – Tháp Truyền Hình – Thác Bạc."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1246,7 +1254,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Vườn quốc gia Ba Vì"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1257,20 +1265,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/vuon_quoc_gia_ba_vi"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Vườn quốc gia Ba Vì bao gồm ba đỉnh núi cao nhất dãy Ba Vì: Đỉnh Vua, đỉnh Tản Viên và đỉnh Ngọc Hoa. Có dịp đến đây, bạn không chỉ được tìm hiểu về những câu chuyện lịch sử huyền thoại từ thời lập quốc mà còn được khám phá một thế giới của hàng ngàn động thực vật muôn điều kỳ thú."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Ngoài ra Vườn Quốc gia Ba Vì rất phù hợp cho các hoạt động cắm trại, team building. Các bạn có thể tự chuẩn bị lều và dụng cụ cắm trại ở nhà hoặc đến đây rồi thuê. Riêng đồ ăn và nước uống các bạn cần chủ động chuẩn bị ở nhà vì rất khó có thể mua thêm khi đã lên tới các địa điểm cắm trại."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1287,7 +1295,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Chợ dưới lòng đất Central Market"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1298,20 +1306,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/cho_am_thuc"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Chợ Central Market là một trong những điểm đi chơi lễ 2/9 tại Sài Gòn đáng lưu vào danh sách nhất. Với mô hình kết hợp chợ truyền thống cùng chợ ẩm thực, đây sẽ là điểm đến thỏa lòng các “tâm hồn ăn uống”. Với khu chợ ẩm thực dưới lòng đất mang tên Asiana Food Town. "
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Với hơn 100 cửa hàng bày bán đủ các món ăn đường phố đặc trưng của châu Á, Asiana Food Town sẽ khiến bạn lóa mắt và thỏa mãn cả thân lẫn tâm. Từ các món ăn truyền thống Việt Nam cho đến Lào, Campuchia, Nhật Bản, Ấn Độ, Singapore,... Tất cả hội tụ tạo ra một không gian bắt mắt cùng mùi thơm hấp dẫn bao tử của các thực khách. Bên cạnh đó, nếu bạn thích mua sắm thì cũng có cả khu Taka Plaza với hơn 400 gian hàng lớn nhỏ sẽ đáp ứng bạn ngay nhé! Nếu bạn còn đang phân vân chưa biết 2/9 đi đâu chơi ở TPHCM thì hãy đến ngay đây nhé."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1328,7 +1336,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Thác Giang Điền - Đồng Nai"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1339,20 +1347,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/thac_giang_dien"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Nếu là một tâm hồn yêu thiên nhiên thì thác Giang Điền là một địa danh rất lý tưởng cho chuyến đi chơi xả stress dịp lễ 2/9 này. Với dòng nước mát lạnh cùng những con thác hùng vĩ, thác Giang Điền dường như mang cả hồn núi Tây Nguyên về đây."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Bên cạnh việc ngâm chân hay nhấn mình vào trong dòng nước mát mẻ, bạn cũng có thể đi tham quan, sống ảo tại nhiều điểm hấp dẫn khác. Chẳng hạn như: đường Hoàng Hoa, khu vườn mùa đông, hồ Tuyền Lâm, công viên tình yêu, nhà Rông…"
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
         <LinearLayout
@@ -1392,7 +1400,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Nhà Thờ Lớn Hà Nội"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1403,20 +1411,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/anh_nha_tho_lon"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Nhà thờ Lớn Hà Nội tọa lạc tại số 40 phố Nhà Chung, là nhà thờ chính tòa thuộc Tổng giáo phận Hà Nội. Được xây dựng từ năm 1884 đến 1888, nơi đây không chỉ là nơi diễn ra hoạt động tín ngưỡng của giáo dân mà còn là điểm tụ tập quen thuộc của giới trẻ thủ đô vào dịp Noel hay cuối năm."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Vào những dịp như Noel, nhà thờ Lớn thường được trang hoàng lộng lẫy để chào đón ngày lễ trọng đại của người Công giáo. Vì là điểm tham quan nổi tiếng nên thường rất đông vào đúng dịp lễ. Dù là người theo đạo hay không theo đạo cũng đến đây để tham gia nhiều hoạt động thú vị như: biểu diễn văn nghệ, hát Thánh ca…."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1433,7 +1441,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Nhà thờ Hàm Long"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1444,20 +1452,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/nha_tho_ham_long"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Bên cạnh nhà thờ Lớn, nhà thờ Hàm Long cũng là 1 trong những địa điểm đi chơi Noel ở Hà Nội được nhiều người yêu thích. Nhà thờ thuộc Giáo hội Công giáo Rôma, do kiến trúc sư người Việt là Doctor Thân, du học ở Pháp về thiết kế và hoàn thành vào năm 1934."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Vào mỗi dịp Giáng sinh, hai mặt tiền nhà thờ nằm trên các tuyến phố Hàm Long và Ngô Thì Nhậm lại lung linh, rực rỡ trong ánh đèn thu hút đông đảo bạn trẻ đến check-in, tham gia nhiều hoạt động sôi nổi."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1474,7 +1482,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Nhà thờ Đức Bà"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1485,20 +1493,55 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/nha_tho_duc_ba"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Một địa điểm đã quá quen thuộc với người dân Sài Gòn mà bạn nhất định phải tới trong dịp Noel này đó chính là nhà thờ Đức Bà. Nằm ở vị trí vô cùng thuận lợi khi nằm gay tại khu vực trung tâm của thành phố với hàng loạt địa điểm vui chơi hấp dẫ xung quanh. Mỗi dịp Giáng sinh đến là có hàng ngàn người tới tụ tập tại Nhà thờ Đức Bà để chiêm ngưỡng và vui chơi."
+                android:layout_marginTop="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chamnho"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tòa nhà Bitexco"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/toa_nha_bitexco"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="     Tòa nhà Bitexco là một trong những công trình nổi bật nhất tại Sài Gòn hiện nay. Và đây cũng là địa điểm đến hấp dẫn và mới lạ mà rất đông các bạn trẻ Sài Gòn nô nức rủ nhau tới vào ngày lễ giáng sinh. Khi tới đây bạn có thể tận mắt chiêm ngưỡng không khí náo nhiệt và đầy sắc màu của ngày lễ Noel khi nhìn từ trên cao."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Tòa nhà có một vị trí vô cùng thuận lợi khi nằm ngay bên cạnh khu phố đi bộ nên bạn có thể thỏa sức ngắm nhìn khung cảnh lung linh đầy màu sắc từ ánh đèn từ tầng cao 49 qua ống nhòm. Một cảm giác vô cùng thú vị và mới lạ phải không nào."
                 android:layout_marginTop="10dp"/>
 
             <LinearLayout
@@ -1515,7 +1558,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Các trung tâm thương mại lớn trên cả nước"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -1526,61 +1569,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/trung_tam_thuong_mai"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
+                android:text="     Nhắc đến các các địa điểm chơi Noel ở Việt Nam, sẽ thật thiếu sót nếu không nhắc đến các khu đô thị và trung tâm thương mại (TTTM) lớn. Cứ khoảng nửa tháng trước Giáng Sinh, các TTTM đã bắt đầu “tô điểm” cho cảnh sắc cả nước bằng những cây thông, mô hình ông già Noel khổng lồ. Ngoài đi dạo, chụp ảnh check in du khách có thể kết hợp mua sắm, ăn uống bên trong và tận hưởng những chương trình khuyến mại lớn cuối năm."
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="@color/black"
-                android:text=""
-                android:layout_marginTop="10dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_chamnho"
-                    android:layout_marginLeft="35dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:text=""
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:text=""
+                android:text="     Các TTTM, khu đô thị thu hút nhiều lượt khách tham quan trong dịp này là: Aeon Mall, Tràng Tiền Plaza, Royal City, Times City, Vincom Bà Triệu, Vincom Nguyễn Chí Thanh, Aeon Mall Tân Phú Celadon, Crescent Mall, Vincom Center Đồng Khởi, SC VivoCity, Parkson,...."
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
     </LinearLayout>
