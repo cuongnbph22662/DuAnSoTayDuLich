@@ -13,44 +13,49 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.database.DB_Helper;
-import cuongnbph22662.poly.duansotaydulich.model.PhieuDLChiTiet;
+import cuongnbph22662.poly.duansotaydulich.model.ChuyenDi;
 
-public class PhieuDLChiTietDAO {
+public class ChuyenDiDAO {
 
     private SQLiteDatabase db;
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-    public PhieuDLChiTietDAO(Context context){
+    public ChuyenDiDAO(Context context){
         DB_Helper dbHelper = new DB_Helper(context);
         db = dbHelper.getWritableDatabase();
     }
 
-    public long insert(PhieuDLChiTiet obj){
+    public long insert(ChuyenDi obj){
         ContentValues values = new ContentValues();
         values.put("taiKhoan",obj.getTaiKhoan());
-        values.put("maPhieu",obj.getMaPhieu());
+        values.put("maDiaDiem",obj.getMaDiaDiem());
         values.put("tienThue",obj.getTienThue());
         values.put("SoLuongNguoi",obj.getSoLuongNguoi());
         values.put("NgayDat",sdf.format(obj.getNgayDat()));
-        return db.insert("PhieuDLChiTiet",null,values);
+        return db.insert("ChuyenDi",null,values);
     }
-    public int update (PhieuDLChiTiet obj){
+    public int update (ChuyenDi obj){
         ContentValues values = new ContentValues();
-        return db.update("PhieuDLChiTiet",values,"maPhieuChiTiet=?",new String[]{String.valueOf(obj.getMaPhieuCT())});
+        values.put("taiKhoan",obj.getTaiKhoan());
+        values.put("maDiaDiem",obj.getMaDiaDiem());
+        values.put("tienThue",obj.getTienThue());
+        values.put("SoLuongNguoi",obj.getSoLuongNguoi());
+        values.put("NgayDat",sdf.format(obj.getNgayDat()));
+        return db.update("ChuyenDi",values,"maChuyenDi=?",new String[]{String.valueOf(obj.getMaChuyenDi())});
     }
     public int delete(String id){
-        return db.delete("PhieuDLChiTiet","maPhieuChiTiet=?", new String[]{id});
+        return db.delete("ChuyenDi","maChuyenDi=?", new String[]{id});
     }
 
 
     @SuppressLint("Range")
-    public List<PhieuDLChiTiet> getData(String sql, String...selectionArgs){
-        List<PhieuDLChiTiet> list = new ArrayList<PhieuDLChiTiet>();
+    public List<ChuyenDi> getData(String sql, String...selectionArgs){
+        List<ChuyenDi> list = new ArrayList<ChuyenDi>();
         Cursor c = db.rawQuery(sql,selectionArgs);
         while (c.moveToNext()){
-            PhieuDLChiTiet obj = new PhieuDLChiTiet();
-            obj.setMaPhieu(Integer.parseInt(c.getString(c.getColumnIndex("maPhieuChiTiet"))));
+            ChuyenDi obj = new ChuyenDi();
+            obj.setMaChuyenDi(Integer.parseInt(c.getString(c.getColumnIndex("maChuyenDi"))));
             obj.setTaiKhoan(c.getString(c.getColumnIndex("taiKhoan")));
-            obj.setMaPhieu(Integer.parseInt(c.getString(c.getColumnIndex("maPhieu"))));
+            obj.setMaDiaDiem(Integer.parseInt(c.getString(c.getColumnIndex("maDiaDiem"))));
             obj.setTienThue(Integer.parseInt(c.getString(c.getColumnIndex("tienThue"))));
             obj.setSoLuongNguoi(Integer.parseInt(c.getString(c.getColumnIndex("SoLuongNguoi"))));
             try {
@@ -63,13 +68,13 @@ public class PhieuDLChiTietDAO {
         }
         return list;
     }
-    public List<PhieuDLChiTiet> getAll(){
-        String sql = "SELECT * FROM PhieuDLChiTiet";
+    public List<ChuyenDi> getAll(){
+        String sql = "SELECT * FROM ChuyenDi";
         return getData(sql);
     }
-    public PhieuDLChiTiet getID(String id){
-        String sql = "SELECT * FROM PhieuDLChiTiet WHERE maPhieuChiTiet=?";
-        List<PhieuDLChiTiet> list = getData(sql,id);
+    public ChuyenDi getID(String id){
+        String sql = "SELECT * FROM ChuyenDi WHERE maChuyenDi=?";
+        List<ChuyenDi> list = getData(sql,id);
         return list.get(0);
     }
 }

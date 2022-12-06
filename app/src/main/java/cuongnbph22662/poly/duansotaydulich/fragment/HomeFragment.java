@@ -1,33 +1,32 @@
 package cuongnbph22662.poly.duansotaydulich.fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import cuongnbph22662.poly.duansotaydulich.adapter.ThanhPhoAdapter;
-import cuongnbph22662.poly.duansotaydulich.adapter.SlideShowAdapter;
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.dao.PhieuDuLichDAO;
-import cuongnbph22662.poly.duansotaydulich.dao.TheLoaiDAO;
-import cuongnbph22662.poly.duansotaydulich.model.PhieuDuLich;
-import cuongnbph22662.poly.duansotaydulich.model.TheLoai;
+import cuongnbph22662.poly.duansotaydulich.adapter.SlideShowAdapter;
+import cuongnbph22662.poly.duansotaydulich.adapter.ThanhPhoAdapter;
+import cuongnbph22662.poly.duansotaydulich.dao.DiaDiemDAO;
+import cuongnbph22662.poly.duansotaydulich.dao.ThanhPhoDAO;
+import cuongnbph22662.poly.duansotaydulich.model.DiaDiem;
+import cuongnbph22662.poly.duansotaydulich.model.ThanhPho;
 import cuongnbph22662.poly.duansotaydulich.model.itemdiadiem;
 
 public class HomeFragment extends Fragment {
     private RecyclerView recyclerViewThanhPho ;
-    private ArrayList<TheLoai> listTP = new ArrayList<>() ;
+    private ArrayList<ThanhPho> listTP = new ArrayList<>() ;
     private ThanhPhoAdapter thanhPhoAdapter ;
-    static TheLoaiDAO theLoaiDAO;
+    static ThanhPhoDAO theLoaiDAO;
 
     private List<itemdiadiem> itemList = new ArrayList<>();
     private SlideShowAdapter mitemDiaDiemAdapter ;
@@ -35,8 +34,8 @@ public class HomeFragment extends Fragment {
     private RecyclerView recyclerViewitem ;
     private RecyclerView recyclerViewitem1 ;
     private RecyclerView recyclerViewitem2 ;
-    private ArrayList<PhieuDuLich> listPhieuDL = new ArrayList<>();
-    static PhieuDuLichDAO phieuDuLichDAO;
+    private ArrayList<DiaDiem> listPhieuDL = new ArrayList<>();
+    static DiaDiemDAO phieuDuLichDAO;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,8 +48,8 @@ public class HomeFragment extends Fragment {
         //anhXa
         anhXa(view);
         // khởi chạy database
-        theLoaiDAO = new TheLoaiDAO(getActivity());
-        phieuDuLichDAO = new PhieuDuLichDAO(getActivity());
+        theLoaiDAO = new ThanhPhoDAO(getActivity());
+        phieuDuLichDAO = new DiaDiemDAO(getActivity());
         //Dữ liệu thêm vào
         createDuLieu();
         //code
@@ -92,7 +91,7 @@ public class HomeFragment extends Fragment {
 
     private void loadDataThanhPho() {
         listTP.clear();
-        listTP = (ArrayList<TheLoai>) theLoaiDAO.getAll();
+        listTP = (ArrayList<ThanhPho>) theLoaiDAO.getAll();
         thanhPhoAdapter = new ThanhPhoAdapter(getActivity());
         thanhPhoAdapter.setListTP(listTP);
         LinearLayoutManager LinLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL,false);

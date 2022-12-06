@@ -16,20 +16,20 @@ public class DB_Helper extends SQLiteOpenHelper {
             "soDienThoai TEXT NOT NULL," +
             "namSinh INTEGER NOT NULL," +
             "diaChi TEXT NOT NULL)";
-    static final String CREATE_TABLE_THELOAI = "CREATE TABLE TheLoai (" +
-            "maTheLoai INTEGER PRIMARY KEY AUTOINCREMENT," +
-            "tenTheLoai TEXT NOT NULL)";
-    static final String CREATE_TABLE_PHIEU_DU_LICH = "CREATE TABLE PhieuDuLich(" +
-            "maPhieu INTEGER PRIMARY KEY AUTOINCREMENT," +
-            "maTheLoai INTEGER REFERENCES TheLoai(maTheLoai)," +
+    static final String CREATE_TABLE_THANH_PHO = "CREATE TABLE ThanhPho (" +
+            "maThanhPho INTEGER PRIMARY KEY AUTOINCREMENT," +
+            "tenThanhPho TEXT NOT NULL)";
+    static final String CREATE_TABLE_DIA_DIEM = "CREATE TABLE DiaDiem(" +
+            "maDiaDiem INTEGER PRIMARY KEY AUTOINCREMENT," +
+            "maThanhPho INTEGER REFERENCES TheLoai(maThanhPho)," +
             "tenDiaDiem TEXT NOT NULL," +
             "giaThue INTEGER NOT NULL," +
             "noiDung TEXT NOT NULL," +
             "viTri TEXT NOT NULL)";
-    static final String CREATE_TABLE_PHIEU_CHI_TIET = "CREATE TABLE PhieuDLChiTiet(" +
-            "maPhieuChiTiet INTEGER PRIMARY KEY AUTOINCREMENT," +
+    static final String CREATE_TABLE_CHUYEN_DI = "CREATE TABLE ChuyenDi(" +
+            "maChuyenDi INTEGER PRIMARY KEY AUTOINCREMENT," +
             "taiKhoan TEXT REFERENCES NguoiDung(taiKhoan)," +
-            "maPhieu INTEGER REFERENCES PhieuDuLich(maPhieu)," +
+            "maDiaDiem INTEGER REFERENCES PhieuDuLich(maDiaDiem)," +
             "tienThue INTEGER NOT NULL," +
             "SoLuongNguoi INTEGER NOT NULL," +
             "NgayDat DATE NOT NULL)";
@@ -41,14 +41,14 @@ public class DB_Helper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // Tạo bảng
         db.execSQL(CREATE_TABLE_NGUOI_DUNG);
-        db.execSQL(CREATE_TABLE_THELOAI);
-        db.execSQL(CREATE_TABLE_PHIEU_DU_LICH);
-        db.execSQL(CREATE_TABLE_PHIEU_CHI_TIET);
+        db.execSQL(CREATE_TABLE_THANH_PHO);
+        db.execSQL(CREATE_TABLE_DIA_DIEM);
+        db.execSQL(CREATE_TABLE_CHUYEN_DI);
         // insert dữ liệu vào database
         db.execSQL(Data_SQLite.INSERT_NGUOI_DUNG);
-        db.execSQL(Data_SQLite.INSERT_THE_LOAI);
-        db.execSQL(Data_SQLite.INSERT_PHIEU_DU_LICH);
-        db.execSQL(Data_SQLite.INSERT_PHIEU_DU_LICH_CHI_TIET);
+        db.execSQL(Data_SQLite.INSERT_THANH_PHO);
+        db.execSQL(Data_SQLite.INSERT_DIA_DIEM);
+        db.execSQL(Data_SQLite.INSERT_CHUYEN_DI);
 
     }
 
@@ -57,12 +57,12 @@ public class DB_Helper extends SQLiteOpenHelper {
 
         String DropTableNguoiDung = "DROP TABLE IF EXISTS NguoiDung";
         db.execSQL(DropTableNguoiDung);
-        String DropTableTheLoai = "DROP TABLE IF EXISTS TheLoai";
-        db.execSQL(DropTableTheLoai);
-        String DropTablePhieuDuLich = "DROP TABLE IF EXISTS PhieuDuLich";
-        db.execSQL(DropTablePhieuDuLich);
-        String DropTablePhieuChiTiet = "DROP TABLE IF EXISTS PhieuDLChiTiet";
-        db.execSQL(DropTablePhieuChiTiet);
+        String DropTableThanhPho = "DROP TABLE IF EXISTS ThanhPho";
+        db.execSQL(DropTableThanhPho);
+        String DropTableDiaDiem = "DROP TABLE IF EXISTS DiaDiem";
+        db.execSQL(DropTableDiaDiem);
+        String DropTableChuyenDi = "DROP TABLE IF EXISTS ChuyenDi";
+        db.execSQL(DropTableChuyenDi);
 
         onCreate(db);
     }

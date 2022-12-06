@@ -2,32 +2,32 @@ package cuongnbph22662.poly.duansotaydulich.model;
 
 import java.util.Date;
 
-public class PhieuDLChiTiet {
-    private int maPhieuCT;
+public class ChuyenDi {
+    private int maChuyenDi;
     private String taiKhoan;
-    private int maPhieu;
+    private int maDiaDiem;
     private int tienThue;
     private int soLuongNguoi;
     private Date ngayDat;
 
-    public PhieuDLChiTiet() {
+    public ChuyenDi() {
     }
 
-    public PhieuDLChiTiet(int maPhieuCT, String taiKhoan, int maPhieu, int tienThue, int soLuongNguoi, Date ngayDat) {
-        this.maPhieuCT = maPhieuCT;
+    public ChuyenDi(int maChuyenDi, String taiKhoan, int maDiaDiem, int tienThue, int soLuongNguoi, Date ngayDat) {
+        this.maChuyenDi = maChuyenDi;
         this.taiKhoan = taiKhoan;
-        this.maPhieu = maPhieu;
+        this.maDiaDiem = maDiaDiem;
         this.tienThue = tienThue;
         this.soLuongNguoi = soLuongNguoi;
         this.ngayDat = ngayDat;
     }
 
-    public int getMaPhieuCT() {
-        return maPhieuCT;
+    public int getMaChuyenDi() {
+        return maChuyenDi;
     }
 
-    public void setMaPhieuCT(int maPhieuCT) {
-        this.maPhieuCT = maPhieuCT;
+    public void setMaChuyenDi(int maChuyenDi) {
+        this.maChuyenDi = maChuyenDi;
     }
 
     public String getTaiKhoan() {
@@ -38,12 +38,12 @@ public class PhieuDLChiTiet {
         this.taiKhoan = taiKhoan;
     }
 
-    public int getMaPhieu() {
-        return maPhieu;
+    public int getMaDiaDiem() {
+        return maDiaDiem;
     }
 
-    public void setMaPhieu(int maPhieu) {
-        this.maPhieu = maPhieu;
+    public void setMaDiaDiem(int maDiaDiem) {
+        this.maDiaDiem = maDiaDiem;
     }
 
     public int getTienThue() {
@@ -72,10 +72,10 @@ public class PhieuDLChiTiet {
 
     @Override
     public String toString() {
-        return "PhieuChiTiet{" +
-                "maPhieuCT=" + maPhieuCT +
+        return "ChuyenDi{" +
+                "maChuyenDi=" + maChuyenDi +
                 ", taiKhoan='" + taiKhoan + '\'' +
-                ", maPhieu=" + maPhieu +
+                ", maDiaDiem=" + maDiaDiem +
                 ", tienThue=" + tienThue +
                 ", soLuongNguoi=" + soLuongNguoi +
                 ", ngayDat=" + ngayDat +
