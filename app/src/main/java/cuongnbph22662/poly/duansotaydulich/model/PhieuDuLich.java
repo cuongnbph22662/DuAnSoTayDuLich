@@ -1,5 +1,7 @@
 package cuongnbph22662.poly.duansotaydulich.model;
 
+import android.widget.ImageView;
+
 public class PhieuDuLich {
     private int maPhieu;
     private int maTheLoai;
@@ -8,6 +10,19 @@ public class PhieuDuLich {
     private String noiDung;
     private String viTri;
 
+
+    @Override
+    public String toString() {
+        return "PhieuDuLich{" +
+                "maPhieu=" + maPhieu +
+                ", maTheLoai=" + maTheLoai +
+                ", tenDiaDiem='" + tenDiaDiem + '\'' +
+                ", giaThue=" + giaThue +
+                ", noiDung='" + noiDung + '\'' +
+                ", viTri='" + viTri + '\'' +
+                '}';
+    }
+
     public PhieuDuLich(int maPhieu, int maTheLoai, String tenDiaDiem, int giaThue, String noiDung, String viTri) {
         this.maPhieu = maPhieu;
         this.maTheLoai = maTheLoai;
@@ -15,6 +30,7 @@ public class PhieuDuLich {
         this.giaThue = giaThue;
         this.noiDung = noiDung;
         this.viTri = viTri;
+
     }
 
     public PhieuDuLich() {
@@ -76,14 +92,4 @@ public class PhieuDuLich {
         this.viTri = viTri;
     }
 
-    @Override
-    public String toString() {
-        return "PhieuDuLich{" +
-                "maPhieu=" + maPhieu +
-                ", maTheLoai=" + maTheLoai +
-                ", giaThue=" + giaThue +
-                ", noiDung='" + noiDung + '\'' +
-                ", diaChi='" + viTri + '\'' +
-                '}';
-    }
 }
