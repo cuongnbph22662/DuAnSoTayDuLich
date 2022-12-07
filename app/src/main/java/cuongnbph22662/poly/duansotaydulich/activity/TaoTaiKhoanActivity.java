@@ -15,7 +15,7 @@ import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
 import cuongnbph22662.poly.duansotaydulich.model.NguoiDung;
 
 public class TaoTaiKhoanActivity extends AppCompatActivity {
-    EditText edTenDangNhap, edHoTen, edMatKhau, edNamSinh, edDiaChi, edSDT;
+    EditText edTenDangNhap, edHoTen, edMatKhau, edNamSinh, edDiaChi, edGioiTinh, edSDT;
     Button btnDangKi;
     TextView tvTroVeManDNhap;
     NguoiDungDAO dao;
@@ -31,6 +31,9 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
                 String TenDangNhap = edTenDangNhap.getText().toString();
                 String HoTen = edHoTen.getText().toString();
                 String MatKhau = edMatKhau.getText().toString();
+                String DiaChi = edDiaChi.getText().toString();
+                String NamSinh = edNamSinh.getText().toString();
+                String GioiTinh = edGioiTinh.getText().toString();
                 String SDT = edSDT.getText().toString();
                 if (TenDangNhap.isEmpty()||HoTen.isEmpty()||MatKhau.isEmpty()||SDT.isEmpty()){
                     Toast.makeText(getApplicationContext(),"Không được để trống ",Toast.LENGTH_SHORT).show();
@@ -41,6 +44,9 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
                     nguoiDung.setTaiKhoan(TenDangNhap);
                     nguoiDung.setHoTen(HoTen);
                     nguoiDung.setMatKhau(MatKhau);
+                    nguoiDung.setDiaChi(DiaChi);
+                    nguoiDung.setGioiTinh(GioiTinh);
+                    nguoiDung.setNamSinh(Integer.parseInt(NamSinh));
                     nguoiDung.setSoDienThoai(SDT);
                     dao.insert(nguoiDung);
                     Toast.makeText(TaoTaiKhoanActivity.this, "Đăng kí thành công !!!", Toast.LENGTH_SHORT).show();
@@ -57,6 +63,7 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
         edMatKhau = findViewById(R.id.edMatKhau);
         edNamSinh = findViewById(R.id.edNamSinh);
         edDiaChi = findViewById(R.id.edDiaChi);
+        edGioiTinh = findViewById(R.id.edGioiTinh);
         edSDT = findViewById(R.id.edSoDienThoai);
         btnDangKi = findViewById(R.id.btnDangKi);
 
