@@ -11,11 +11,16 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import cuongnbph22662.poly.duansotaydulich.R;
+import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
+import cuongnbph22662.poly.duansotaydulich.model.NguoiDung;
 
 public class TaoTaiKhoanActivity extends AppCompatActivity {
     EditText edTenDangNhap, edHoTen, edMatKhau, edNamSinh, edDiaChi, edSDT;
     Button btnDangKi;
     TextView tvTroVeManDNhap;
+    NguoiDungDAO dao;
+    NguoiDung nguoiDung;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +29,25 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
         btnDangKi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(TaoTaiKhoanActivity.this, "Đăng kí thành công !!!", Toast.LENGTH_SHORT).show();
-                Toast.makeText(TaoTaiKhoanActivity.this, "Bạn hãy đăng nhập vào tài khoản của bạn", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), DangNhapActivity.class));
+                String TenDangNhap = edTenDangNhap.getText().toString();
+                String HoTen = edHoTen.getText().toString();
+                String MatKhau = edMatKhau.getText().toString();
+                String SDT = edSDT.getText().toString();
+                if (TenDangNhap.isEmpty()||HoTen.isEmpty()||MatKhau.isEmpty()||SDT.isEmpty()){
+                    Toast.makeText(getApplicationContext(),"Không được để trống ",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    dao = new NguoiDungDAO(getApplicationContext());
+                    nguoiDung = new NguoiDung();
+                    nguoiDung.setTaiKhoan(TenDangNhap);
+                    nguoiDung.setHoTen(HoTen);
+                    nguoiDung.setMatKhau(MatKhau);
+                    nguoiDung.setSoDienThoai(SDT);
+                    dao.insert(nguoiDung);
+                    Toast.makeText(TaoTaiKhoanActivity.this, "Đăng kí thành công !!!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), DangNhapActivity.class));
+                }
+
             }
         });
         }
