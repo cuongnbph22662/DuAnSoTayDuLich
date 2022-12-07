@@ -3,40 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/button_design.xml" value="0.1795" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/customitem1.xml" value="0.1795" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/icon_yeuthich.xml" value="0.1795" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/round_edittext.xml" value="0.1795" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_chia_se.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_cong_dong_activity.xml" value="0.264" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_cong_dongactivity.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_dang_nhap.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_dia_diem.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_doi_mk.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_doi_thong_tin.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_hello.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_lich_su.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_lien_he.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_main.xml" value="0.11955420466058764" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_nhan_tin.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_tao_tai_khoan.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_them_email.xml" value="0.12158054711246201" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_them_sdt.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_trip_plan.xml" value="0.4" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_ttca_nhan.xml" value="0.264" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/dialog_dangxuat.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/dialog_thoat.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/dialog_thongbao.xml" value="0.10597826086956522" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/fragment_ho_so.xml" value="0.2" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/fragment_kham_pha.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/fragment_lich.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/fragment_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/kham_pha_item.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/lichsu_item.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/loading.xml" value="0.1038500506585613" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/slide_show_item.xml" value="0.22826086956521738" />
-        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/top_menu_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/ic_chamto.xml" value="0.1375" />
+        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_dia_diem.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/ADMIN/OneDrive/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_lich.xml" value="0.1" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable-v24/background_title.xml" value="0.1745" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_btn_dangnhap.xml" value="0.1745" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_dialog.xml" value="0.1745" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/background_dn_dk.xml" value="0.1745" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/customitem1.xml" value="0.1665" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/drawable/icon_ngoisao.xml" value="0.1835" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_chia_se.xml" value="0.25" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_cong_dongactivity.xml" value="0.4" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_dang_nhap.xml" value="0.2" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_dia_diem.xml" value="0.25" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_hello.xml" value="0.4" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_ho_so.xml" value="0.11398176291793313" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_lich_su.xml" value="0.1109375" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_lien_he.xml" value="0.2" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_login.xml" value="0.1109375" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_main.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_tao_tai_khoan.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/activity_trip_plan.xml" value="0.16510416666666666" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/dialog_dangxuat.xml" value="0.25" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/dialog_thongbao.xml" value="0.1" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_ho_so.xml" value="0.264" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_home.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/fragment_main.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/itemlistitem1.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/tungs/Documents/GitHub/DuAnSoTayDuLich/app/src/main/res/layout/lienhe_dialog.xml" value="0.1109375" />
       </map>
     </option>
   </component>
