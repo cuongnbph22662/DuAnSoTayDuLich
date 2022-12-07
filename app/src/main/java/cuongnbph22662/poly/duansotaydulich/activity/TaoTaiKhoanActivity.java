@@ -20,7 +20,6 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
     TextView tvTroVeManDNhap;
     NguoiDungDAO dao;
     NguoiDung nguoiDung;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +49,7 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
 
             }
         });
-        }
+    }
 
     private void anhXa() {
         edTenDangNhap = findViewById(R.id.edTenDangNhap);
@@ -60,7 +59,7 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
         edDiaChi = findViewById(R.id.edDiaChi);
         edSDT = findViewById(R.id.edSoDienThoai);
         btnDangKi = findViewById(R.id.btnDangKi);
+
+
     }
-
-
 }
