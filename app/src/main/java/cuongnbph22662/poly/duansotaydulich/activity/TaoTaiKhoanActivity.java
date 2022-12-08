@@ -35,9 +35,15 @@ public class TaoTaiKhoanActivity extends AppCompatActivity {
                 String NamSinh = edNamSinh.getText().toString();
                 String GioiTinh = edGioiTinh.getText().toString();
                 String SDT = edSDT.getText().toString();
-                if (TenDangNhap.isEmpty()||HoTen.isEmpty()||MatKhau.isEmpty()||SDT.isEmpty()){
-                    Toast.makeText(getApplicationContext(),"Không được để trống ",Toast.LENGTH_SHORT).show();
+                if (TenDangNhap.isEmpty()||HoTen.isEmpty()||MatKhau.isEmpty()||SDT.isEmpty()||DiaChi.isEmpty()||NamSinh.isEmpty()||GioiTinh.isEmpty()){
+                    Toast.makeText(getApplicationContext(),"Thông tin không được để trống ",Toast.LENGTH_SHORT).show();
                 }
+                 else if (!GioiTinh.equalsIgnoreCase("Nam")&&!GioiTinh.equalsIgnoreCase("Nữ")){
+                     Toast.makeText(getApplicationContext(),"Định dạng giới tính sai ! Vui lòng điền lại!!!",Toast.LENGTH_SHORT).show();
+                }
+//                 else if (!NamSinh.matches("\\d+")){
+//                    Toast.makeText(getApplicationContext(),"Định dạng năm sinh sai ! Vui lòng điền lại!!!",Toast.LENGTH_SHORT).show();
+//                }
                 else {
                     dao = new NguoiDungDAO(getApplicationContext());
                     nguoiDung = new NguoiDung();
