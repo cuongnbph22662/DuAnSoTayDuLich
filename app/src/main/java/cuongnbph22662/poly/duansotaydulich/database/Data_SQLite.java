@@ -2,6 +2,7 @@ package cuongnbph22662.poly.duansotaydulich.database;
 
 public class Data_SQLite {
     public static final String INSERT_NGUOI_DUNG= "INSERT INTO NguoiDung(taiKhoan,hoTen,matKhau,soDienThoai,namSinh,diaChi,gioiTinh) VALUES " +
+            "('admin','Nguyễn Admin','1','0339760892',2022,'Quốc Oai - Hà Nội','Nam')," +
             "('cuongnb','Nguyễn Bá Cường','1','0339760892',2003,'Ha Noi','Nam')," +
             "('thuynt','Nguyễn Thanh Thúy','2','0339760893',2004,'Mi Dinh','Nữ')," +
             "('hoangttm','Tạ Trần Minh Hoàng','3','0339760894',2005,'Moc Chau','Nam')," +
