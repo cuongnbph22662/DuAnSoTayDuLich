@@ -25,6 +25,7 @@ import cuongnbph22662.poly.duansotaydulich.activity.LienHeActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.ManChaoActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.admin.ThongTinDiaDiemActivity;
 import cuongnbph22662.poly.duansotaydulich.data_local.DataLocalManager;
 
 public class HoSoFragment extends Fragment {
@@ -163,6 +164,13 @@ public class HoSoFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 dialogDangXuat();
+            }
+        });
+        thongTinDiaDiem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ThongTinDiaDiemActivity.class);
+                startActivity(intent);
             }
         });
         // lưu đăng nhập
