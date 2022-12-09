@@ -54,6 +54,7 @@ public class DiaDiemActivity extends AppCompatActivity {
         viTri.setText(diaDiem.getViTri());
         tongTienDi.setText(String.valueOf(diaDiem.getGiaThue()));
         soLuongNguoi.setText(String.valueOf(1));
+        soNguoi = Integer.parseInt(soLuongNguoi.getText().toString());
         tien = diaDiem.getGiaThue();
         btnGiamND.setOnClickListener(view1 -> {
             if (Integer.parseInt(soLuongNguoi.getText().toString()) > 1) {
