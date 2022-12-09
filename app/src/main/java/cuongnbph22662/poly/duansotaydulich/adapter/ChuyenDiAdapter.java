@@ -36,7 +36,7 @@ public class ChuyenDiAdapter extends RecyclerView.Adapter<ChuyenDiAdapter.Chuyen
     @NonNull
     @Override
     public ChuyenDiViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.chuyen_di_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_chuyen_di, parent, false);
         return new ChuyenDiViewHolder(view);
     }
 

@@ -77,4 +77,21 @@ public class ChuyenDiDAO {
         List<ChuyenDi> list = getData(sql,id);
         return list.get(0);
     }
+
+    @SuppressLint("Range")
+    public int getDoanhThu(String tuNgay, String denNgay){
+        String sqlDoanhThu = "SELECT SUM(tienThue) as DOANHTHU FROM ChuyenDi WHERE NgayDat BETWEEN ? AND ?";
+        List <Integer> list = new ArrayList < Integer > ( ) ;
+        Cursor c = db.rawQuery (sqlDoanhThu, new String[]{tuNgay ,denNgay});
+        while (c.moveToNext()){
+            try {
+                list.add(Integer.parseInt(c.getString(c.getColumnIndex("DOANHTHU"))));
+            }
+            catch (Exception e){
+                list.add(0);
+            }
+
+        }
+        return list.get(0);
+    }
 }

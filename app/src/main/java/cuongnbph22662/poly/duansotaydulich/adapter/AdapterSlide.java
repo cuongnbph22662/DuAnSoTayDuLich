@@ -23,7 +23,7 @@ public class AdapterSlide extends RecyclerView.Adapter<AdapterSlide.PhotoViewHol
     @NonNull
     @Override
     public PhotoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.slide_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slide, parent, false);
         return new PhotoViewHolder(view);
     }
 
