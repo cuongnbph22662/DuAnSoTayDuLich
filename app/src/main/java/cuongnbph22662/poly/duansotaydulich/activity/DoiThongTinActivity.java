@@ -39,13 +39,16 @@ public class DoiThongTinActivity extends AppCompatActivity {
         btnXacNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(kiemTraLoi()){
-                    String gioitinh = gioiTinh.getText().toString();
-                    if(!gioitinh.equalsIgnoreCase("Nam")){
-                        dialog("Chỉ đc nhập Nam hoặc Nữ");
-                    }else if (!gioitinh.equalsIgnoreCase("Nữ")){
-                        dialog("Chỉ đc nhập Nam hoặc Nữ");
-                    }else {}
+                String gioitinh = gioiTinh.getText().toString();
+                String HoTen = hoTen.getText().toString();
+                String NamSinh = namSinh.getText().toString();
+                String DiaChi = diaChi.getText().toString();
+                String SDT = soDienThoai.getText().toString();
+                if (HoTen.isEmpty() || NamSinh.isEmpty() || DiaChi.isEmpty() || SDT.isEmpty() || gioitinh.isEmpty()) {
+                    dialog("Thông tin không được để trống ");
+                } else if (!gioitinh.equalsIgnoreCase("Nam") && !gioitinh.equalsIgnoreCase("Nữ")) {
+                    dialog("Định dạng giới tính sai ! Vui lòng điền lại!!!");
+                } else {
                     nguoiDung.setHoTen(hoTen.getText().toString());
                     nguoiDung.setNamSinh(Integer.parseInt(namSinh.getText().toString()));
                     nguoiDung.setGioiTinh(gioitinh);
@@ -53,37 +56,37 @@ public class DoiThongTinActivity extends AppCompatActivity {
                     nguoiDung.setSoDienThoai(soDienThoai.getText().toString());
                     nguoiDungDAO.update(nguoiDung);
                     dialog("Đổi thông tin thành công thành công");
+                    startActivity(new Intent(DoiThongTinActivity.this, TTCaNhanActivity.class));
                 }
-                startActivity(new Intent(DoiThongTinActivity.this, TTCaNhanActivity.class));
             }
         });
     }
 
-    public boolean kiemTraLoi(){
-        if(hoTen.getText().toString().isEmpty()){
-            dialog("Không đc để trống họ tên");
-            return false;
-        }
-        if(namSinh.getText().toString().isEmpty()){
-            dialog("Không đc để trống năm sinh");
-            return false;
-        }
-        if(diaChi.getText().toString().isEmpty()){
-            dialog("Không đc để trống địa chỉ");
-            return false;
-        }
-        if(soDienThoai.getText().toString().isEmpty()){
-            dialog("Không đc để trống số điện thoại");
-            return false;
-        }
-        if(gioiTinh.getText().toString().isEmpty()){
-            dialog("Không đc để trống giới tính");
-            return false;
-        }
-
-
-        return true;
-    }
+//    public boolean kiemTraLoi(){
+//        if(hoTen.getText().toString().isEmpty()){
+//            dialog("Không đc để trống họ tên");
+//            return false;
+//        }
+//        if(namSinh.getText().toString().isEmpty()){
+//            dialog("Không đc để trống năm sinh");
+//            return false;
+//        }
+//        if(diaChi.getText().toString().isEmpty()){
+//            dialog("Không đc để trống địa chỉ");
+//            return false;
+//        }
+//        if(soDienThoai.getText().toString().isEmpty()){
+//            dialog("Không đc để trống số điện thoại");
+//            return false;
+//        }
+//        if(gioiTinh.getText().toString().isEmpty()){
+//            dialog("Không đc để trống giới tính");
+//            return false;
+//        }
+//
+//
+//        return true;
+//    }
 
     private void anhXa() {
         troLai = findViewById(R.id.img_trove_ttcn);
@@ -106,7 +109,6 @@ public class DoiThongTinActivity extends AppCompatActivity {
         // dialog
         Button btnThongBao = view.findViewById(R.id.btnThongBao);
         tvThongbao.setText(thongbao);
-
         btnThongBao.setOnClickListener(view1 -> {
             alertDialog.dismiss();
         });
