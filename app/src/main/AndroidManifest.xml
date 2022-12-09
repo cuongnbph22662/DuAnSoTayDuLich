@@ -19,32 +19,38 @@
         android:theme="@style/Theme.DuAnSoTayDuLich"
         tools:targetApi="31">
         <activity
+            android:name=".ThongTinDiaDiemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThanhPhoActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.NhanTinActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ChiaSeActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.CongDongActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.DangNhapActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.DiaDiemActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.DoiMatKhauActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.LichSuActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.LienHeActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.ManChaoActivity"
             android:exported="true">
@@ -56,16 +62,16 @@
         </activity>
         <activity
             android:name=".activity.TaoTaiKhoanActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.DoiThongTinActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.TripPlanActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.TTCaNhanActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

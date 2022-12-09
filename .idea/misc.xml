@@ -13,6 +13,7 @@
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/background_cir.xml" value="0.1" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/background_title.xml" value="0.1" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/custom_linear.xml" value="0.1" />
+        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/ic_add.xml" value="0.1085" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/ic_ten_dia_diem.xml" value="0.1065" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/ic_tien_di.xml" value="0.1065" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/drawable/ic_vitri.xml" value="0.1065" />
@@ -23,6 +24,9 @@
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_dang_nhap.xml" value="0.12158054711246201" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_dia_diem.xml" value="0.264" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_lich_su.xml" value="0.2427536231884058" />
+        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_thanh_pho.xml" value="0.12158054711246201" />
+        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_thong_tin_dia_diem.xml" value="0.11474164133738601" />
+        <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/activity_thong_tin_thanh_pho.xml" value="0.2" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/bacgroung_btn_left.xml" value="0.22826086956521738" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/chuyen_di_item.xml" value="0.264" />
         <entry key="..\:/FPT Polytechnic/DuAnSoTayDuLich/app/src/main/res/layout/dia_diem_item.xml" value="0.264" />
