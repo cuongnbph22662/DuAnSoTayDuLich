@@ -525,7 +525,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/img_hoa"/>
+                android:src="@drawable/anh_ho_hoan_kiem"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

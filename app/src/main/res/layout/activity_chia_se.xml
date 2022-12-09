@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="200dp"
-            android:src="@drawable/anh_chiase"/>
+            android:src="@drawable/anh_ho_hoan_kiem"/>
         <ImageButton
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"

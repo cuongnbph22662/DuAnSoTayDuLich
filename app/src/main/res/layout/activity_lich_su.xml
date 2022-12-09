@@ -29,19 +29,16 @@
     </LinearLayout>
     <TextView
         android:textStyle="bold"
-        android:layout_margin="30dp"
+        android:layout_margin="15dp"
         android:text="Lịch sử chuyến đi của bạn"
         android:textSize="18dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TextView>
-
-    <ListView
-        android:id="@+id/id_LV_LichSu"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recyChuyenDi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

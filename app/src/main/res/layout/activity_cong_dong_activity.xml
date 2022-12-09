@@ -188,7 +188,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView14"
-            app:srcCompat="@drawable/img2" />
+            app:srcCompat="@drawable/anh_ho_hoan_kiem" />
 
         <TextView
             android:id="@+id/tv_chiaSe"
