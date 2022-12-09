@@ -53,7 +53,7 @@ public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhP
         return 0;
     }
 
-    class ThanhPhoViewHolder extends RecyclerView.ViewHolder{
+    public class ThanhPhoViewHolder extends RecyclerView.ViewHolder{
         private TextView TVthanhpho ;
         public ThanhPhoViewHolder(@NonNull View itemView) {
             super(itemView);

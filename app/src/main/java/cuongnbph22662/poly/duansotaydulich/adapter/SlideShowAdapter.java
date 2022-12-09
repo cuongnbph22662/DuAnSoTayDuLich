@@ -35,7 +35,7 @@ public class SlideShowAdapter extends RecyclerView.Adapter<SlideShowAdapter.item
     @NonNull
     @Override
     public itemDiaDiemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-       View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.slide_show_item,parent,false);
+       View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.slide_item,parent,false);
         return new itemDiaDiemViewHolder(view);
     }
 

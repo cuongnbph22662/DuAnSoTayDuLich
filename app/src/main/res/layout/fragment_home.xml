@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.HomeFragment"
     android:background="@color/maunen"
     android:orientation="vertical">
@@ -28,13 +29,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleviewItem1"
+        android:orientation="vertical">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="2dp" />
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/cir3"
             android:layout_width="wrap_content"
-            android:layout_height="170dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            app:ci_drawable="@drawable/background_cir" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="6dp"
+            android:background="@color/xam" />
     </LinearLayout>
 
     <TextView
@@ -45,24 +57,11 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="5dp"
-        />
-    <LinearLayout
+        android:layout_marginTop="5dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleviewItem2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleviewItem2"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleviewItem3"
-            android:layout_width="190dp"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="10dp"/>
-    </LinearLayout>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
 </LinearLayout>

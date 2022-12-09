@@ -168,7 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/bo_song_han"/>
+                android:src="@drawable/anh_bo_song_han"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/thung_lung_tinh_yeu"/>
+                android:src="@drawable/anh_thung_lung_tinh_yeu"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -239,7 +239,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/kinh_thanh_hue"/>
+                android:src="@drawable/anh_kinh_thanh_hue"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -426,7 +426,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/lang_sen_que_bac"/>
+                android:src="@drawable/anh_lang_sen_que_bac"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -467,7 +467,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/anh_pho_co_hoi_an"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -559,7 +559,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/dao_phu_quoc"/>
+                android:src="@drawable/anh_dao_phu_quoc"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -594,7 +594,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/nha_trang"/>
+                android:src="@drawable/anh_nha_trang"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -629,7 +629,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/duong_hoa_nguyen_hue"/>
+                android:src="@drawable/anh_duong_hoa_nguyen_hue"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -663,7 +663,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cau_vang_da_nang"/>
+                android:src="@drawable/anh_cau_vang_da_nang"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -727,7 +727,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/img_lich_dao_cat_ba"/>
+                android:src="@drawable/anh_lich_dao_cat_ba"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -775,7 +775,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/img_lich_dao_co_to"/>
+                android:src="@drawable/anh_lich_dao_co_to"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -816,7 +816,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/img_lich_bien_sam_son"/>
+                android:src="@drawable/anh_lich_bien_sam_son"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -857,7 +857,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/img_lich_vinh_ha_long"/>
+                android:src="@drawable/anh_lich_vinh_ha_long"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -898,7 +898,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/img_lich_nha_trang"/>
+                android:src="@drawable/anh_lich_nha_trang"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -969,7 +969,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_hang_ma"/>
+                android:src="@drawable/anh_pho_hang_ma"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1010,7 +1010,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/van_mieu_quoc_tu_giam"/>
+                android:src="@drawable/anh_van_mieu_quoc_tu_giam"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1045,7 +1045,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_long_den_luong_nhu_hoc"/>
+                android:src="@drawable/anh_pho_long_den_luong_nhu_hoc"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1086,7 +1086,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cau_anh_sao"/>
+                android:src="@drawable/anh_cau_anh_sao"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1127,7 +1127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/saigon_center"/>
+                android:src="@drawable/anh_saigon_center"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1232,7 +1232,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/pho_co_hoi_an"/>
+                android:src="@drawable/anh_pho_co_hoi_an"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1273,7 +1273,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/vuon_quoc_gia_ba_vi"/>
+                android:src="@drawable/anh_vuon_quoc_gia_ba_vi"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1314,7 +1314,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cho_am_thuc"/>
+                android:src="@drawable/anh_cho_am_thuc"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1355,7 +1355,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/thac_giang_dien"/>
+                android:src="@drawable/anh_thac_giang_dien"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1460,7 +1460,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/nha_tho_ham_long"/>
+                android:src="@drawable/anh_nha_tho_ham_long"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1501,7 +1501,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/nha_tho_duc_ba"/>
+                android:src="@drawable/anh_nha_tho_duc_ba"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1536,7 +1536,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/toa_nha_bitexco"/>
+                android:src="@drawable/anh_toa_nha_bitexco"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1577,7 +1577,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/trung_tam_thuong_mai"/>
+                android:src="@drawable/anh_trung_tam_thuong_mai"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
