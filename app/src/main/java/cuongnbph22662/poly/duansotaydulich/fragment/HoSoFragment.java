@@ -25,23 +25,22 @@ import cuongnbph22662.poly.duansotaydulich.activity.LienHeActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.ManChaoActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
-import cuongnbph22662.poly.duansotaydulich.dao.NguoiDungDAO;
 import cuongnbph22662.poly.duansotaydulich.data_local.DataLocalManager;
 
 public class HoSoFragment extends Fragment {
-    NguoiDungDAO nguoiDungDAO;
     Button btnDangNhap;
     TextView tvTaoTaiKhoan;
-    LinearLayout hoSoCaNhan, hoSoCuaBan,
+    LinearLayout hoSoCaNhan, hoSoCuaBan, hoSoAdmin,
                 ThongTinCaNhan,DoiMatKhau, DangXuat, CongDong, LichSuDi, HoTro,DieuKhoan, QuyenRiengTu,
-            dieuKhoan, quyenRiengTu;
+                dieuKhoan, quyenRiengTu,
+                thongTinAdmin, doiMatKhauAdmin, dangXuatAdmin, thongKe, thongTinThanhPho, thongTinDiaDiem, traLoiTinNhan;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
     @SuppressLint("MissingInflatedId")
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ho_so, container, false);
@@ -62,17 +61,16 @@ public class HoSoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        // chưa làm
         dieuKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                dialog("Chức năng đang được phát triên, Bạn hãy quay lại sau nhé");
             }
         });
         quyenRiengTu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                dialog("Chức năng đang được phát triên, Bạn hãy quay lại sau nhé");
             }
         });
         // sau khi đăng nhập
@@ -112,22 +110,71 @@ public class HoSoFragment extends Fragment {
                 startActivity(new Intent(getActivity(), CongDongActivity.class));
             }
         });
-        // chưa làm
         DieuKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                dialog("Chức năng đang được phát triên, Bạn hãy quay lại sau nhé");
             }
         });
         QuyenRiengTu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                dialog("Chức năng đang được phát triên, Bạn hãy quay lại sau nhé");
             }
         });
+        // chức năng của admin
+        thongKe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
+        thongTinThanhPho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
+        thongTinDiaDiem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        traLoiTinNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog("Chức năng đang được phát triên, Bạn hãy quay lại sau nhé");
+            }
+        });
+        thongTinAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), TTCaNhanActivity.class));
+            }
+        });
+        doiMatKhauAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), DoiMatKhauActivity.class));
+            }
+        });
+        dangXuatAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialogDangXuat();
+            }
+        });
+        // lưu đăng nhập
+        String admin = DataLocalManager.getUser();
         if(DataLocalManager.layTrangThaiDangNhap() == true){
-            hoSoCaNhan.setVisibility(View.GONE);
-            hoSoCuaBan.setVisibility(View.VISIBLE);
+            if(admin.equalsIgnoreCase("admin")){
+                hoSoAdmin.setVisibility(View.VISIBLE);
+                hoSoCaNhan.setVisibility(View.GONE);
+            }else {
+                hoSoCaNhan.setVisibility(View.GONE);
+                hoSoCuaBan.setVisibility(View.VISIBLE);
+            }
         }
         return view;
     }
@@ -156,15 +203,39 @@ public class HoSoFragment extends Fragment {
         });
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+    }
+
+    public void dialog(String thongbao) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_thongbao, null);
+        builder.setView(view);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        alertDialog.show();
+        TextView tvThongbao = view.findViewById(R.id.tvMess);
+        // dialog
+        Button btnThongBao = view.findViewById(R.id.btnThongBao);
+        tvThongbao.setText(thongbao);
+
+        btnThongBao.setOnClickListener(view1 -> {
+            alertDialog.dismiss();
+        });
+    }
+
     private void anhXa(View view) {
+        hoSoCaNhan = view.findViewById(R.id.id_HoSoCaNhan);
+        hoSoCuaBan = view.findViewById(R.id.id_HoSoCuaBan);
+        hoSoAdmin = view.findViewById(R.id.id_ChucNangAdmin);
+        //hồ sơ cá nhân
         btnDangNhap = view.findViewById(R.id.btnDangNhap);
         tvTaoTaiKhoan = view.findViewById(R.id.tvDangKi);
         dieuKhoan = view.findViewById(R.id.id_dieuKhoan);
         quyenRiengTu = view.findViewById(R.id.id_quyenRiengTu);
-
-        hoSoCaNhan = view.findViewById(R.id.id_HoSoCaNhan);
-        hoSoCuaBan = view.findViewById(R.id.id_HoSoCuaBan);
-
+        //người dùng
         ThongTinCaNhan = view.findViewById(R.id.id_ThongTinCaNhan);
         DangXuat = view.findViewById(R.id.id_DangXuat);
         DoiMatKhau = view.findViewById(R.id.id_DoiMatKhau);
@@ -173,12 +244,14 @@ public class HoSoFragment extends Fragment {
         HoTro = view.findViewById(R.id.id_PhanHoi);
         DieuKhoan = view.findViewById(R.id.id_DieuKhoan);
         QuyenRiengTu = view.findViewById(R.id.id_QuyenRiengTu);
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
+        //admin
+        thongTinAdmin = view.findViewById(R.id.id_ThongTinCaNhanAdmin);
+        doiMatKhauAdmin = view.findViewById(R.id.id_DoiMatKhauAdmin);
+        dangXuatAdmin = view.findViewById(R.id.id_DangXuatAdmin);
+        thongKe = view.findViewById(R.id.id_ThongKe);
+        thongTinThanhPho = view.findViewById(R.id.id_ThemThanhPho);
+        thongTinDiaDiem = view.findViewById(R.id.id_ThemDiaDiem);
+        traLoiTinNhan = view.findViewById(R.id.id_TraLoiTinNhan);
     }
 
 
