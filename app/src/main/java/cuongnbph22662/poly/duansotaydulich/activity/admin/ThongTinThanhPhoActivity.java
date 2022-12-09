@@ -1,4 +1,4 @@
-package cuongnbph22662.poly.duansotaydulich.activity;
+package cuongnbph22662.poly.duansotaydulich.activity.admin;
 
 import android.os.Bundle;
 
