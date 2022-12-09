@@ -42,10 +42,11 @@ public class TimKiemAdapter extends RecyclerView.Adapter<TimKiemAdapter.UserView
         if (phieuDuLich == null){
             return;
         }
-        holder.imageView.setImageResource(R.drawable.dalat);
-        holder.DiaDiem.setText(phieuDuLich.getDiaChi());
-        holder.Gia.setText(phieuDuLich.getGiaThue());
+        holder.imageView.setImageResource(R.drawable.anh_chiase);
         holder.TenDiaDiem.setText(phieuDuLich.getTenDiaDiem());
+        holder.DiaDiem.setText(phieuDuLich.getViTri());
+        holder.Gia.setText(phieuDuLich.getGiaThue());
+
     }
 
     @Override
@@ -55,7 +56,6 @@ public class TimKiemAdapter extends RecyclerView.Adapter<TimKiemAdapter.UserView
         }
         return 0;
     }
-
 
     public class UserViewHolder extends RecyclerView.ViewHolder{
         private ImageView imageView;

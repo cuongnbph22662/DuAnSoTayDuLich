@@ -2,6 +2,7 @@ package cuongnbph22662.poly.duansotaydulich.fragment;
 
 import android.app.SearchManager;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -64,7 +65,24 @@ public class TimKiemFragment extends Fragment {
             searchView = new SearchView(getContext());
             timKiemAdapter = new TimKiemAdapter(getListUser());
             recyclerView.setAdapter(timKiemAdapter);
+            phieuDuLichDAO = new PhieuDuLichDAO(getContext());
+
+
+
             RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(getContext(),DividerItemDecoration.VERTICAL);
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    timKiemAdapter.getFilter().filter(query);
+                    return false;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    timKiemAdapter.getFilter().filter(newText);
+                    return false;
+                }
+            });
             recyclerView.addItemDecoration(itemDecoration);
 
             searchView.setOnClickListener(new View.OnClickListener() {
@@ -78,20 +96,8 @@ public class TimKiemFragment extends Fragment {
 
     private List<PhieuDuLich> getListUser() {
         List<PhieuDuLich> list = new ArrayList<>();
-
-           searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                timKiemAdapter.getFilter().filter(query);
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                timKiemAdapter.getFilter().filter(newText);
-                return false;
-            }
-        });
+        list.add(new PhieuDuLich(R.drawable.anh_chiase,"Name","2000","Nội dung"));
+//        list.add(new PhieuDuLich(R.drawable.anh_chiase,"Name1","Nmae"));
         return list;
     }
 

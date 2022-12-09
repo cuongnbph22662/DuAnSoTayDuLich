@@ -1,39 +1,34 @@
 package cuongnbph22662.poly.duansotaydulich.model;
 
-import android.widget.ImageView;
-
 public class PhieuDuLich {
+    private int img;
     private int maPhieu;
     private int maTheLoai;
     private String tenDiaDiem;
-    private int giaThue;
+    private String giaThue;
     private String noiDung;
     private String viTri;
 
 
-    @Override
-    public String toString() {
-        return "PhieuDuLich{" +
-                "maPhieu=" + maPhieu +
-                ", maTheLoai=" + maTheLoai +
-                ", tenDiaDiem='" + tenDiaDiem + '\'' +
-                ", giaThue=" + giaThue +
-                ", noiDung='" + noiDung + '\'' +
-                ", viTri='" + viTri + '\'' +
-                '}';
-    }
-
-    public PhieuDuLich(int maPhieu, int maTheLoai, String tenDiaDiem, int giaThue, String noiDung, String viTri) {
+    public PhieuDuLich(int img, String tenDiaDiem, String giaThue, String noiDung) {
+        this.img = img;
         this.maPhieu = maPhieu;
         this.maTheLoai = maTheLoai;
         this.tenDiaDiem = tenDiaDiem;
         this.giaThue = giaThue;
         this.noiDung = noiDung;
         this.viTri = viTri;
-
     }
 
     public PhieuDuLich() {
+    }
+
+    public int getImg() {
+        return img;
+    }
+
+    public void setImg(int img) {
+        this.img = img;
     }
 
     public int getMaPhieu() {
@@ -52,11 +47,19 @@ public class PhieuDuLich {
         this.maTheLoai = maTheLoai;
     }
 
-    public int getGiaThue() {
+    public String getTenDiaDiem() {
+        return tenDiaDiem;
+    }
+
+    public void setTenDiaDiem(String tenDiaDiem) {
+        this.tenDiaDiem = tenDiaDiem;
+    }
+
+    public String getGiaThue() {
         return giaThue;
     }
 
-    public void setGiaThue(int giaThue) {
+    public void setGiaThue(String giaThue) {
         this.giaThue = giaThue;
     }
 
@@ -68,22 +71,6 @@ public class PhieuDuLich {
         this.noiDung = noiDung;
     }
 
-    public String getDiaChi() {
-        return viTri;
-    }
-
-    public void setDiaChi(String diaChi) {
-        this.viTri = diaChi;
-    }
-
-    public String getTenDiaDiem() {
-        return tenDiaDiem;
-    }
-
-    public void setTenDiaDiem(String tenDiaDiem) {
-        this.tenDiaDiem = tenDiaDiem;
-    }
-
     public String getViTri() {
         return viTri;
     }
@@ -91,5 +78,4 @@ public class PhieuDuLich {
     public void setViTri(String viTri) {
         this.viTri = viTri;
     }
-
 }

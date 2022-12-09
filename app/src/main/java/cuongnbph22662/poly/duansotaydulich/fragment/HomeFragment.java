@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
         //Dữ liệu thêm vào
         createDuLieu();
         //code
-        loadDataThanhPho();
+//        loadDataThanhPho();
 
 
         mitemDiaDiemAdapter = new SlideShowAdapter(itemList, getContext());

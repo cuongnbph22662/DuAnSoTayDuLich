@@ -26,7 +26,7 @@ public class PhieuDuLichDAO {
         values.put("tenDiaDiem", obj.getTenDiaDiem());
         values.put("giaThue",obj.getGiaThue());
         values.put("noiDung",obj.getNoiDung());
-        values.put("viTri",obj.getDiaChi());
+        values.put("viTri",obj.getViTri());
         return db.insert("PhieuDuLich",null,values);
     }
     public int update (PhieuDuLich obj){
@@ -35,7 +35,7 @@ public class PhieuDuLichDAO {
         values.put("tenDiaDiem", obj.getTenDiaDiem());
         values.put("giaThue",obj.getGiaThue());
         values.put("noiDung",obj.getNoiDung());
-        values.put("viTri",obj.getDiaChi());
+        values.put("viTri",obj.getViTri());
         return db.update("PhieuDuLich",values,"maPhieu=?",new String[]{String.valueOf(obj.getMaPhieu())});
     }
     public int delete(String id){
@@ -52,9 +52,9 @@ public class PhieuDuLichDAO {
             obj.setMaPhieu(Integer.parseInt(c.getString(c.getColumnIndex("maPhieu"))));
             obj.setMaTheLoai(Integer.parseInt(c.getString(c.getColumnIndex("maTheLoai"))));
             obj.setTenDiaDiem(c.getString(c.getColumnIndex("tenDiaDiem")));
-            obj.setGiaThue(Integer.parseInt(c.getString(c.getColumnIndex("giaThue"))));
+            obj.setGiaThue(String.valueOf(Integer.parseInt(c.getString(c.getColumnIndex("giaThue")))));
             obj.setNoiDung(c.getString(c.getColumnIndex("noiDung")));
-            obj.setDiaChi(c.getString(c.getColumnIndex("viTri")));
+            obj.setViTri(c.getString(c.getColumnIndex("viTri")));
             Log.i("//=======", obj.toString());
             list.add(obj);
         }
