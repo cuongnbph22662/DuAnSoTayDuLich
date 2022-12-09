@@ -25,7 +25,13 @@ import cuongnbph22662.poly.duansotaydulich.activity.LienHeActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.ManChaoActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TTCaNhanActivity;
 import cuongnbph22662.poly.duansotaydulich.activity.TaoTaiKhoanActivity;
+<<<<<<< HEAD
 import cuongnbph22662.poly.duansotaydulich.activity.admin.ThongTinDiaDiemActivity;
+=======
+import cuongnbph22662.poly.duansotaydulich.activity.admin.ThongKeDoanhThuActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.admin.ThongTinDiaDiemActivity;
+import cuongnbph22662.poly.duansotaydulich.activity.admin.ThongTinThanhPhoActivity;
+>>>>>>> c6ec3721f5b2e10376d765f47fdadd294a7d3b60
 import cuongnbph22662.poly.duansotaydulich.data_local.DataLocalManager;
 
 public class HoSoFragment extends Fragment {
@@ -127,19 +133,19 @@ public class HoSoFragment extends Fragment {
         thongKe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(), ThongKeDoanhThuActivity.class));
             }
         });
         thongTinThanhPho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(), ThongTinThanhPhoActivity.class));
             }
         });
         thongTinDiaDiem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(), ThongTinDiaDiemActivity.class));
             }
         });
         traLoiTinNhan.setOnClickListener(new View.OnClickListener() {

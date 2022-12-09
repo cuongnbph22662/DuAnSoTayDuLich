@@ -36,6 +36,12 @@ public class DoiThongTinActivity extends AppCompatActivity {
         gioiTinh.setText(nguoiDung.getGioiTinh());
         diaChi.setText(nguoiDung.getDiaChi());
         soDienThoai.setText(nguoiDung.getSoDienThoai());
+        troLai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DoiThongTinActivity.this, TTCaNhanActivity.class));
+            }
+        });
         btnXacNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
