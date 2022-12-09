@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import cuongnbph22662.poly.duansotaydulich.R;
@@ -34,7 +33,6 @@ public class DiaDiemActivity extends AppCompatActivity {
     ChuyenDiDAO chuyenDiDAO;
     int soNguoi, tongTien, tien;
     String maDD;
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
