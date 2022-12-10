@@ -6,12 +6,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edMaPM"
+        android:id="@+id/ed_MaDiaDiem"
         android:hint="Mã địa điểm"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"/>
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,30 +19,38 @@
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="5dp"/>
-    <TextView
-        android:id="@+id/tvNgay"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ngày: "
+        android:id="@+id/ed_TenDiaDiem"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="5dp"/>
-    <TextView
-        android:id="@+id/tvTienThue"
+        android:layout_marginRight="5dp"
+        android:hint="Tên địa điểm"/>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tiền thuê: "
+        android:id="@+id/ed_ViTri"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="5dp"/>
-    <CheckBox
-        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:hint="Vị trí"/>
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/chkTraSach"
-        android:text="Đã trả sách"
+        android:id="@+id/ed_NoiDung"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="5dp"/>
+        android:layout_marginRight="5dp"
+        android:hint="Nội dung"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_Gia"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:hint="Giá"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,7 +59,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSavePM"
+            android:id="@+id/btnSaveDiaDiem"
             android:text="Lưu"
             android:drawableStart="@android:drawable/ic_menu_save"
             android:layout_marginHorizontal="20dp"
@@ -59,7 +67,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCancelPM"
+            android:id="@+id/btnCancelDiaDiem"
             android:text="Hủy"
             android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
             android:layout_marginHorizontal="20dp"
