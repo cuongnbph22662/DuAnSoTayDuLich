@@ -14,9 +14,10 @@ import java.util.List;
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.adapter.adapter_admin.TTDiaDiemAdapter;
 import cuongnbph22662.poly.duansotaydulich.dao.DiaDiemDAO;
+import cuongnbph22662.poly.duansotaydulich.loaddata.LoadDiaDiem;
 import cuongnbph22662.poly.duansotaydulich.model.DiaDiem;
 
-public class ThongTinDiaDiemActivity extends AppCompatActivity {
+public class ThongTinDiaDiemActivity extends AppCompatActivity implements LoadDiaDiem {
    private RecyclerView recyclerView;
    private FloatingActionButton floaBtn;
    private ArrayList<DiaDiem> listDD = new ArrayList<>();
@@ -28,10 +29,15 @@ public class ThongTinDiaDiemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_thong_tin_dia_diem);
         recyclerView = findViewById(R.id.id_RecyDiaDiem);
         floaBtn = findViewById(R.id.btn_ThemDiaDiem);
-        listDD.clear();
         dao = new DiaDiemDAO(this);
+        loadDataDiaDiem();
+    }
+
+    @Override
+    public void loadDataDiaDiem() {
+        listDD.clear();
         listDD = (ArrayList<DiaDiem>) dao.getAll();
-        adapter = new TTDiaDiemAdapter(ThongTinDiaDiemActivity.this);
+        adapter = new TTDiaDiemAdapter(ThongTinDiaDiemActivity.this,this);
         adapter.setList(listDD);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
         recyclerView.setLayoutManager(linearLayoutManager);

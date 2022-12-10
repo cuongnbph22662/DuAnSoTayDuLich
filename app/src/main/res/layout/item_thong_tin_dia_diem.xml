@@ -54,5 +54,28 @@
             android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Xoa_DD"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="5"
+                android:backgroundTint="@color/xanhla"
+                android:text="Xóa"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Sua_DD"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="5"
+                android:backgroundTint="@color/red"
+                android:text="Sửa"
+                android:textColor="@color/white" />
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

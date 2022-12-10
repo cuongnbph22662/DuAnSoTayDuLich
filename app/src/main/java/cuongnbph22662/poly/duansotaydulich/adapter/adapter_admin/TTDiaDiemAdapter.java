@@ -1,14 +1,16 @@
 package cuongnbph22662.poly.duansotaydulich.adapter.adapter_admin;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -17,16 +19,20 @@ import java.util.List;
 import cuongnbph22662.poly.duansotaydulich.R;
 import cuongnbph22662.poly.duansotaydulich.adapter.DiaDiemAdapter;
 import cuongnbph22662.poly.duansotaydulich.dao.DiaDiemDAO;
+import cuongnbph22662.poly.duansotaydulich.loaddata.LoadDiaDiem;
 import cuongnbph22662.poly.duansotaydulich.model.DiaDiem;
 
 public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.DiaiemViewHolder>{
     private Context mContext;
     private List<DiaDiem> listTT = new ArrayList<>();
     private DiaDiemDAO diaDiemDao;
+    LoadDiaDiem loadDiaDiem;
 
-    public TTDiaDiemAdapter(Context mContext) {
+    public TTDiaDiemAdapter(Context mContext, LoadDiaDiem loadDiaDiem) {
         this.mContext = mContext;
+        this.loadDiaDiem = loadDiaDiem;
     }
+
     public void setList(ArrayList<DiaDiem> list){
         this.listTT = list;
         notifyDataSetChanged();
@@ -53,18 +59,13 @@ public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.Diai
         holder.TTGia.setText(String.valueOf(diaDiem.getGiaThue()));
 //        holder.TTNoiDung.setText(diaDiem.getNoiDung());
         holder.TTViTri.setText(diaDiem.getViTri());
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.btnXoaDD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(mContext.getApplicationContext());
-                builder.setTitle("Delete");
-                builder.setMessage("Bạn có muốn xóa không?");
-                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-//                       diaDiemDao.delete(String.valueOf(position));
-                    }
-                });
+                diaDiemDao = new DiaDiemDAO(mContext);
+                diaDiemDao.delete(String.valueOf(obj.getMaDiaDiem()));
+                loadDiaDiem.loadDataDiaDiem();
+                dialog("Xóa thành công ");
             }
         });
     }
@@ -79,6 +80,7 @@ public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.Diai
 
     public class DiaiemViewHolder extends RecyclerView.ViewHolder {
         private TextView TTTenDiaDiem,TTMaDiaDiem,TTMaThanhPho,TTViTri,TTNoiDung,TTGia;
+        private Button btnXoaDD, btnSuaDD;
         public DiaiemViewHolder(@NonNull View itemView) {
             super(itemView);
             TTTenDiaDiem = itemView.findViewById(R.id.tv_TTTenDiaDiem);
@@ -87,6 +89,24 @@ public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.Diai
             TTViTri = itemView.findViewById(R.id.tv_TTViTri);
             TTNoiDung = itemView.findViewById(R.id.tv_TTNoiDung);
             TTGia = itemView.findViewById(R.id.tv_TTGia);
+            btnXoaDD = itemView.findViewById(R.id.btn_Xoa_DD);
+            btnSuaDD = itemView.findViewById(R.id.btn_Sua_DD);
         }
+    }
+    public void dialog(String thongbao) {
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(mContext);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.dialog_thongbao, null);
+        builder.setView(view);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        alertDialog.show();
+        TextView tvThongbao = view.findViewById(R.id.tvMess);
+        // dialog
+        Button btnThongBao = view.findViewById(R.id.btnThongBao);
+        tvThongbao.setText(thongbao);
+
+        btnThongBao.setOnClickListener(view1 -> {
+            alertDialog.dismiss();
+        });
     }
 }
