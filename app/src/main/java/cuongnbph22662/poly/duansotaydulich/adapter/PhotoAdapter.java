@@ -16,14 +16,14 @@ import androidx.annotation.Nullable;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.model.hinhanh;
+import cuongnbph22662.poly.duansotaydulich.model.HinhAnh;
 
-public class listphotoAdapter extends ArrayAdapter<hinhanh> {
-    public listphotoAdapter(@NonNull Context context, int resource) {
+public class PhotoAdapter extends ArrayAdapter<HinhAnh> {
+    public PhotoAdapter(@NonNull Context context, int resource) {
         super(context, resource);
     }
 
-    public listphotoAdapter(@NonNull Context context, int resource , List<hinhanh> items) {
+    public PhotoAdapter(@NonNull Context context, int resource , List<HinhAnh> items) {
         super(context, resource , items);
     }
 
@@ -36,7 +36,7 @@ public class listphotoAdapter extends ArrayAdapter<hinhanh> {
             convertView = inflater.inflate(R.layout.activity_donganhactivity,null);
         }
 
-        hinhanh ha = getItem(position);
+        HinhAnh ha = getItem(position);
 
         if(ha != null){
             //Anh xa

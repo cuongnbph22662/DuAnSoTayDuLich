@@ -14,11 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.activity.danang;
-import cuongnbph22662.poly.duansotaydulich.activity.hanam;
-import cuongnbph22662.poly.duansotaydulich.activity.hanoi;
-import cuongnbph22662.poly.duansotaydulich.activity.hochiminh;
-import cuongnbph22662.poly.duansotaydulich.activity.hue;
+import cuongnbph22662.poly.duansotaydulich.activity.ThanhPhoActivity;
 import cuongnbph22662.poly.duansotaydulich.model.ThanhPho;
 
 public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhPhoViewHolder>{
@@ -49,29 +45,14 @@ public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhP
         return;
       }
         holder.TVthanhpho.setText(obj.getTenThanhPho());
-        holder.TVthanhpho.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(holder.TVthanhpho.getText().toString().equalsIgnoreCase("Hà Nội")){
-                    Intent intent = new Intent(mContext, hanoi.class);
-                    mContext.startActivity(intent);
-                }else if(holder.TVthanhpho.getText().toString().equalsIgnoreCase("Huế")){
-                    Intent intent = new Intent(mContext, hue.class);
-                    mContext.startActivity(intent);
-                }else if(holder.TVthanhpho.getText().toString().equalsIgnoreCase("Hồ Chí Minh")){
-                    Intent intent = new Intent(mContext, hochiminh.class);
-                    mContext.startActivity(intent);
-                }else if(holder.TVthanhpho.getText().toString().equalsIgnoreCase("Đà Nẵng")){
-                    Intent intent = new Intent(mContext, danang.class);
-                    mContext.startActivity(intent);
-                }else if(holder.TVthanhpho.getText().toString().equalsIgnoreCase("Hà Nam")){
-                    Intent intent = new Intent(mContext, hanam.class);
-                    mContext.startActivity(intent);
-                }
-
+                Intent intent = new Intent(mContext, ThanhPhoActivity.class);
+                intent.putExtra("mathanhpho", String.valueOf(obj.getMaThanhPho()));
+                mContext.startActivity(intent);
             }
         });
-      holder.TVthanhpho.setText(obj.getTenThanhPho());
     }
 
     @Override

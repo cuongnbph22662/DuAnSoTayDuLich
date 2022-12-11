@@ -78,13 +78,11 @@ public class DiaDiemDAO {
 
     public List<DiaDiem> timTheoTen(String diachi){
         String sql = "SELECT * FROM DiaDiem WHERE tenDiaDiem=?";
-        List<DiaDiem> list = getData(sql, diachi);
-        return (List<DiaDiem>) list.get(0);
+        return getData(sql, diachi);
     }
 
     public List<DiaDiem> timTheoThanhPho(String diachi){
         String sql = "SELECT * FROM DiaDiem WHERE maThanhPho=?";
-        List<DiaDiem> list = getData(sql, diachi);
-        return (List<DiaDiem>) list.get(0);
+        return getData(sql, diachi);
     }
 }

@@ -1,10 +1,10 @@
 package cuongnbph22662.poly.duansotaydulich.model;
 
-public class hinhanh {
+public class HinhAnh {
     private String tieude ;
     private byte[] hinh ;
 
-    public hinhanh(String tieude, byte[] hinh) {
+    public HinhAnh(String tieude, byte[] hinh) {
         this.tieude = tieude;
         this.hinh = hinh;
     }
