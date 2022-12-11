@@ -75,7 +75,7 @@ public class ChuyenDiDAO {
     }
 
     public List<ChuyenDi> getChuyenDiTheoUser(String user){
-        String sql = "SELECT * FROM ChuyenDi WHERE taiKhoan=?";
+        String sql = "SELECT * FROM ChuyenDi WHERE taiKhoan=? Order by maChuyenDi Desc";
         return getData(sql,user);
     }
 

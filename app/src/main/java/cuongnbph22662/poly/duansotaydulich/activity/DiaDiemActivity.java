@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,7 +31,7 @@ public class DiaDiemActivity extends AppCompatActivity {
     ThanhPhoDAO thanhPhoDAO;
     ChuyenDiDAO chuyenDiDAO;
     int soNguoi, tongTien, tien;
-    String maDD;
+    String maDD, tongTien2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +54,10 @@ public class DiaDiemActivity extends AppCompatActivity {
         viTri.setText(diaDiem.getViTri());
         tongTienDi.setText(String.valueOf(diaDiem.getGiaThue()));
         soLuongNguoi.setText(String.valueOf(1));
+
         soNguoi = Integer.parseInt(soLuongNguoi.getText().toString());
         tien = diaDiem.getGiaThue();
+        tongTien = 0;
         btnGiamND.setOnClickListener(view1 -> {
             if (Integer.parseInt(soLuongNguoi.getText().toString()) > 1) {
                 soLuongNguoi.setText(String.valueOf(Integer.parseInt(soLuongNguoi.getText().toString()) - 1));
@@ -66,6 +67,7 @@ public class DiaDiemActivity extends AppCompatActivity {
                 btnGiamND.setEnabled(false);
             }
             tongTienDi.setText(String.valueOf(((soNguoi/tien)+tien*soNguoi)));
+            tongTien2 = tongTienDi.getText().toString();
             btnTangND.setEnabled(true);
         });
         btnTangND.setOnClickListener(view1 -> {
@@ -77,17 +79,16 @@ public class DiaDiemActivity extends AppCompatActivity {
                 btnTangND.setEnabled(false);
             }
             tongTienDi.setText(String.valueOf((soNguoi*tien)));
+            tongTien2 = tongTienDi.getText().toString();
             btnGiamND.setEnabled(true);
         });
-        tongTien = Integer.parseInt(tongTienDi.getText().toString());
         btnDatTua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(DataLocalManager.layTrangThaiDangNhap() == false){
                     dialog("Bạn phải đăng nhập mới sử dụng đc chứ năng này");
                 }else {
-                    lenLichChuyenDi(tongTien, soNguoi);
-                    Toast.makeText(DiaDiemActivity.this, soNguoi+" + "+tongTien, Toast.LENGTH_SHORT).show();
+                    lenLichChuyenDi(Integer.parseInt(tongTien2), soNguoi);
                     startActivity(new Intent(DiaDiemActivity.this, LichSuActivity.class));
                 }
             }
