@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/maunen"
+    android:padding="10dp"
     tools:context=".activity.admin.ThongTinDiaDiemActivity">
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

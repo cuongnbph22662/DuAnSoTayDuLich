@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/maunen"
+            android:text="Sửa Địa Điểm"/>
+        <EditText
+            android:enabled="false"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/ed_MaDiaDiemSua"
+            android:hint="Mã địa điểm"/>
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/spMaThanhPhoSua"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/ed_TenDiaDiemSua"
+            android:hint="Tên địa điểm"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_ViTriSua"
+            android:hint="Vị trí"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_NoiDungSua"
+            android:hint="Nội dung"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/ed_GiaSua"
+            android:hint="Giá"/>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:id="@+id/btnHuySuaDiaDiem"
+                android:text="Hủy"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:id="@+id/btnSuaDiaDiem"
+                android:text="Sửa"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

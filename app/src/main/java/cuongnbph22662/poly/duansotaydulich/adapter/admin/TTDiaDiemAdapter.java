@@ -11,17 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.activity.admin.ThongTinDiaDiemActivity;
 import cuongnbph22662.poly.duansotaydulich.dao.DiaDiemDAO;
 import cuongnbph22662.poly.duansotaydulich.dao.ThanhPhoDAO;
 import cuongnbph22662.poly.duansotaydulich.loaddata.LoadDiaDiem;
@@ -30,23 +27,21 @@ import cuongnbph22662.poly.duansotaydulich.model.ThanhPho;
 
 public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.DiaiemViewHolder>{
     private Context mContext;
-    private List<DiaDiem> listTT = new ArrayList<>();
+    private ArrayList<DiaDiem> listDD = new ArrayList<>();
+    private ArrayList<ThanhPho> listTP = new ArrayList<>();
     private DiaDiemDAO diaDiemDao;
-    LoadDiaDiem loadDiaDiem;
-    DiaDiemDAO dao;
-    DiaDiem item;
-    ArrayList<ThanhPho> listThanhPho;
-    ThanhPhoDAO thanhPhoDAO;
-    DiaDiemSPAdapter diaDiemSPAdapter;
-    int maThanhPho,position1;
+    private ThanhPhoDAO thanhPhoDAO;
+    private LoadDiaDiem loadDiaDiem;
+    private DiaDiemSPAdapter diaDiemSPAdapter;
+    private int maThanhPho,position1;
 
     public TTDiaDiemAdapter(Context mContext, LoadDiaDiem loadDiaDiem) {
         this.mContext = mContext;
         this.loadDiaDiem = loadDiaDiem;
     }
 
-    public void setList(ArrayList<DiaDiem> list){
-        this.listTT = list;
+    public void setListTTDiaDiem(ArrayList<DiaDiem> list){
+        this.listDD = list;
         notifyDataSetChanged();
     }
 
@@ -59,19 +54,18 @@ public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.Diai
 
     @Override
     public void onBindViewHolder(@NonNull DiaiemViewHolder holder, int position) {
-        DiaDiem obj = listTT.get(position);
-        if (listTT == null){
+        DiaDiem obj = listDD.get(position);
+        if (listDD == null){
             return;
         }
-        diaDiemDao = new DiaDiemDAO(mContext);
-        DiaDiem diaDiem = diaDiemDao.getID(String.valueOf(obj.getMaDiaDiem()));
-        holder.TTMaDiaDiem.setText("Mã địa điểm: "+String.valueOf(obj.getMaDiaDiem()));
-        holder.TTMaThanhPho.setText("Mã thành phố: "+String.valueOf(diaDiem.getMaThanhPho()));
-        holder.TTTenDiaDiem.setText("Tên địa điểm: "+diaDiem.getTenDiaDiem());
-        holder.TTGia.setText("Giá : "+String.valueOf(diaDiem.getGiaThue()));
-//        holder.TTNoiDung.setText("Nội dung: "+diaDiem.getNoiDung());
-        dao = new DiaDiemDAO(mContext);
-        holder.TTViTri.setText("Địa điểm chi tiết: "+diaDiem.getViTri());
+        thanhPhoDAO = new ThanhPhoDAO(mContext);
+        ThanhPho tp = thanhPhoDAO.getID(String.valueOf(obj.getMaThanhPho()));
+        holder.TTMaDiaDiem.setText("Mã địa điểm: "+obj.getMaDiaDiem());
+        holder.TTMaThanhPho.setText("Tên thành phố: "+tp.getTenThanhPho());
+        holder.TTTenDiaDiem.setText("Tên địa điểm: "+obj.getTenDiaDiem());
+        holder.TTGia.setText("Giá : "+obj.getGiaThue());
+        holder.TTViTri.setText("Vị trí: "+obj.getViTri());
+        // chức năng xóa
         holder.btnXoaDD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,18 +75,78 @@ public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.Diai
                 dialog("Xóa thành công ");
             }
         });
+        // chức năng sửa
         holder.btnSuaDD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDialog();
+                Dialog dialog = new Dialog(mContext);
+                dialog.setContentView(R.layout.dialog_sua_dia_diem);
+
+                EditText edMaDiaDiem = dialog.findViewById(R.id.ed_MaDiaDiemSua);
+                EditText edTenDiaDiem = dialog.findViewById(R.id.ed_TenDiaDiemSua);
+                EditText edVitri = dialog.findViewById(R.id.ed_ViTriSua);
+                Spinner spMaThanhPho = dialog.findViewById(R.id.spMaThanhPhoSua);
+                EditText edNoiDung = dialog.findViewById(R.id.ed_NoiDungSua);
+                EditText edGia = dialog.findViewById(R.id.ed_GiaSua);
+                Button btnSua = dialog.findViewById(R.id.btnSuaDiaDiem);
+                Button btnHuy = dialog.findViewById(R.id.btnHuySuaDiaDiem);
+
+                thanhPhoDAO = new ThanhPhoDAO(mContext);
+                listTP =(ArrayList<ThanhPho>)thanhPhoDAO.getAll();
+                diaDiemSPAdapter = new DiaDiemSPAdapter(mContext,listTP);
+                spMaThanhPho.setAdapter(diaDiemSPAdapter);
+                spMaThanhPho.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        maThanhPho = listTP.get(position).getMaThanhPho();
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
+
+                    }
+                });
+                edMaDiaDiem.setText(String.valueOf(obj.getMaDiaDiem()));
+                edTenDiaDiem.setText(obj.getTenDiaDiem());
+                edVitri.setText(obj.getViTri());
+                edNoiDung.setText(obj.getNoiDung());
+                edGia.setText(String.valueOf(obj.getGiaThue()));
+
+                btnHuy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+                btnSua.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        if (edTenDiaDiem.getText().toString().isEmpty()||edMaDiaDiem.getText().toString().isEmpty()||edVitri.getText().toString().isEmpty()||edGia.getText().toString().isEmpty()){
+                            dialog("Vui lòng nhập đủ thông tin");
+                        }
+                        else {
+                            diaDiemDao = new DiaDiemDAO(mContext);
+                            obj.setMaThanhPho(maThanhPho);
+                            obj.setTenDiaDiem(edTenDiaDiem.getText().toString());
+                            obj.setViTri(edVitri.getText().toString());
+                            obj.setNoiDung(edNoiDung.getText().toString());
+                            obj.setGiaThue(Integer.parseInt(edGia.getText().toString()));
+                            diaDiemDao.update(obj);
+                            loadDiaDiem.loadDataDiaDiem();
+                            dialog.dismiss();
+                        }
+                    }
+                });
+                dialog.show();
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        if (listTT != null){
-            return listTT.size();
+        if (listDD != null){
+            return listDD.size();
         }
         return 0;
     }
@@ -112,6 +166,7 @@ public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.Diai
             btnSuaDD = itemView.findViewById(R.id.btn_Sua_DD);
         }
     }
+
     public void dialog(String thongbao) {
         androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(mContext);
         View view = LayoutInflater.from(mContext).inflate(R.layout.dialog_thongbao, null);
@@ -127,72 +182,5 @@ public class TTDiaDiemAdapter extends RecyclerView.Adapter<TTDiaDiemAdapter.Diai
         btnThongBao.setOnClickListener(view1 -> {
             alertDialog.dismiss();
         });
-    }
-    protected void openDialog(){
-        Dialog dialog = new Dialog(mContext);
-        dialog.setContentView(R.layout.item_them_dia_diem);
-        EditText edMaDiaDiem,edTenDiaDiem,edVitri,edNoiDung,edGia;
-        Spinner spMaThanhPho;
-        edMaDiaDiem = dialog.findViewById(R.id.ed_MaDiaDiem);
-        edTenDiaDiem = dialog.findViewById(R.id.ed_TenDiaDiem);
-        edVitri = dialog.findViewById(R.id.ed_ViTri);
-        spMaThanhPho = dialog.findViewById(R.id.spMaThanhPho);
-        edNoiDung = dialog.findViewById(R.id.ed_NoiDung);
-        edGia = dialog.findViewById(R.id.ed_Gia);
-        Button btnThem = dialog.findViewById(R.id.btnSaveDiaDiem);
-        Button btnCancel = dialog.findViewById(R.id.btnCancelDiaDiem);
-        listThanhPho = new ArrayList<ThanhPho>();
-        thanhPhoDAO = new ThanhPhoDAO(mContext);
-        listThanhPho =(ArrayList<ThanhPho>)thanhPhoDAO.getAll();
-        item = new DiaDiem();
-        diaDiemSPAdapter = new DiaDiemSPAdapter(mContext,listThanhPho);
-        spMaThanhPho.setAdapter(diaDiemSPAdapter);
-        spMaThanhPho.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                maThanhPho = listThanhPho.get(position).getMaThanhPho();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        edMaDiaDiem.setText(String.valueOf(item.getMaDiaDiem()));
-        edTenDiaDiem.setText(item.getTenDiaDiem());
-        edVitri.setText(item.getViTri());
-        edNoiDung.setText(item.getNoiDung());
-        edGia.setText(String.valueOf(item.getGiaThue()));
-        for (int i = 0 ; i<listThanhPho.size();i++)
-            if (item.getMaThanhPho()==(listThanhPho.get(i)).getMaThanhPho()){
-                position1 = i;
-            }
-        spMaThanhPho.setSelection(position1);
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.cancel();
-            }
-        });
-        btnThem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (edTenDiaDiem.getText().toString().isEmpty()||edMaDiaDiem.getText().toString().isEmpty()||edVitri.getText().toString().isEmpty()||edGia.getText().toString().isEmpty()){
-                    Toast.makeText(mContext,"Vui lòng nhập đủ thông tin",Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    item.setMaThanhPho(maThanhPho);
-                    item.setMaDiaDiem(Integer.parseInt(edMaDiaDiem.getText().toString()));
-                    item.setTenDiaDiem(edTenDiaDiem.getText().toString());
-                    item.setViTri(edVitri.getText().toString());
-                    item.setNoiDung(edNoiDung.getText().toString());
-                    item.setGiaThue(Integer.parseInt(edGia.getText().toString()));
-                    dao.update(item);
-                    loadDiaDiem.loadDataDiaDiem();
-                    dialog.dismiss();
-                }
-            }
-        });
-        dialog.show();
     }
 }

@@ -1,15 +1,17 @@
 package cuongnbph22662.poly.duansotaydulich.activity.admin;
 
 import android.app.Dialog;
-import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,67 +30,67 @@ import cuongnbph22662.poly.duansotaydulich.model.DiaDiem;
 import cuongnbph22662.poly.duansotaydulich.model.ThanhPho;
 
 public class ThongTinDiaDiemActivity extends AppCompatActivity implements LoadDiaDiem {
-   private RecyclerView recyclerView;
-   private FloatingActionButton floaBtn;
-   private ArrayList<DiaDiem> listDD = new ArrayList<>();
-   private TTDiaDiemAdapter adapter;
-   DiaDiemDAO dao;
-   DiaDiem item;
-   ArrayList<ThanhPho> listThanhPho;
-   ThanhPhoDAO thanhPhoDAO;
-   DiaDiemSPAdapter diaDiemSPAdapter;
-   int maThanhPho,position1;
+    private RecyclerView recyclerView;
+    private FloatingActionButton floaBtn;
+    private ArrayList<DiaDiem> listDD = new ArrayList<>();
+    private TTDiaDiemAdapter adapter;
+    private ArrayList<ThanhPho> listTP = new ArrayList<>();
+    private ThanhPhoDAO thanhPhoDAO;
+    private DiaDiemDAO diaDiemDAO;
+    private DiaDiemSPAdapter diaDiemSPAdapter;
+    private int maThanhPho,position1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thong_tin_dia_diem);
-        recyclerView = findViewById(R.id.id_RecyDiaDiem);
-        floaBtn = findViewById(R.id.btn_ThemDiaDiem);
-        dao = new DiaDiemDAO(this);
+        anhXa();
         loadDataDiaDiem();
         floaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openDialog();
-
             }
         });
+    }
+
+    private void anhXa() {
+        diaDiemDAO = new DiaDiemDAO(this);
+        recyclerView = findViewById(R.id.id_RecyDiaDiem);
+        floaBtn = findViewById(R.id.btn_ThemDiaDiem);
     }
 
     @Override
     public void loadDataDiaDiem() {
         listDD.clear();
-        listDD = (ArrayList<DiaDiem>) dao.getAll();
+        listDD = (ArrayList<DiaDiem>) diaDiemDAO.getAllAdmin();
         adapter = new TTDiaDiemAdapter(ThongTinDiaDiemActivity.this,this);
-        adapter.setList(listDD);
+        adapter.setListTTDiaDiem(listDD);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
 
     }
+
     protected void openDialog(){
         Dialog dialog = new Dialog(ThongTinDiaDiemActivity.this);
-        dialog.setContentView(R.layout.item_them_dia_diem);
-        EditText edMaDiaDiem,edTenDiaDiem,edVitri,edNoiDung,edGia;
-        Spinner spMaThanhPho;
-        edMaDiaDiem = dialog.findViewById(R.id.ed_MaDiaDiem);
-        edTenDiaDiem = dialog.findViewById(R.id.ed_TenDiaDiem);
-        edVitri = dialog.findViewById(R.id.ed_ViTri);
-        spMaThanhPho = dialog.findViewById(R.id.spMaThanhPho);
-        edNoiDung = dialog.findViewById(R.id.ed_NoiDung);
-        edGia = dialog.findViewById(R.id.ed_Gia);
+        dialog.setContentView(R.layout.dialog_them_dia_diem);
+        // ánh xạ
+        EditText edTenDiaDiem = dialog.findViewById(R.id.ed_TenDiaDiem);
+        EditText edVitri = dialog.findViewById(R.id.ed_ViTri);
+        Spinner spMaThanhPho = dialog.findViewById(R.id.spMaThanhPho);
+        EditText edNoiDung = dialog.findViewById(R.id.ed_NoiDung);
+        EditText edGia = dialog.findViewById(R.id.ed_Gia);
         Button btnThem = dialog.findViewById(R.id.btnSaveDiaDiem);
         Button btnCancel = dialog.findViewById(R.id.btnCancelDiaDiem);
-        listThanhPho = new ArrayList<ThanhPho>();
+        // code
         thanhPhoDAO = new ThanhPhoDAO(this);
-        listThanhPho =(ArrayList<ThanhPho>)thanhPhoDAO.getAll();
-        item = new DiaDiem();
-        diaDiemSPAdapter = new DiaDiemSPAdapter(this,listThanhPho);
+        listTP =(ArrayList<ThanhPho>)thanhPhoDAO.getAll();
+        diaDiemSPAdapter = new DiaDiemSPAdapter(this,listTP);
         spMaThanhPho.setAdapter(diaDiemSPAdapter);
         spMaThanhPho.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                maThanhPho = listThanhPho.get(position).getMaThanhPho();
+                maThanhPho = listTP.get(position).getMaThanhPho();
             }
 
             @Override
@@ -96,41 +98,52 @@ public class ThongTinDiaDiemActivity extends AppCompatActivity implements LoadDi
 
             }
         });
-        edMaDiaDiem.setText(String.valueOf(item.getMaDiaDiem()));
-        edTenDiaDiem.setText(item.getTenDiaDiem());
-        edVitri.setText(item.getViTri());
-        edNoiDung.setText(item.getNoiDung());
-        edGia.setText(String.valueOf(item.getGiaThue()));
-        for (int i = 0 ; i<listThanhPho.size();i++)
-            if (item.getMaThanhPho()==(listThanhPho.get(i)).getMaThanhPho()){
-                position1 = i;
-            }
-            spMaThanhPho.setSelection(position1);
+
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.cancel();
+                dialog.dismiss();
             }
         });
         btnThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (edTenDiaDiem.getText().toString().isEmpty()||edMaDiaDiem.getText().toString().isEmpty()||edVitri.getText().toString().isEmpty()||edGia.getText().toString().isEmpty()){
-                    Toast.makeText(getApplicationContext(),"Vui lòng nhập đủ thông tin",Toast.LENGTH_SHORT).show();
+                if (edTenDiaDiem.getText().toString().isEmpty() || edVitri.getText().toString().isEmpty() ||
+                        edGia.getText().toString().isEmpty() || edNoiDung.getText().toString().isEmpty()){
+                    dialog("Vui lòng nhập đủ thông tin");
                 }
                 else {
+                    diaDiemDAO = new DiaDiemDAO(getApplicationContext());
+                    DiaDiem item = new DiaDiem();
                     item.setMaThanhPho(maThanhPho);
-                    item.setMaDiaDiem(Integer.parseInt(edMaDiaDiem.getText().toString()));
                     item.setTenDiaDiem(edTenDiaDiem.getText().toString());
                     item.setViTri(edVitri.getText().toString());
                     item.setNoiDung(edNoiDung.getText().toString());
                     item.setGiaThue(Integer.parseInt(edGia.getText().toString()));
-                    dao.insert(item);
+                    diaDiemDAO.insert(item);
                     loadDataDiaDiem();
                     dialog.dismiss();
+                    dialog("Thêm địa điểm thành công");
                 }
             }
         });
         dialog.show();
+    }
+
+    public void dialog(String thongbao) {
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(ThongTinDiaDiemActivity.this);
+        View view = LayoutInflater.from(ThongTinDiaDiemActivity.this).inflate(R.layout.dialog_thongbao, null);
+        builder.setView(view);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        alertDialog.show();
+        TextView tvThongbao = view.findViewById(R.id.tvMess);
+        // dialog
+        Button btnThongBao = view.findViewById(R.id.btnThongBao);
+        tvThongbao.setText(thongbao);
+
+        btnThongBao.setOnClickListener(view1 -> {
+            alertDialog.dismiss();
+        });
     }
 }

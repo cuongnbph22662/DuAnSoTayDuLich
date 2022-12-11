@@ -64,6 +64,12 @@ public class DiaDiemDAO {
         String sql = "SELECT * FROM DiaDiem";
         return getData(sql);
     }
+
+    public List<DiaDiem> getAllAdmin(){
+        String sql = "SELECT * FROM DiaDiem Order by maDiaDiem Desc";
+        return getData(sql);
+    }
+
     public DiaDiem getID(String id){
         String sql = "SELECT * FROM DiaDiem WHERE maDiaDiem=?";
         List<DiaDiem> list = getData(sql,id);
@@ -72,6 +78,12 @@ public class DiaDiemDAO {
 
     public List<DiaDiem> timTheoTen(String diachi){
         String sql = "SELECT * FROM DiaDiem WHERE tenDiaDiem=?";
+        List<DiaDiem> list = getData(sql, diachi);
+        return (List<DiaDiem>) list.get(0);
+    }
+
+    public List<DiaDiem> timTheoThanhPho(String diachi){
+        String sql = "SELECT * FROM DiaDiem WHERE maThanhPho=?";
         List<DiaDiem> list = getData(sql, diachi);
         return (List<DiaDiem>) list.get(0);
     }

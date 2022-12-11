@@ -60,9 +60,6 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         //anhXa
         anhXa(view);
-        // khởi chạy database
-        theLoaiDAO = new ThanhPhoDAO(getActivity());
-        diaDiemDAO = new DiaDiemDAO(getActivity());
         //code
         Slide();
         loadDataThanhPho();
@@ -126,6 +123,9 @@ public class HomeFragment extends Fragment {
     }
 
     private void anhXa(View view) {
+        theLoaiDAO = new ThanhPhoDAO(getActivity());
+        diaDiemDAO = new DiaDiemDAO(getActivity());
+
         slideShow = view.findViewById(R.id.id_SlideShow);
         chuyenSlide = view.findViewById(R.id.id_chuyenSlide);
         itemThanhPho = view.findViewById(R.id.recycleviewTopmenu);
