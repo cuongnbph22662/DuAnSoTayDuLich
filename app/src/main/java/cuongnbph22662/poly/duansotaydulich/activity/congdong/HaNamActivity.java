@@ -1,11 +1,11 @@
-package cuongnbph22662.poly.duansotaydulich.activity;
+package cuongnbph22662.poly.duansotaydulich.activity.congdong;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import cuongnbph22662.poly.duansotaydulich.R;
-public class hanam extends AppCompatActivity {
+public class HaNamActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

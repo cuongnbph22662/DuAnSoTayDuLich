@@ -6,7 +6,7 @@
     android:fillViewport="false"
     android:background="#F8D4D0"
     android:layout_height="match_parent"
-    tools:context=".activity.hochiminh">
+    tools:context=".activity.congdong.HoChiMinhActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

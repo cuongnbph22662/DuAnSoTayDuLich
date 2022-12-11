@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.ByteArrayOutputStream;
 
 import cuongnbph22662.poly.duansotaydulich.R;
-import cuongnbph22662.poly.duansotaydulich.activity.admin.danhsachanhdachup;
+import cuongnbph22662.poly.duansotaydulich.activity.admin.AnhDaChupActivity;
 import cuongnbph22662.poly.duansotaydulich.database.img_SQlite;
 
 public class ChiaSeActivity extends AppCompatActivity {
@@ -56,7 +56,7 @@ public class ChiaSeActivity extends AppCompatActivity {
         btnbangtin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChiaSeActivity.this, danhsachanhdachup.class);
+                Intent intent = new Intent(ChiaSeActivity.this, AnhDaChupActivity.class);
                 startActivity(intent);
             }
         });
