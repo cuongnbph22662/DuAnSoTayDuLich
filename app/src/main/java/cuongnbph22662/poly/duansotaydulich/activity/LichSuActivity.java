@@ -39,17 +39,13 @@ public class LichSuActivity extends AppCompatActivity {
                 startActivity(new Intent(LichSuActivity.this, MainActivity.class));
             }
         });
-        listCD.clear();
-        String user = DataLocalManager.getUser();
-        try {
-            listCD = (ArrayList<ChuyenDi>) chuyenDiDAO.getChuyenDiTheoUser(user);
-        }catch (Exception e){
-            dialog("Bạn chưa có chuyến đi nào cả");
-        }
         loadDataChuyenDi();
     }
 
     private void loadDataChuyenDi() {
+        listCD.clear();
+        String user = DataLocalManager.getUser();
+        listCD = (ArrayList<ChuyenDi>) chuyenDiDAO.getChuyenDiTheoUser(user);
         chuyenDiAdapter = new ChuyenDiAdapter(this);
         chuyenDiAdapter.setListCD(listCD);
         LinearLayoutManager LinLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL,false);

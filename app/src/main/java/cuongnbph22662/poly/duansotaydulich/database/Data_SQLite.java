@@ -37,6 +37,6 @@ public class Data_SQLite {
             "(5,'Thu lũng tình yêu',4000,'Đà Lạt là một nơi đáng sống, thu hút nhiều khách du lịch không chỉ những địa điểm tham quan nổi tiếng, không khí trong lành mà còn sự hiếu khách, dễ mến của người dân nơi đây. Nơi nào của xứ sở này cũng quyến rũ lòng người, trong đó phải kể đến Thung Lũng Tình Yêu','số 7, đường Mai Anh Đào, phường 8, Đà Lạt')," +
             "(10,'Tam Chúc',500000,'Quần thể du lịch chùa Tam Chúc Hà Nam là điểm du lịch tâm linh đang nhận được rất nhiều sự quan tâm từ các bạn trẻ và Phật tử trên cả nước. Tham khảo kinh nghiệm du lịch ở ngôi chùa lớn nhất thế giới được mệnh danh “Hạ Long trên cạn” trong bài viết.','Thuộc thị xã Ba Sao huyện Kim Bảng tỉnh Hà Nam')";
     public static final String INSERT_CHUYEN_DI ="INSERT INTO ChuyenDi(taiKhoan,maDiaDiem,tienThue,SoLuongNguoi,NgayDat) VALUES " +
-            "('cuongnb',1,10000,2,'2022/11/09')," +
-            "('cuongnb',2,30000,1,'2022/11/09')";
+            "('cuongnb',1,5000,2,'2022/11/09')," +
+            "('cuongnb',2,60000,1,'2022/11/09')";
 }
