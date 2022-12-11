@@ -68,10 +68,17 @@ public class ChuyenDiDAO {
         }
         return list;
     }
-    public List<ChuyenDi> getAll(){
-        String sql = "SELECT * FROM ChuyenDi";
-        return getData(sql);
+//    public List<ChuyenDi> getAll(){
+//        String sql = "SELECT * FROM ChuyenDi";
+//        return getData(sql);
+//    }
+
+    public List<ChuyenDi> getChuyenDiTheoUser(String user){
+        String sql = "SELECT * FROM ChuyenDi WHERE taiKhoan=?";
+        List<ChuyenDi> listCD = getData(sql,user);
+        return (List<ChuyenDi>) listCD.get(0);
     }
+
     public ChuyenDi getID(String id){
         String sql = "SELECT * FROM ChuyenDi WHERE maChuyenDi=?";
         List<ChuyenDi> list = getData(sql,id);
