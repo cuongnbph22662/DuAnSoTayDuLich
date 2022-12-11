@@ -42,31 +42,48 @@
             android:textAlignment="center"
             android:textColor="@color/black" />
         <ImageView
-            android:layout_width="wrap_content"
+            android:id="@+id/imgchiase"
+            android:layout_width="400dp"
             android:layout_height="200dp"
             android:src="@drawable/anh_ho_hoan_kiem"/>
-        <ImageButton
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_image" />
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/uploadimg"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_image"
+                android:layout_margin="10dp"/>
+
+            <ImageButton
+                android:id="@+id/cameraimg"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
 
         <EditText
+            android:id="@+id/edttieude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tiêu đề" />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_marginTop="40dp"
-            android:id="@+id/btnChiaSe"
+        <Button
+            android:id="@+id/btndang"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:background="@drawable/background_btn_dangnhap"
-            android:elevation="3dp"
-            android:text="Chia sẻ với mọi người"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C9AE82"
+            android:text="Đăng tin"
+            android:layout_margin="20dp"/>
+        <Button
+            android:id="@+id/btnluutru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#67512E"
+            android:text="Bảng tin"
+            android:layout_margin="20dp"/>
     </LinearLayout>
 </LinearLayout>

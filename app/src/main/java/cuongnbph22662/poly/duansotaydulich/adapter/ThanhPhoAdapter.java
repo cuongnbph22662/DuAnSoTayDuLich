@@ -1,6 +1,7 @@
 package cuongnbph22662.poly.duansotaydulich.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuongnbph22662.poly.duansotaydulich.R;
+import cuongnbph22662.poly.duansotaydulich.activity.ThanhPhoActivity;
 import cuongnbph22662.poly.duansotaydulich.model.ThanhPho;
 
 public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhPhoViewHolder>{
@@ -42,7 +44,15 @@ public class ThanhPhoAdapter extends RecyclerView.Adapter<ThanhPhoAdapter.ThanhP
       if(obj == null){
         return;
       }
-      holder.TVthanhpho.setText(obj.getTenThanhPho());
+        holder.TVthanhpho.setText(obj.getTenThanhPho());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, ThanhPhoActivity.class);
+                intent.putExtra("mathanhpho", String.valueOf(obj.getMaThanhPho()));
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override

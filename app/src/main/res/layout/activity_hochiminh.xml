@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="false"
+    android:background="#F8D4D0"
+    android:layout_height="match_parent"
+    tools:context=".activity.congdong.HoChiMinhActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travenus"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="95dp"
+                android:textSize="38dp"
+                android:fontFamily="@font/robotolight"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:id="@+id/icontravenus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/incontrevenus"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="95dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Chợ Bến Thành"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/chobenthanh"
+                android:layout_margin="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hồ Hoàn Kiếm hay còn gọi là Hồ Gươm tọa lạc ngay trung tâm thủ đô Hà Nội và được bao quanh bởi 3 con phố Hàng Khay – Lê Thái Tổ – Đinh Tiên Hoàng.
+
+Do nằm ở vị trí đắc địa, là nơi kết nối giữa khu phố cổ như Hàng Ngang, Hàng Đào, Cầu Gỗ, Lương Văn Can... với khu phố Tây là Nhà Thờ, Tràng Thi, Hàng Bài, Tràng Tiền, Hàng Khay... nên Hồ Hoàn Kiếm thu hút nhiều du khách trong và ngoài nước đến tham quan, khám phá trong chuyến du lịch Hà Nội."
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/robotomedium"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Dinh Độc Lập"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/congvienchaua"
+                android:layout_margin="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hồ Tây (với các tên gọi khác trong lịch sử như Đầm Xác Cáo, Hồ Kim Ngưu, Lãng Bạc, Dâm Đàm, Đoài Hồ) là hồ tự nhiên lớn nhất thành phố Hà Nội, hiện thuộc địa phận quận Tây Hồ. Hồ có diện tích hơn 500 ha với chu vi là khoảng 14,8 km.[2]"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/robotomedium"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Nhà Thờ Đức Bà"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/nhathoducba"
+                android:layout_margin="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hồ Tây (với các tên gọi khác trong lịch sử như Đầm Xác Cáo, Hồ Kim Ngưu, Lãng Bạc, Dâm Đàm, Đoài Hồ) là hồ tự nhiên lớn nhất thành phố Hà Nội, hiện thuộc địa phận quận Tây Hồ. Hồ có diện tích hơn 500 ha với chu vi là khoảng 14,8 km.[2]"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/robotomedium"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Bảo tàng lịch sử Việt Nam"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/baotanglichsuvietnam"
+                android:layout_margin="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hồ Tây (với các tên gọi khác trong lịch sử như Đầm Xác Cáo, Hồ Kim Ngưu, Lãng Bạc, Dâm Đàm, Đoài Hồ) là hồ tự nhiên lớn nhất thành phố Hà Nội, hiện thuộc địa phận quận Tây Hồ. Hồ có diện tích hơn 500 ha với chu vi là khoảng 14,8 km.[2]"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/robotomedium"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

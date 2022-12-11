@@ -19,6 +19,9 @@
         android:theme="@style/Theme.DuAnSoTayDuLich"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ThanhPhoActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.admin.ThongKeDoanhThuActivity"
             android:exported="true" />
         <activity
@@ -75,6 +78,55 @@
         <activity
             android:name=".activity.TTCaNhanActivity"
             android:exported="true" />
+        <activity
+            android:name=".activity.congdong.HaNamActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.congdong.DaNangActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.congdong.HoChiMinhActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.congdong.HueActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.congdong.HaNoiActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.congdong.DongAnhActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.admin.AnhDaChupActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
     </application>
 
 </manifest>
